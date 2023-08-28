@@ -1,0 +1,8 @@
+.headerLogoWraper{
+    width: min(45%, 350px);
+}
+
+.heroTxt{
+    font-size: 30px;
+    line-height: 29px;
+}

@@ -1,0 +1,28 @@
+.mainProductCard{
+    /* width: min(60%, 300px); */
+    border-radius: 40px;
+    /* overflow: hidden; */
+    border-width: 2px !important;
+}
+
+.productName p{
+    line-height: 18px !important;
+    font-size: 18px;
+}
+
+.productCardRating i, .productCardRating p{
+    font-size: 12px;
+}
+
+.productCardPrice p{
+    font-size: 20px;
+    width: max-content;
+}
+
+.active{
+    margin-top: -35px;
+}
+
+.owl-stage{
+    padding-top: 35px;
+}

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'bricolage-extralight';
+    src: url('../fonts/BricolageGrotesque_28pt-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'bricolage-light';
+    src: url('../fonts/BricolageGrotesque_28pt-Light.ttf');
+}
+@font-face {
+    font-family: 'bricolage-regular';
+    src: url('../fonts/BricolageGrotesque_28pt-Regular.ttf');
+}
+@font-face {
+    font-family: 'bricolage-medium';
+    src: url('../fonts/BricolageGrotesque_28pt-Medium.ttf');
+}
+@font-face {
+    font-family: 'bricolage-semibold';
+    src: url('../fonts/BricolageGrotesque_28pt-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'bricolage-bold';
+    src: url('../fonts/BricolageGrotesque_28pt-Bold.ttf');
+}
+@font-face {
+    font-family: 'bricolage-extrabold';
+    src: url('../fonts/BricolageGrotesque_28pt-ExtraBold.ttf');
+}
+
+.bricolage-extralight{
+    font-family: 'bricolage-extralight', sans-serif !important;
+}
+.bricolage-light{
+    font-family: 'bricolage-light', sans-serif !important;
+}
+.bricolage-regular{
+    font-family: 'bricolage-regular', sans-serif !important;
+}
+.bricolage-medium{
+    font-family: 'bricolage-medium', sans-serif !important;
+}
+.bricolage-semibold{
+    font-family: 'bricolage-semibold', sans-serif !important;
+}
+.bricolage-bold{
+    font-family: 'bricolage-bold', sans-serif !important;
+}
+.bricolage-extrabold{
+    font-family: 'bricolage-extrabold', sans-serif !important;
+}
