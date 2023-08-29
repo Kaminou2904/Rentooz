@@ -1,5 +1,6 @@
 import React from 'react';
 import './Productcard.css';
+import { Link } from 'react-router-dom';
 
 function Productcard() {
   return (
@@ -9,7 +10,7 @@ function Productcard() {
         </div>
         <div className="productCardData">
             <div className="productName">
-                <p className="mb-0 text-brand-blue text-center lh-sm bricolage-extrabold mt-2">Mist Fan High End <br /><span className="text-uppercase bricolage-extrabold">blue tank</span></p>
+                <Link to='/detail' className='nav-link'><p className="mb-0 text-brand-blue text-center lh-sm bricolage-extrabold mt-2">Mist Fan High End <br /><span className="text-uppercase bricolage-extrabold">blue tank</span></p></Link>
             </div>
             <div className="productCardRating mt-1 d-flex justify-content-center align-items-center">
                 <i className="fas fa-star text-warning"></i>

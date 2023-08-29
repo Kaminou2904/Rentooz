@@ -1,0 +1,37 @@
+.detailProContainer{
+    /* border-top-right-radius: 50%;
+    border-top-left-radius: 50%; */
+    overflow: hidden;
+}
+
+.proImgWrap{
+    width: 55px;
+    border-radius: 15px;
+}
+
+.detailProName{
+    line-height: 23px;
+}
+
+.detailPriceTag{
+    border-radius: 15px;
+    line-height: 20px;
+    width: calc(95% / 3);
+    border-width: 2px !important;
+}
+
+.mainDetailProAboutTxt{
+    color: gray !important;
+    line-height: 17px;
+}
+
+.checkBtn{
+    border-radius: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.checkBtnWrap{
+    position: fixed;
+    bottom: 5px;
+}
