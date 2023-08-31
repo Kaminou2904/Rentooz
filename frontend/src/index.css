@@ -33,6 +33,10 @@
   color: #efefef !important;
 }
 
+.text-gray{
+  color: gray !important;
+}
+
 .bg-brand-gray{
   background-color: #efefef !important;
 }
@@ -43,9 +47,14 @@
 
 .heading{
   font-size: 20px;
-  color: rgb(118, 118, 118);
+  color: #767676;
   text-transform: uppercase;
   margin: 0px;
   text-align: center;
   font-family: 'bricolage-extrabold', sans-serif;
+}
+
+.fs-14{
+  font-size: 14px !important;
+  line-height: 16px !important;
 }

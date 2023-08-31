@@ -6,3 +6,113 @@
     font-size: 30px;
     line-height: 29px;
 }
+
+.active{
+    transition: 5s;
+}
+
+.callBtn{
+    border-radius: 13px;
+    letter-spacing: 1px;
+}
+
+.aboutLogo{
+    width: auto;
+    height: 14px;
+}
+
+.aboutLogo img{
+    height: 100% !important;
+    width: auto !important;
+}
+
+.aboutTxt{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.serviceTxt{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.whyLogo{
+    width: 155px !important;
+}
+
+.whyTxt{
+    font-size: 14px;
+    line-height: 16px !important;
+}
+
+.blogCardImg img{
+    border-radius: 20px;
+}
+
+.contactHeading{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.formInpu::placeholder{
+    letter-spacing: 2px;
+}
+
+.submitBtn{
+    letter-spacing: 1px;
+}
+
+.bottomNavCont{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.tabIcon{
+    font-size: 20px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.activeNavTab{
+    background-color: white;
+    padding: 5px 15px !important;
+    width: 120px;
+    color: #808080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: tabAnimation ease-in-out 0.5s;
+}
+
+@keyframes tabAnimation {
+    from{
+        width: 40px;
+    }
+    to{
+        width: 120px;
+    }
+}
+
+/* .activeNavTab::after{
+    content: "Book";
+    color: #808080;
+    margin-left: 5px;
+    font-family: 'bricolage-bold';
+} */
+
+.svgWraper{
+    width: 30px;
+}
+
+.svgWraper img{
+    padding: 2px;
+}
+
+.svgicon{
+    filter: invert(0%) sepia(99%) saturate(2%) hue-rotate(90deg) brightness(111%) contrast(100%);
+}
+
+.svgiconActive{
+    filter: invert(52%) sepia(3%) saturate(0%) hue-rotate(333deg) brightness(97%) contrast(93%);
+}

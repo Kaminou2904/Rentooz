@@ -20,7 +20,8 @@
 }
 
 .active{
-    margin-top: -35px;
+    margin-top: -25px;
+    transition: 0.5s;
 }
 
 .owl-stage{
