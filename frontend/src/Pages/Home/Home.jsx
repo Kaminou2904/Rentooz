@@ -177,13 +177,13 @@ function Home() {
             </div>
 
             <div className="bottomNavCont container pb-2">
-                <div className="bottomNav p-3 px-4 d-flex justify-content-between align-items-center rounded-pill bg-brand-skin">
+                <div className="bottomNav px-4 d-flex justify-content-between align-items-center rounded-pill bg-brand-skin">
                     <div className={`tabIcon  align-items-center mb-0 p-0 rounded-pill ${navTabIndex === 0 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(0) }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/Home.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 0 ? 'svgiconActive' : ''}`} />
                             {
                                 navTabIndex === 0 ? (
-                                    <span className="bricolage-bold ms-2">Home</span>
+                                    <span className="navTabSpan bricolage-bold ms-2">Home</span>
                                 ) : ''
                             }
                         </div>
@@ -194,7 +194,7 @@ function Home() {
                         </div>
                         {
                             navTabIndex === 1 ? (
-                                <span className="bricolage-bold ms-2">Chat</span>
+                                <span className="navTabSpan bricolage-bold ms-2">Chat</span>
                             ) : ''
                         }
                     </div>
@@ -204,7 +204,7 @@ function Home() {
                         </div>
                         {
                             navTabIndex === 2 ? (
-                                <span className="bricolage-bold ms-2">Book</span>
+                                <span className="navTabSpan bricolage-bold ms-2">Book</span>
                             ) : ''
                         }
                     </div>
@@ -214,7 +214,7 @@ function Home() {
                         </div>
                         {
                             navTabIndex === 3 ? (
-                                <span className="bricolage-bold ms-2">Profile</span>
+                                <span className="navTabSpan bricolage-bold ms-2">Profile</span>
                             ) : ''
                         }
                     </div>

@@ -62,6 +62,11 @@
     letter-spacing: 1px;
 }
 
+.bottomNav{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
 .bottomNavCont{
     position: fixed;
     bottom: 0px;
@@ -77,8 +82,8 @@
 
 .activeNavTab{
     background-color: white;
-    padding: 5px 15px !important;
-    width: 120px;
+    padding: 4px 15px !important;
+    width: 110px;
     color: #808080;
     display: flex;
     justify-content: space-between;
@@ -91,7 +96,7 @@
         width: 40px;
     }
     to{
-        width: 120px;
+        width: 110px;
     }
 }
 
@@ -103,11 +108,19 @@
 } */
 
 .svgWraper{
-    width: 30px;
+    width: 25px;
 }
 
 .svgWraper img{
     padding: 2px;
+}
+
+.svgWraper span{
+    font-size: 17px;
+}
+
+.navTabSpan{
+    font-size: 17px !important;
 }
 
 .svgicon{
