@@ -21,7 +21,7 @@
 
 .active{
     margin-top: -25px;
-    transition: 0.5s;
+    /* transition: 0.3s; */
 }
 
 .owl-stage{

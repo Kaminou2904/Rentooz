@@ -2,9 +2,32 @@
     width: min(45%, 350px);
 }
 
+.heroDiv{
+    height: 70px;
+}
+
 .heroTxt{
     font-size: 30px;
     line-height: 29px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.searchIcon{
+    width: 38px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    z-index: 65;
+}
+
+.psudoDiv{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    z-index: 60;
 }
 
 .emptyTab{
@@ -21,10 +44,6 @@
 
 .customTab, .dailyTab{
     z-index: 3;
-}
-
-.active{
-    transition: 5s;
 }
 
 .callBtn{
