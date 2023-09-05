@@ -5,6 +5,16 @@
   font-family: 'bricolage-regular', sans-serif;
 }
 
+::-moz-selection{
+  color: #1a4a82;
+  background-color: #daaa84;
+}
+
+::selection{
+  color: #1a4a82;
+  background-color: #daaa84;
+}
+
 .text-brand-skin{
   color: #daaa84 !important;
 }

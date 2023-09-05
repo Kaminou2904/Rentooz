@@ -7,6 +7,22 @@
     line-height: 29px;
 }
 
+.emptyTab{
+    position: absolute;
+    height: 32px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.activeTopTab{
+    color: white !important;
+}
+
+.customTab, .dailyTab{
+    z-index: 3;
+}
+
 .active{
     transition: 5s;
 }
@@ -29,6 +45,20 @@
 .aboutTxt{
     font-size: 14px;
     line-height: 16px;
+}
+
+.serviceCardImg{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto;
+}
+
+.serviceCardImg img{
+    height: 100%;
+    width: auto !important;
 }
 
 .serviceTxt{

@@ -7,11 +7,29 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function Home() {
 
+    const [topnav, setTopnav] = useState(0);
     const [navTabIndex, setNavTabIndex] = useState(0);
+
+    const topNavFunc = (x)=>{
+        setTopnav(x);
+    }
 
     const navTabFunc = (i) => {
         setNavTabIndex(i);
     }
+
+    // const imageResizer = (elem) => {
+    //     // const img = elem.target.src;
+    //     const imgWidth = elem.target.width;
+    //     const imgHeight = elem.target.height;
+    //     console.log(imgWidth, imgHeight);
+    //     const ratio = imgWidth / imgHeight;
+    //     if(ratio >= 1){
+    //         elem.target.style.width = '100%'
+    //     }else{
+    //         elem.target.style.height = '100%'
+    //     }
+    // }
 
     return (
         <div className='mainHome'>
@@ -30,11 +48,12 @@ function Home() {
 
             <div className="dailyTabs container mt-4">
                 <div className="tabsWrap d-flex bg-brand-gray rounded-pill">
-                    <div className="dailyTab text-uppercase w-50 text-center">
-                        <p className="dailySpan p-1 text-white bricolage-medium bg-brand-skin rounded-pill mb-0">daily</p>
+                    <div className="emptyTab bg-brand-skin p-2 px-3 w-50 rounded-pill" style={{left: topnav === 0 ? '3%' : '47%'}}></div>
+                    <div className="dailyTab text-uppercase w-50 text-center" onClick={()=>{topNavFunc(0)}}>
+                        <p className={`dailySpan p-1 bricolage-medium rounded-pill mb-0 ${topnav === 0 ? 'text-white' : 'text-muted'}`}>daily</p>
                     </div>
-                    <div className="customTab text-uppercase w-50 text-center">
-                        <p className="customSpan p-1 bricolage-medium  text-muted rounded-pill mb-0">custom</p>
+                    <div className="customTab text-uppercase w-50 text-center" onClick={()=>{topNavFunc(1)}}>
+                        <p className={`customSpan p-1 bricolage-medium rounded-pill mb-0 ${topnav === 1 ? 'text-white' : 'text-muted'}`}>custom</p>
                     </div>
                 </div>
             </div>
@@ -76,35 +95,35 @@ function Home() {
                 <p className="mb-4 text-brand-skin fs-5 bricolage-bold text-center">Our <span className="text-brand-blue bricolage-bold">Services</span></p>
                 <div className="serviceCard mb-2 text-center">
                     <div className="serviceCardImg px-5">
-                        <img src="./images/Stand AC.png" className='img-fluid p-2' alt="service icon" />
+                        <img src="./images/Stand AC.png" className=' p-2' alt="service icon"/>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
                 </div>
                 <div className="serviceCard mb-2 text-center">
                     <div className="serviceCardImg px-5">
-                        <img src="./images/Mist Fan.png" className='img-fluid p-2' alt="service icon" />
+                        <img src="./images/Mist Fan.png" alt="service icon" style={{padding: '30px 50px'}}/>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
                 </div>
                 <div className="serviceCard mb-2 text-center">
                     <div className="serviceCardImg px-5">
-                        <img src="./images/Portable Toilet.png" className='img-fluid p-2' alt="service icon" />
+                        <img src="./images/Portable Toilet.png" className=' p-2' alt="service icon"/>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
                 </div>
-                <div className="serviceCard mb-2 text-center">
-                    <div className="serviceCardImg px-5">
-                        <img src="./images/Fan.png" className='img-fluid p-2' alt="service icon" />
+                <div className="serviceCard text-center">
+                    <div className="serviceCardImg mt-4 px-5">
+                        <img src="./images/Fan.png" className=' p-2' alt="service icon"/>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
                 </div>
-                <div className="serviceCard mb-2 text-center">
-                    <div className="serviceCardImg px-5">
-                        <img src="./images/Event Material.png" className='img-fluid p-2' alt="service icon" />
+                <div className="serviceCard mb-2 mt-0 text-center">
+                    <div className="serviceCardImgg px-5">
+                        <img src="./images/Event Material.png" className='px-3 img-fluid mt-5' alt="service icon"/>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
@@ -177,7 +196,7 @@ function Home() {
             </div>
 
             <div className="bottomNavCont container pb-2">
-                <div className="bottomNav px-4 d-flex justify-content-between align-items-center rounded-pill bg-brand-skin">
+                <div className="bottomNav px-3 d-flex justify-content-between align-items-center rounded-pill bg-brand-skin">
                     <div className={`tabIcon  align-items-center mb-0 p-0 rounded-pill ${navTabIndex === 0 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(0) }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/Home.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 0 ? 'svgiconActive' : ''}`} />
