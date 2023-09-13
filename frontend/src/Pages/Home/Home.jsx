@@ -87,7 +87,7 @@ function Home() {
             </div>
 
             <div className="categoryWrap d-flex justify-content-between flex-wrap text-center mt-5 px-4 mb-5">
-                <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-2">BROWSE BY CATEGORY</p>
+                <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
                 <Categorycard img="../images/1 Event Material.png" text="Event Material" />
                 <Categorycard img="../images/2Fan.png" text="Fan" />
                 <Categorycard img="../images/3Mist Fan.png" text="Mist Fan" />

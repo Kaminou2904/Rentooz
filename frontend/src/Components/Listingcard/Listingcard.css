@@ -1,0 +1,23 @@
+.mainListingcard{
+    width: 100%;
+}
+
+.listingcardImg{
+    width: 40%;
+}
+
+.listingcardData{
+    width: 60%;
+}
+
+.listingcardRating{
+    font-size: 12px;
+}
+
+.listingcardPrice{
+    font-size: 15px;
+}
+
+.listingCardcategory{
+    font-size: 12px;
+}
