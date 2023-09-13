@@ -20,6 +20,15 @@ function Detail() {
         detstarNum.push(index);
     };
 
+    const submitFunc = ()=>{
+        setLoadingpopup('0px');
+        setBookpopup('-100vh')
+        setTimeout(() => {
+            setLoadingpopup('-100vh');
+            setThankpopup('0vh');
+        }, 5000);
+    }
+
     return (
         <div className='mainDetail bg-brand-skin' style={{height: mainheight}}>
             <div className="mainDetailHeader px-4 py-3 pt-4 d-flex container">
@@ -142,7 +151,7 @@ function Detail() {
                                 </div>
                             </div>
                             <div className="bookBtnDiv">
-                                <button className="bookBtn btn bg-brand-skin text-white text-uppercase w-100 mt-5 p-2 fs-5 bricolage-bold" onClick={()=> setThankpopup('0vh')}>Book Now!</button>
+                                <button className="bookBtn btn bg-brand-skin text-white text-uppercase w-100 mt-5 p-2 fs-5 bricolage-bold"  onClick={submitFunc}>Book Now!</button>
                             </div>
                         </div>
                     </div>
@@ -160,7 +169,7 @@ function Detail() {
                 <div className="thanksCont px-3" style={{bottom: thankpopup}}>
                     <div className="thankspopup p-3  text-center">
                         <div className="doneimg mt-5 mx-auto">
-                            <img src="../images/Done.png" alt="done image" className="img-fluid" />
+                            <img src="../images/Done.png" alt="done" className="img-fluid" />
                         </div>
                         <p className="mb-0 fs-4 text-muted mt-3 text-center bricolage-bold lh-sm">Thank you very much <br /> for booking with Rentooz!</p>
                         <button className='btn bg-brand-skin bricolage-extrabold text-white fs-5 w-75 mx-auto text-uppercase mt-4' onClick={()=> navigate('/')}>Done</button>
