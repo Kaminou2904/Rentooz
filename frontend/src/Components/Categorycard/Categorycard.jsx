@@ -1,9 +1,13 @@
 import React from 'react';
 import './Categorycard.css';
+import { useNavigate } from 'react-router-dom';
 
 function Categorycard(props) {
+
+  const navigate = useNavigate();
+
   return (
-    <div className='mainCategorycard mt-2'>
+    <div className='mainCategorycard mt-2' onClick={()=> navigate('/listing')}>
         <div className="mainCategorycardimg border-brand-blue rounded-brand p-2">
             <img src={props.img} alt="mist fan" className='img-fluid' />
         </div>
