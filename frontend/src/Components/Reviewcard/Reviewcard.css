@@ -1,0 +1,20 @@
+.mainReviewcard{
+    width: 100%;
+}
+
+.reviewImg{
+    width: 20%;
+}
+
+.reviewData{
+    width: 80%;
+}
+
+.reviewTxt{
+    font-size: 14px;
+    line-height: 15px !important;
+}
+
+.reviewDate{
+    font-size: 12px;
+}

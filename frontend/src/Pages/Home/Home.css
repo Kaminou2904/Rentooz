@@ -67,18 +67,17 @@
 }
 
 .serviceCardImg{
-    height: 200px;
-    width: 200px;
+    width: 140px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin: auto;
 }
 
-.serviceCardImg img{
+/* .serviceCardImg img{
     height: 100%;
     width: auto !important;
-}
+} */
 
 .serviceTxt{
     font-size: 14px;

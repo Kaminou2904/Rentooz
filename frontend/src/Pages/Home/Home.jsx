@@ -4,6 +4,7 @@ import Productcard from '../../Components/Productcard/Productcard';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Categorycard from '../../Components/Categorycard/Categorycard';
 
 function Home() {
 
@@ -14,7 +15,7 @@ function Home() {
     const [herotxt, setHerotxt] = useState('block');
     const [psudodiv, setPsudodiv] = useState('none')
 
-    const topNavFunc = (x)=>{
+    const topNavFunc = (x) => {
         setTopnav(x);
     }
 
@@ -22,14 +23,14 @@ function Home() {
         setNavTabIndex(i);
     }
 
-    const searchIconClick = ()=>{
+    const searchIconClick = () => {
         setSearchInpu('block');
         setHerotxt('none');
         setSearchbtn('100%');
         setPsudodiv('block');
     }
 
-    const psudoClick = ()=>{
+    const psudoClick = () => {
         setSearchInpu('none');
         setHerotxt('block');
         setSearchbtn('38px');
@@ -44,23 +45,23 @@ function Home() {
                 </div>
             </div>
 
-            <div className="psudoDiv" style={{display: psudodiv}} onClick={psudoClick}></div>
+            <div className="psudoDiv" style={{ display: psudodiv }} onClick={psudoClick}></div>
 
             <div className={`heroDiv px-4 mt-2 d-flex align-items-center ${searchBtn === '100%' ? 'justify-content-end' : 'justify-content-between'}`}>
-                <h2 className='heroTxt mb-0 bricolage-regular text-brand-blue text-nowrap' style={{display: herotxt}}>Your Trusted <br /> <span className="text-brand-skin bricolage-extrabold">Rental Partner</span></h2>
-                <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-4 px-2 ${searchBtn === '100%' ? 'rounded-brand' : 'rounded-pill'}`} onClick={searchIconClick} style={{width: searchBtn}}>
-                    <input type="text" name="search" className='form-control border-0 shadow-none bricolage-light text-muted m-0 p-0 ps-2'  id="searchinpu" placeholder='Search something' style={{display: searchInpu}}/>
+                <h2 className='heroTxt mb-0 bricolage-regular text-brand-blue text-nowrap' style={{ display: herotxt }}>Your Trusted <br /> <span className="text-brand-skin bricolage-extrabold">Rental Partner</span></h2>
+                <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-4 px-2 ${searchBtn === '100%' ? 'rounded-brand' : 'rounded-pill'}`} onClick={searchIconClick} style={{ width: searchBtn }}>
+                    <input type="text" name="search" className='form-control border-0 shadow-none bricolage-light text-muted m-0 p-0 ps-2' id="searchinpu" placeholder='Search something' style={{ display: searchInpu }} />
                     <i className={`fas fa-search text-brand-skin fs-5 ${searchBtn === '100%' ? 'me-2' : ''}`}></i>
                 </div>
             </div>
 
             <div className="dailyTabs container mt-4">
                 <div className="tabsWrap d-flex bg-brand-gray rounded-pill">
-                    <div className="emptyTab bg-brand-skin p-2 px-3 w-50 rounded-pill" style={{left: topnav === 0 ? '3%' : '47%'}}></div>
-                    <div className="dailyTab text-uppercase w-50 text-center" onClick={()=>{topNavFunc(0)}}>
+                    <div className="emptyTab bg-brand-skin p-2 px-3 w-50 rounded-pill" style={{ left: topnav === 0 ? '3%' : '47%' }}></div>
+                    <div className="dailyTab text-uppercase w-50 text-center" onClick={() => { topNavFunc(0) }}>
                         <p className={`dailySpan p-1 bricolage-medium rounded-pill mb-0 ${topnav === 0 ? 'text-white' : 'text-muted'}`}>daily</p>
                     </div>
-                    <div className="customTab text-uppercase w-50 text-center" onClick={()=>{topNavFunc(1)}}>
+                    <div className="customTab text-uppercase w-50 text-center" onClick={() => { topNavFunc(1) }}>
                         <p className={`customSpan p-1 bricolage-medium rounded-pill mb-0 ${topnav === 1 ? 'text-white' : 'text-muted'}`}>custom</p>
                     </div>
                 </div>
@@ -77,12 +78,21 @@ function Home() {
                             <div className='item d-flex justify-content-center'>
                                 <Productcard />
                             </div>
-                            <div className ='item d-flex justify-content-center'>
+                            <div className='item d-flex justify-content-center'>
                                 <Productcard />
                             </div>
                         </OwlCarousel>
                     </div>
                 </div>
+            </div>
+
+            <div className="categoryWrap d-flex justify-content-between flex-wrap text-center mt-5 px-4">
+                <Categorycard img="../images/1 Event Material.png" text="Event Material" />
+                <Categorycard img="../images/2Fan.png" text="Fan" />
+                <Categorycard img="../images/3Mist Fan.png" text="Mist Fan" />
+                <Categorycard img="../images/4Portable Toilet.png" text="Portable Toilet" />
+                <Categorycard img="../images/5Stand AC.png" text="Stand AC" />
+                <Categorycard img="../images/viewMore.png" text="View All" />
             </div>
 
             <div className="callToActionDiv">
@@ -96,45 +106,63 @@ function Home() {
             <div className="aboutRentooz px-4 mt-5">
                 <div className="aboutHeading d-flex justify-content-start align-items-start mb-0 text-brand-skin bricolage-bold fs-4">About <div className="aboutLogo mb-0">
                     <img src="./images/Rentooz Logo front.png" className='img-fluid ps-2 mb-0' alt="rentooz logo" /></div></div>
-                <p className="aboutTxt mb-0 text-gray bricolage-medium mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora exercitationem, obcaecati quibusdam magnam natus est deserunt, labore sequi velit, nam commodi inventore possimus voluptatibus!</p>
+                <p className="aboutTxt mb-0 text-gray bricolage-medium mt-1">At Rentooz, we're your trusted partner for event
+                    material rentals that add convenience and charm
+                    to your Pune occasions. With a focus on providing
+                    top-notch solutions, we offer an extensive selection
+                    of items, including stand ACs, fans for rent, mist
+                    fans on rent, portable toilets, and more. Our
+                    dedication is to ensure your Pune events are a
+                    seamless and comfortable experience</p>
             </div>
 
             <div className="services mt-5 px-4">
                 <p className="mb-4 text-brand-skin fs-5 bricolage-bold text-center">Our <span className="text-brand-blue bricolage-bold">Services</span></p>
                 <div className="serviceCard mb-2 text-center">
-                    <div className="serviceCardImg px-5">
-                        <img src="./images/Stand AC.png" className=' p-2' alt="service icon"/>
+                    <div className="serviceCardImg mt-3">
+                        <img src="./images/5Stand AC.png" className='img-fluid p-2' alt="service icon" />
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Keep your Pune guests cool and comfortable with
+our stand ACs, designed to deliver efficient
+cooling for indoor and outdoor events.</p>
                 </div>
                 <div className="serviceCard mb-2 text-center">
-                    <div className="serviceCardImg px-5">
-                        <img src="./images/Mist Fan.png" alt="service icon" style={{padding: '30px 50px'}}/>
+                    <div className="serviceCardImg mt-3">
+                        <img src="./images/2Fan.png" alt="service icon" className='img-fluid' />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Fans For Rent</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Beat the heat at your Pune events with our variety
+of fans available for rent. From classic fans to
+contemporary designs, we've got the right
+fan for your event.</p>
                 </div>
                 <div className="serviceCard mb-2 text-center">
-                    <div className="serviceCardImg px-5">
-                        <img src="./images/Portable Toilet.png" className=' p-2' alt="service icon"/>
+                    <div className="serviceCardImg mt-3">
+                        <img src="./images/3Mist Fan.png" className='img-fluid p-2' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Mist Fans on Rent</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Create a refreshing atmosphere for your outdoor
+Pune gatherings with our mist fans on rent.
+They add a touch of coolness to warm occasions.</p>
                 </div>
                 <div className="serviceCard text-center">
-                    <div className="serviceCardImg mt-4 px-5">
-                        <img src="./images/Fan.png" className=' p-2' alt="service icon"/>
+                    <div className="serviceCardImg mt-3">
+                        <img src="./images/1 Event Material.png" className='img-fluid p-2' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Event Material Rentals</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Beyond cooling solutions, explore our range
+of event materials for rent in Pune, including big fans,
+outdoor coolers, and more.</p>
                 </div>
                 <div className="serviceCard mb-2 mt-0 text-center">
-                    <div className="serviceCardImgg px-5">
-                        <img src="./images/Event Material.png" className='px-3 img-fluid mt-5' alt="service icon"/>
+                    <div className="serviceCardImg mt-3">
+                        <img src="./images/4Portable Toilet.png" className='img-fluid' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam nesciunt laudantium fugiat inventore.</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Portable Toilets on Wheels</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Ensure convenience for your Pune guests with our
+portable toilets on wheels. Easy to set up
+and maintain, they provide hassle-free comfort.</p>
                 </div>
             </div>
 

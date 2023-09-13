@@ -1,3 +1,7 @@
+.mainDetail{
+    overflow-y: hidden;
+}
+
 .detailProContainer{
     /* border-top-right-radius: 50%;
     border-top-left-radius: 50%; */
@@ -34,4 +38,131 @@
 .checkBtnWrap{
     position: fixed;
     bottom: 5px;
+}
+
+.featuresUl{
+    list-style: none;
+}
+
+.featureLi::before{
+    content: "";
+    color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #daaa84;
+    margin-left: -20px;
+    margin-right: 10px;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.bookingPopupCont, .loadingCont, .thanksCont{
+    position: fixed;
+    bottom: 0vh;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(218, 171, 132, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 55;
+    transition: all 0.5s ease-in-out;
+}
+
+.bookingpopup, .loadingpopup, .thankspopup{
+    min-height: 65vh;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: white;
+}
+
+.loadingpopup{
+    min-height: 40vh;
+}
+
+.popupLogo{
+    width: 40%;
+}
+
+.popupSogen{
+    font-size: 19px;
+    line-height: 17px;
+}
+
+/* date picker styling */
+/* ::-webkit-datetime-edit { padding: 1em; }
+::-webkit-datetime-edit-fields-wrapper { background: silver; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: orange; } */
+
+.myDatepicker{
+    border-width: 2px !important;
+    width: 55%;
+}
+
+.addInpu{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.mylegend{
+    margin-top: -9px;
+    width: max-content;
+    font-size: 12px;
+}
+
+.bookBtn{
+    border-radius: 10px;
+}
+
+.datepickerWrap{
+    width: 56%;
+    /* background-color: #daaa84; */
+}
+
+.mydatePicker{
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.extarDiv{
+    height: 100%;
+    width: 100%;
+}
+
+.loaderImg{
+    width: 30%;
+    animation: loaderAnimation 2s infinite ease-out;
+}
+
+/* .loaderImg:hover{
+    transform: rotate(760deg);
+} */
+
+.loaderImg img{
+    animation: 5s infinite ease-out;
+}
+
+@keyframes loaderAnimation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.doneimg{
+    width: 40%;
 }
