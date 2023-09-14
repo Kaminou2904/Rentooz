@@ -8,7 +8,7 @@ function Categorycard(props) {
 
   return (
     <div className='mainCategorycard mt-2' onClick={()=> navigate('/listing')}>
-        <div className="mainCategorycardimg border-brand-blue rounded-brand p-2">
+        <div className="mainCategorycardimg border-brand-blue rounded-brand p-3">
             <img src={props.img} alt="mist fan" className='img-fluid' />
         </div>
         <span className="cateTxt nunito-bold">{props.text}</span>

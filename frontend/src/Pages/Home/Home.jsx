@@ -59,10 +59,10 @@ function Home() {
                 <div className="tabsWrap d-flex bg-brand-gray rounded-pill">
                     <div className="emptyTab bg-brand-skin p-2 px-3 w-50 rounded-pill" style={{ left: topnav === 0 ? '3%' : '47%' }}></div>
                     <div className="dailyTab text-uppercase w-50 text-center" onClick={() => { topNavFunc(0) }}>
-                        <p className={`dailySpan p-1 bricolage-medium rounded-pill mb-0 ${topnav === 0 ? 'text-white' : 'text-muted'}`}>daily</p>
+                        <p className={`dailySpan p-2 bricolage-medium rounded-pill mb-0 ${topnav === 0 ? 'text-white' : 'text-muted'}`}>daily</p>
                     </div>
                     <div className="customTab text-uppercase w-50 text-center" onClick={() => { topNavFunc(1) }}>
-                        <p className={`customSpan p-1 bricolage-medium rounded-pill mb-0 ${topnav === 1 ? 'text-white' : 'text-muted'}`}>custom</p>
+                        <p className={`customSpan p-2 bricolage-medium rounded-pill mb-0 ${topnav === 1 ? 'text-white' : 'text-muted'}`}>custom</p>
                     </div>
                 </div>
             </div>
@@ -125,8 +125,8 @@ function Home() {
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Keep your Pune guests cool and comfortable with
-our stand ACs, designed to deliver efficient
-cooling for indoor and outdoor events.</p>
+                        our stand ACs, designed to deliver efficient
+                        cooling for indoor and outdoor events.</p>
                 </div>
                 <div className="serviceCard mb-2 text-center">
                     <div className="serviceCardImg mt-3">
@@ -134,9 +134,9 @@ cooling for indoor and outdoor events.</p>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Fans For Rent</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Beat the heat at your Pune events with our variety
-of fans available for rent. From classic fans to
-contemporary designs, we've got the right
-fan for your event.</p>
+                        of fans available for rent. From classic fans to
+                        contemporary designs, we've got the right
+                        fan for your event.</p>
                 </div>
                 <div className="serviceCard mb-2 text-center">
                     <div className="serviceCardImg mt-3">
@@ -144,8 +144,8 @@ fan for your event.</p>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Mist Fans on Rent</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Create a refreshing atmosphere for your outdoor
-Pune gatherings with our mist fans on rent.
-They add a touch of coolness to warm occasions.</p>
+                        Pune gatherings with our mist fans on rent.
+                        They add a touch of coolness to warm occasions.</p>
                 </div>
                 <div className="serviceCard text-center">
                     <div className="serviceCardImg mt-3">
@@ -153,8 +153,8 @@ They add a touch of coolness to warm occasions.</p>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Event Material Rentals</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Beyond cooling solutions, explore our range
-of event materials for rent in Pune, including big fans,
-outdoor coolers, and more.</p>
+                        of event materials for rent in Pune, including big fans,
+                        outdoor coolers, and more.</p>
                 </div>
                 <div className="serviceCard mb-2 mt-0 text-center">
                     <div className="serviceCardImg mt-3">
@@ -162,8 +162,8 @@ outdoor coolers, and more.</p>
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Portable Toilets on Wheels</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Ensure convenience for your Pune guests with our
-portable toilets on wheels. Easy to set up
-and maintain, they provide hassle-free comfort.</p>
+                        portable toilets on wheels. Easy to set up
+                        and maintain, they provide hassle-free comfort.</p>
                 </div>
             </div>
 
@@ -176,19 +176,28 @@ and maintain, they provide hassle-free comfort.</p>
                 </div>
                 <div className="whyCard mb-3">
                     <p className="mb-0 lh-sm text-gray bricolage-bold">Quality Assurance:</p>
-                    <p className="whyTxt mb-0 lh-sm text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur officiis assumenda doloremque, architecto ullam.</p>
+                    <p className="whyTxt mb-0 lh-sm text-gray">Our event materials undergo rigorous checks to ensure top-notch quality and performance.</p>
                 </div>
                 <div className="whyCard mb-3">
-                    <p className="mb-0 lh-sm text-gray bricolage-bold">Quality Assurance:</p>
-                    <p className="whyTxt mb-0 lh-sm text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur officiis assumenda doloremque, architecto ullam.</p>
+                    <p className="mb-0 lh-sm text-gray bricolage-bold">Wide Selection:</p>
+                    <p className="whyTxt mb-0 lh-sm text-gray">Our diverse inventory ensures you find the right solutions to match your Pune event's theme and requirements.</p>
                 </div>
                 <div className="whyCard mb-3">
-                    <p className="mb-0 lh-sm text-gray bricolage-bold">Quality Assurance:</p>
-                    <p className="whyTxt mb-0 lh-sm text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur officiis assumenda doloremque, architecto ullam.</p>
+                    <p className="mb-0 lh-sm text-gray bricolage-bold">Convenient Rentals:</p>
+                    <p className="whyTxt mb-0 lh-sm text-gray">With a seamless online booking process, renting
+                        event materials in Pune has never been easier.</p>
                 </div>
                 <div className="whyCard mb-3">
-                    <p className="mb-0 lh-sm text-gray bricolage-bold">Quality Assurance:</p>
-                    <p className="whyTxt mb-0 lh-sm text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur officiis assumenda doloremque, architecto ullam.</p>
+                    <p className="mb-0 lh-sm text-gray bricolage-bold">Flexible Durations:</p>
+                    <p className="whyTxt mb-0 lh-sm text-gray">Rent for the duration that suits your Pune event's
+                        timeline, whether it's a single day or an
+                        extended period.</p>
+                </div>
+                <div className="whyCard mb-3">
+                    <p className="mb-0 lh-sm text-gray bricolage-bold">Prompt Delivery:</p>
+                    <p className="whyTxt mb-0 lh-sm text-gray">We provide timely delivery and pickup services,
+                        ensuring your Pune event planning remains
+                        stress-free.</p>
                 </div>
             </div>
 
@@ -234,7 +243,7 @@ and maintain, they provide hassle-free comfort.</p>
 
             <div className="bottomNavCont container pb-2">
                 <div className="bottomNav px-3 d-flex justify-content-between align-items-center rounded-pill bg-brand-skin">
-                    <div className={`tabIcon  align-items-center mb-0 p-0 rounded-pill ${navTabIndex === 0 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(0) }}>
+                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 0 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(0) }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/Home.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 0 ? 'svgiconActive' : ''}`} />
                             {
@@ -244,7 +253,7 @@ and maintain, they provide hassle-free comfort.</p>
                             }
                         </div>
                     </div>
-                    <div className={`tabIcon  align-items-center mb-0 p-0 rounded-pill ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1) }}>
+                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1) }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/Chat.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 1 ? 'svgiconActive' : ''}`} />
                         </div>
@@ -254,7 +263,7 @@ and maintain, they provide hassle-free comfort.</p>
                             ) : ''
                         }
                     </div>
-                    <div className={`tabIcon  align-items-center text-center mb-0 p-0 rounded-pill ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2) }}>
+                    <div className={`tabIcon  align-items-center text-center mb-0 p-0 ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2) }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/SuitCase.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 2 ? 'svgiconActive' : ''}`} />
                         </div>
@@ -264,7 +273,7 @@ and maintain, they provide hassle-free comfort.</p>
                             ) : ''
                         }
                     </div>
-                    <div className={`tabIcon  align-items-center mb-0 p-0 rounded-pill ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3) }}>
+                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3) }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/USer.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} />
                         </div>

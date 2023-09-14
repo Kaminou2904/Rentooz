@@ -32,7 +32,7 @@
 
 .emptyTab{
     position: absolute;
-    height: 32px;
+    height: 40px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -113,6 +113,7 @@
 .bottomNav{
     padding-top: 12px !important;
     padding-bottom: 12px !important;
+    border-radius: 20px !important;
 }
 
 .bottomNavCont{
@@ -126,11 +127,12 @@
     font-size: 20px;
     width: 30px;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .activeNavTab{
     background-color: white;
-    padding: 4px 15px !important;
+    padding: 8px 15px !important;
     width: 110px;
     color: #808080;
     display: flex;

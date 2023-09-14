@@ -73,15 +73,24 @@
 }
 
 .bookingpopup, .loadingpopup, .thankspopup{
-    min-height: 65vh;
+    min-height: 70vh;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     background-color: white;
+    animation: popupanimation 0.5s ease-out;
 }
 
 .loadingpopup{
     min-height: 40vh;
+}
+
+@keyframes popupanimation {
+    0%{
+        margin-bottom: -70vh;
+    }100%{
+        margin-bottom: 0px;
+    }
 }
 
 .popupLogo{
@@ -165,4 +174,16 @@
 
 .doneimg{
     width: 40%;
+}
+
+.mainImgWrap img{
+    animation: mainImganimation 2s;
+}
+
+@keyframes mainImganimation {
+    0%{
+        margin-left: -100vw;
+    }100%{
+        margin-left: 0px;
+    }
 }
