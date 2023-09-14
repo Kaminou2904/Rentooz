@@ -248,7 +248,7 @@ function Home() {
             </div>
 
             <div className="bottomNavCont container pb-2">
-                <div className="bottomNav px-3 d-flex justify-content-between align-items-center rounded-pill bg-brand-skin">
+                <div className="bottomNav mx-auto px-3 d-flex justify-content-between align-items-center rounded-pill bg-brand-skin">
                     <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 0 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(0) }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/Home.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 0 ? 'svgiconActive' : ''}`} />
