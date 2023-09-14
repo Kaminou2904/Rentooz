@@ -98,7 +98,7 @@ function Home() {
                     <Categorycard img="../images/3Mist Fan.png" text="Mist Fan" />
                     <Categorycard img="../images/4Portable Toilet.png" text="Portable Toilet" />
                     <Categorycard img="../images/5Stand AC.png" text="Stand AC" />
-                    <Categorycard img="../images/viewMore.png" text="View All" />
+                    <Categorycard img="../images/threedots.png" text="View All" />
                 </div>
             </div>
 
