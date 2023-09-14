@@ -45,14 +45,14 @@ function Home() {
         <div className='mainHome'>
             <div className="mainHeader">
                 <div className="headerLogoWraper mx-auto py-4 mt-2">
-                    <img src="./images/Rentooz logo front.png" className='img-fluid' alt="rentooz logo" />
+                    <img src="./images/Rentooz Logo.png" className='img-fluid' alt="rentooz logo" />
                 </div>
             </div>
 
             <div className="psudoDiv" style={{ display: psudodiv }} onClick={psudoClick}></div>
 
             <div className={`heroDiv px-4 mt-2 d-flex align-items-center ${searchBtn === '100%' ? 'justify-content-end' : 'justify-content-between'}`}>
-                <h2 className='heroTxt mb-0 bricolage-regular text-brand-blue text-nowrap' style={{ display: herotxt }}>Your Trusted <br /> <span className="text-brand-skin bricolage-extrabold">Rental Partner</span></h2>
+                <h2 className='heroTxt mb-0 bricolage-bold text-brand-skin text-nowrap' style={{ display: herotxt }}>Stay Cool, Pay Smart<br /> <span className="text-brand-blue bricolage-regular">The Ultimate Cooling <br />Rental Solutions in Pune</span></h2>
                 <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-4 px-2 ${searchBtn === '100%' ? 'rounded-brand' : 'rounded-pill'}`} onClick={searchIconClick} style={{ width: searchBtn }}>
                     <input type="text" name="search" className='form-control border-0 shadow-none bricolage-light text-muted m-0 p-0 ps-2' id="searchinpu" placeholder='Search something' style={{ display: searchInpu }} />
                     <i className={`fas fa-search text-brand-skin fs-5 ${searchBtn === '100%' ? 'me-2' : ''}`}></i>
