@@ -1,9 +1,13 @@
 import React from 'react';
 import './Listingcard.css';
+import { useNavigate } from 'react-router-dom';
 
 function Lisitngcard() {
+
+  const navigate = useNavigate();
+
   return (
-    <div className='mainListingcard d-flex p-2 px-2 align-items-center rounded-brand border-brand-skin mt-3'>
+    <div className='mainListingcard d-flex p-2 px-2 align-items-center rounded-brand border-brand-skin mt-3' onClick={()=>navigate('/detail')}>
         <div className="listingcardImg">
             <img src="../images/mistfanBlack.webp" alt="mist fan" className="img-fluid rounded-brand" />
         </div>
