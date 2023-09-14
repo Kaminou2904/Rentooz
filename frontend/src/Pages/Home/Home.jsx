@@ -86,14 +86,16 @@ function Home() {
                 </div>
             </div>
 
-            <div className="categoryWrap d-flex justify-content-between flex-wrap text-center mt-5 px-4 mb-5">
+            <div className="categoryWrap text-center mt-5 px-4 mb-5">
                 <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
-                <Categorycard img="../images/1 Event Material.png" text="Event Material" />
-                <Categorycard img="../images/2Fan.png" text="Fan" />
-                <Categorycard img="../images/3Mist Fan.png" text="Mist Fan" />
-                <Categorycard img="../images/4Portable Toilet.png" text="Portable Toilet" />
-                <Categorycard img="../images/5Stand AC.png" text="Stand AC" />
-                <Categorycard img="../images/viewMore.png" text="View All" />
+                <div className="categoryCardWrap d-flex justify-content-between flex-wrap ">
+                    <Categorycard img="../images/1 Event Material.png" text="Event Material" />
+                    <Categorycard img="../images/2Fan.png" text="Fan" />
+                    <Categorycard img="../images/3Mist Fan.png" text="Mist Fan" />
+                    <Categorycard img="../images/4Portable Toilet.png" text="Portable Toilet" />
+                    <Categorycard img="../images/5Stand AC.png" text="Stand AC" />
+                    <Categorycard img="../images/viewMore.png" text="View All" />
+                </div>
             </div>
 
             <div className="callToActionDiv">
