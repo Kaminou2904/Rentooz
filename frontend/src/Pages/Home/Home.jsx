@@ -93,11 +93,11 @@ function Home() {
             <div className="categoryWrap text-center mt-5 px-4 mb-5">
                 <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
                 <div className="categoryCardWrap d-flex justify-content-between flex-wrap ">
-                    <Categorycard img="../images/1 Event Material.png" text="Event Material" />
-                    <Categorycard img="../images/2Fan.png" text="Fan" />
+                    <Categorycard img="../images/COOLER.png" text="Cooler" />
+                    <Categorycard img="../images/2Fan.png" text="Pedestal Fan" />
                     <Categorycard img="../images/3Mist Fan.png" text="Mist Fan" />
-                    <Categorycard img="../images/4Portable Toilet.png" text="Portable Toilet" />
-                    <Categorycard img="../images/5Stand AC.png" text="Stand AC" />
+                    <Categorycard img="../images/Heater.png" text="Heater" />
+                    <Categorycard img="../images/5Stand AC.png" text="Portable AC" />
                     <Categorycard img="../images/threedots.png" text="View All" />
                 </div>
             </div>
@@ -129,7 +129,7 @@ function Home() {
                     <div className="serviceCardImg mt-3">
                         <img src="./images/5Stand AC.png" className='img-fluid p-2' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Stand AC<span className='text-brand-skin bricolage-bold'>s</span></p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Portable AC<span className='text-brand-skin bricolage-bold'>s</span></p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Keep your Pune guests cool and comfortable with
                         our stand ACs, designed to deliver efficient
                         cooling for indoor and outdoor events.</p>
@@ -138,7 +138,7 @@ function Home() {
                     <div className="serviceCardImg mt-3">
                         <img src="./images/2Fan.png" alt="service icon" className='img-fluid' />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Fans For Rent</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Padestal Fans For Rent</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Beat the heat at your Pune events with our variety
                         of fans available for rent. From classic fans to
                         contemporary designs, we've got the right
@@ -155,18 +155,18 @@ function Home() {
                 </div>
                 <div className="serviceCard text-center">
                     <div className="serviceCardImg mt-3">
-                        <img src="./images/1 Event Material.png" className='img-fluid p-2' alt="service icon" />
+                        <img src="./images/Heater.png" className='img-fluid p-2' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Event Material Rentals</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Heater Rentals</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Beyond cooling solutions, explore our range
                         of event materials for rent in Pune, including big fans,
                         outdoor coolers, and more.</p>
                 </div>
                 <div className="serviceCard mb-2 mt-0 text-center">
                     <div className="serviceCardImg mt-3">
-                        <img src="./images/4Portable Toilet.png" className='img-fluid' alt="service icon" />
+                        <img src="./images/COOLER.png" className='img-fluid' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Portable Toilets on Wheels</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Cooler on Wheels</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Ensure convenience for your Pune guests with our
                         portable toilets on wheels. Easy to set up
                         and maintain, they provide hassle-free comfort.</p>
