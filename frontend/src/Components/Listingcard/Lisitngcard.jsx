@@ -17,7 +17,7 @@ function Lisitngcard() {
             </p>
             <p className="listingCardcategory mt-3 text-muted mb-0">Category <span className="bricolage-bold tex-uppercase">Mist Fan</span></p>
             <div className="rateNprice d-flex mt-3 justify-content-between align-items-center">
-                <p className="listingcardRating mb-0 text-nowrap"><i class="fas fa-star text-warning"></i> 4.9 (202)</p>
+                <p className="listingcardRating mb-0 text-nowrap"><i className="fas fa-star text-warning"></i> 4.9 (202)</p>
                 <p className="mb-0 listingcardPrice text-white bg-brand-skin rounded-pill p-1 px-3"><span className="bricolage-bold text-white">₹499</span>/day</p>
             </div>
         </div>

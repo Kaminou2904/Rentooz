@@ -9,6 +9,7 @@ function Detail() {
 
     const navigate = useNavigate();
     const [mainImg, setmainimg] = useState('../images/2Fan.png');
+    const [imgtrans, setImgtrans] = useState(false);
     const [imgindex, setImgindex] = useState(0);
     const [dateval, setDateval] = useState(new Date());
     const [bookpopup, setBookpopup] = useState('none');
@@ -21,6 +22,13 @@ function Detail() {
     for (let index = 1; index <= 5; index++) {
         detstarNum.push(index);
     };
+
+    const imgTransi = ()=>{
+        setImgtrans(true)
+        setTimeout(()=>{
+            setImgtrans(false)
+        }, 500);
+    }
 
     const submitFunc = () => {
         setLoadingpopup('flex');
@@ -41,20 +49,20 @@ function Detail() {
             </div>
             <div className="detailProContainer rounded-pill rounded-bottom-0 bg-white">
                 <div className="mainImgWrap pt-4 px-5">
-                    <img src={mainImg} className='img-fluid p-2' alt="mist fan" />
+                    <img src={mainImg} className={`img-fluid p-2 ${imgtrans? 'mainImgImg': ''}`} alt="mist fan" />
                 </div>
                 <div className="proImages d-flex justify-content-around px-5 mt-3">
                     <div className={`proImgWrap p-2 ${imgindex === 0 ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                        <img src="../images/2Fan.png" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); setImgindex(0)}}/>
+                        <img src="../images/2Fan.png" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(0)}}/>
                     </div>
                     <div className={`proImgWrap p-2 ${imgindex === 1 ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                        <img src="../images/1 Event Material.png" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); setImgindex(1)}}/>
+                        <img src="../images/1 Event Material.png" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(1)}}/>
                     </div>
                     <div className={`proImgWrap p-2 ${imgindex === 2 ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                        <img src="../images/3Mist Fan.png" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); setImgindex(2)}}/>
+                        <img src="../images/3Mist Fan.png" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(2)}}/>
                     </div>
                     <div className={`proImgWrap p-2 ${imgindex === 3 ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                        <img src="../images/mistfanBlack.webp" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); setImgindex(3)}}/>
+                        <img src="../images/mistfanBlack.webp" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(3)}}/>
                     </div>
                 </div>
                 <div className="detailProData mt-4 container px-4">

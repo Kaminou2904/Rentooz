@@ -176,8 +176,12 @@
     width: 40%;
 }
 
-.mainImgWrap img{
-    animation: mainImganimation 2s;
+.mainImgWrap{
+    transition: opacity 2s ease-in-out !important;
+}
+
+.mainImgImg{
+    animation: mainImganimation 0.5s;
 }
 
 @keyframes mainImganimation {
