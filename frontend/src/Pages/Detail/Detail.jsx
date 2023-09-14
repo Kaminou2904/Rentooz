@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Detail.css';
 import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
@@ -6,6 +6,10 @@ import 'react-datepicker/dist/react-datepicker.css';
 import Reviewcard from '../../Components/Reviewcard/Reviewcard';
 
 function Detail() {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    }, []);
 
     const navigate = useNavigate();
     const [mainImg, setmainimg] = useState('../images/2Fan.png');

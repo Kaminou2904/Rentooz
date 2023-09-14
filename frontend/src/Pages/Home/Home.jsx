@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Productcard from '../../Components/Productcard/Productcard';
 import OwlCarousel from 'react-owl-carousel';
@@ -7,6 +7,10 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Categorycard from '../../Components/Categorycard/Categorycard';
 
 function Home() {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    }, [])
 
     const [topnav, setTopnav] = useState(0);
     const [navTabIndex, setNavTabIndex] = useState(0);

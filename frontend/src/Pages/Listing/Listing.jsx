@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Lisitngcard from '../../Components/Listingcard/Lisitngcard'
 import { useNavigate } from 'react-router-dom'
 
 function Listing() {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    }, [])
 
     const navigate = useNavigate();
 
