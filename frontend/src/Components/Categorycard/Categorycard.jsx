@@ -7,11 +7,11 @@ function Categorycard(props) {
   const navigate = useNavigate();
 
   return (
-    <div className='mainCategorycard mt-2' onClick={()=> navigate('/listing')}>
+    <div className='mainCategorycard mt-2' onClick={()=> navigate(`${props.text}`)}>
         <div className="mainCategorycardimg border-brand-blue rounded-brand p-3">
             <img src={props.img} alt="mist fan" className='img-fluid' />
         </div>
-        <span className="cateTxt nunito-bold">{props.text}</span>
+        <span className="cateTxt nunito-bold text-capitalize">{props.text}</span>
     </div>
   );
 };

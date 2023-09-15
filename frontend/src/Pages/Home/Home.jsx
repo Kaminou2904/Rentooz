@@ -22,8 +22,9 @@ function Home() {
     const [searchInpu, setSearchInpu] = useState('none');
     const [searchBtn, setSearchbtn] = useState('38px')
     const [herotxt, setHerotxt] = useState('block');
-    const [psudodiv, setPsudodiv] = useState('none')
+    const [psudodiv, setPsudodiv] = useState('none');
     const [firstcate, setFirstcate] = useState([]);
+    const [catedata, setCatedata] = useState([]);
 
     const topNavFunc = (x) => {
         setTopnav(x);
@@ -47,26 +48,33 @@ function Home() {
         setPsudodiv('none');
     }
 
-    console.log(Data['mist fan'].products[0]);
+    // console.log(Data['mist fan'].mainicon);
 
     const productPrinter = ()=> {
         const firstdata = [];
+        const maincateData = [];
         for(const product in Data){
+            maincateData.push({procate: product, icon: Data[product].mainicon})
             firstdata.push(Data[product].products[0]);
         };
-        return firstdata;
+        return {firstdata, maincateData};
     };
 
     useEffect(()=>{
-        const firstdata = productPrinter();
+        const firstdata = productPrinter().firstdata;
         setFirstcate(firstdata);
+        const maindata = productPrinter().maincateData;
+        setCatedata(maindata);
     }, []);
 
     useEffect(()=> {
         console.log(firstcate)
     }, [firstcate])
-    
 
+    useEffect(()=> {
+        console.log(catedata)
+    }, [catedata])
+    
     return (
         <div className='mainHome'>
             <div className="mainHeader">
@@ -125,12 +133,15 @@ function Home() {
 
             <div className="categoryWrap text-center mt-5 px-4 mb-5">
                 <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
+
+                
+
                 <div className="categoryCardWrap d-flex justify-content-between flex-wrap ">
-                    <Categorycard img="../images/COOLER.png" text="Cooler" />
-                    <Categorycard img="../images/2Fan.png" text="Pedestal Fan" />
-                    <Categorycard img="../images/3Mist Fan.png" text="Mist Fan" />
-                    <Categorycard img="../images/Heater.png" text="Heater" />
-                    <Categorycard img="../images/5Stand AC.png" text="Portable AC" />
+                    {
+                        catedata.map((catdata, ind)=>(
+                            <Categorycard key={ind} img={catdata.icon} text={catdata.procate} />
+                        ))
+                    }
                     <Categorycard img="../images/threedots.png" text="View All" />
                 </div>
             </div>
@@ -314,11 +325,11 @@ function Home() {
                     </div>
                     <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3) }}>
                         <div className="svgWraper d-flex">
-                            <img src="./images/USer.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} />
+                            <img src="./images/download.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} style={{filter: 'invert(0%) sepia(99%) saturate(2%) hue-rotate(90deg) brightness(111%) contrast(100%);'}}/>
                         </div>
                         {
                             navTabIndex === 3 ? (
-                                <span className="navTabSpan bricolage-bold ms-2">Profile</span>
+                                <span className="navTabSpan bricolage-bold extrasvg ms-2">Product</span>
                             ) : ''
                         }
                     </div>

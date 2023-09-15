@@ -1,14 +1,33 @@
 import React, { useEffect } from 'react'
 import Lisitngcard from '../../Components/Listingcard/Lisitngcard'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom';
+import Data from '../../Data/Product.json'
 
 function Listing() {
 
     useEffect(()=>{
         window.scrollTo(0,0);
-    }, [])
+    }, []);
 
+    const {category} = useParams();
     const navigate = useNavigate();
+    
+    let listData;
+    const proarr = [];
+    if(category === "View All"){
+        for(const prokey in Data){
+            // console.log(Data[prokey])
+            Data[prokey].products.forEach((pro)=> {
+                proarr.push(pro);
+            })
+        }
+    }else{
+        listData = Data[category].products;
+    }
+
+    
+
+    
 
   return (
     <div className='mainListing'>
@@ -18,11 +37,22 @@ function Listing() {
         </div>
         <div className="cardWraper px-4 mt-5 pt-4">
             <div className="cardWrap">
-                <Lisitngcard/>
-                <Lisitngcard/>
-                <Lisitngcard/>
-                <Lisitngcard/>
-                <Lisitngcard/>
+                {/* {
+                    listData.map((data)=>(
+                        <Lisitngcard key={data.id} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
+                    ))
+                } */}
+                {
+                    category === 'View All' ? (
+                        proarr.map((data)=>(
+                            <Lisitngcard key={data.id} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
+                        ))
+                    ): (
+                        listData.map((data)=>(
+                            <Lisitngcard key={data.id} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
+                        ))
+                    )
+                }
             </div>
         </div>
     </div>
