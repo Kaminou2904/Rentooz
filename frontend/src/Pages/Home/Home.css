@@ -186,7 +186,11 @@
     padding: 10px !important;
 }
 
-.item.active{
-    margin-top: -20px !important;
+.slick-list{
+    padding-top: 40px !important;
+}
+
+.slick-active{
+    margin-top: -40px !important;
     transition: 0.5s !important;
 }

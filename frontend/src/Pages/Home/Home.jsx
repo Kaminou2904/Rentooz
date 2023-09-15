@@ -100,7 +100,7 @@ function Home() {
             <div className="ourProducts mt-4">
                 <p className="heading">Our Products</p>
                 <div className="productCardWraper mt-3">
-                    <div className="productCardWrap">
+                    <div className="productCardWrap pt-4">
                         {/* <OwlCarousel className='owl-theme' stagePadding={80} items={1} margin={10} loop dots={false}>
                             {
                                 firstcate.map((catedata)=>(
