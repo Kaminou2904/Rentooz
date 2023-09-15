@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import Productcard from '../../Components/Productcard/Productcard';
-import OwlCarousel from 'react-owl-carousel';
+// import Productcard from '../../Components/Productcard/Productcard';
+// import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Categorycard from '../../Components/Categorycard/Categorycard';
 import Data from '../../Data/Product.json';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Productcard from '../../Components/Productcard/Productcard';
 
 function Home() {
 
@@ -97,7 +101,7 @@ function Home() {
                 <p className="heading">Our Products</p>
                 <div className="productCardWraper mt-3">
                     <div className="productCardWrap">
-                        <OwlCarousel className='owl-theme' stagePadding={80} items={1} margin={10} loop dots={false}>
+                        {/* <OwlCarousel className='owl-theme' stagePadding={80} items={1} margin={10} loop dots={false}>
                             {
                                 firstcate.map((catedata)=>(
                                     <div className='item d-flex justify-content-center' key={catedata.id}>
@@ -105,8 +109,16 @@ function Home() {
                                     </div>
                                 ))
                             }
-                            {/* <Productcard cate='somecate' img="../images/mistfanBlack.webp" name='somename' keyfeat='somefeat' price={9000}/> */}
-                        </OwlCarousel>
+                        </OwlCarousel> */}
+                        <Slider infinite dots={false} arrows={false} slidesToShow={1} centerMode={true}>
+                            {
+                                firstcate.map((catedata)=>(
+                                    <div className='item px-2 d-flex justify-content-center' key={catedata.id}>
+                                        <Productcard cate={catedata.cate} img={catedata.img} name={catedata.name} keyfeat={catedata.keyfeat} price={catedata.price}/>
+                                    </div>
+                                ))
+                            }
+                        </Slider>
                     </div>
                 </div>
             </div>
