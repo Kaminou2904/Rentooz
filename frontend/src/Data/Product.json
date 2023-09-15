@@ -1,0 +1,134 @@
+{
+    "mist fan": {
+        "id": 1,
+        "mainicon": "../images/3Mist Fan.png",
+        "products": [
+            {
+                "id": 11,
+                "name": "silver mist fan",
+                "keyfeat": "41 ltrs",
+                "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
+                "price": 1000,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "mist fan"
+            },
+            {
+                "id": 12,
+                "name": "white mist fan",
+                "keyfeat": "41 ltrs",
+                "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
+                "price": 1500,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "mist fan"
+            }
+        ]
+    },
+    "pedestal fan": {
+        "id": 2,
+        "mainicon": "../images/2Fan.png",
+        "products": [
+            {
+                "id": 21,
+                "name": "silent fan",
+                "keyfeat": "90 degree",
+                "desc": "Silent Fan 90 degree swing 6 ft height",
+                "price": 500,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "pedestal fan"
+            }
+        ]
+    },
+    "portable AC": {
+        "id": 3,
+        "mainicon": "../images/5Stand AC.png",
+        "products": [
+            {
+                "id": 31,
+                "name": "portable AC",
+                "keyfeat": "1.5 ton",
+                "desc": "Portable Ac 1.5ton covers the area of about 100to110 sqfeet 2.25KW Electricity",
+                "price": 1500,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "portable AC"
+            }
+        ]
+    },
+    "air cooler 90": {
+        "id": 4,
+        "mainicon": "../images/COOLER.png",
+        "products": [
+            {
+                "id": 41,
+                "name": "air cooler",
+                "keyfeat": "90 ltrs",
+                "desc": "90ltrs upto 18 Feet Throw 4.9feet Height",
+                "price": 1000,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "air cooler"
+            },
+            {
+                "id": 42,
+                "name": "air cooler",
+                "keyfeat": "90 ltrs black",
+                "desc": "90 Ltrs Black Handle upto 18 Feet Throw 4.9feet Height",
+                "price": 1000,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "air cooler"
+            }
+        ]
+    },
+    "air cooler 100": {
+        "id": 5,
+        "mainicon": "../images/COOLER.png",
+        "products": [
+            {
+                "id": 51,
+                "name": "air cooler",
+                "keyfeat": "100 ltrs",
+                "desc": "100 Ltrs water Tank Capacity Silent in Nature with Auto swing option upto 15 ft Throw 5 ft height",
+                "price": 1500,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "air cooler"
+            },
+            {
+                "id": 52,
+                "name": "air cooler",
+                "keyfeat": "100 ltrs gray",
+                "desc": "100 ltrs Grey upto 25 ft 5 (Height 5ft)",
+                "price": 1500,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "air cooler"
+            }
+        ]
+    },
+    "aur cooler 120": {
+        "id": 6,
+        "mainicon": "../images/COOLER.png",
+        "products": [
+            {
+                "id": 61,
+                "name": "air cooler",
+                "keyfeat": "120 ltrs",
+                "desc": "120 Ltrs water tank Capacity upto 15 to 18 feet Throw (5.5 ft Height)",
+                "price": 2000,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "air cooler"
+            }
+        ]
+    },
+    "electric heater": {
+        "id": 7,
+        "mainicon": "../images/COOLER.png",
+        "products": [
+            {
+                "id": 71,
+                "name": "electric heater",
+                "keyfeat": "Plug n Play",
+                "desc": "Plug n Play unit 6 feet height 2 KW Electricity",
+                "price": 1800,
+                "img": "../images/mistfanBlack.webp",
+                "cate": "heater"
+            }
+        ]
+    }
+}

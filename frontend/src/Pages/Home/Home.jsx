@@ -5,6 +5,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Categorycard from '../../Components/Categorycard/Categorycard';
+import Data from '../../Data/Product.json';
 
 function Home() {
 
@@ -18,6 +19,7 @@ function Home() {
     const [searchBtn, setSearchbtn] = useState('38px')
     const [herotxt, setHerotxt] = useState('block');
     const [psudodiv, setPsudodiv] = useState('none')
+    const [firstcate, setFirstcate] = useState([]);
 
     const topNavFunc = (x) => {
         setTopnav(x);
@@ -40,6 +42,26 @@ function Home() {
         setSearchbtn('38px');
         setPsudodiv('none');
     }
+
+    console.log(Data['mist fan'].products[0]);
+
+    const productPrinter = ()=> {
+        const firstdata = [];
+        for(const product in Data){
+            firstdata.push(Data[product].products[0]);
+        };
+        return firstdata;
+    };
+
+    useEffect(()=>{
+        const firstdata = productPrinter();
+        setFirstcate(firstdata);
+    }, []);
+
+    useEffect(()=> {
+        console.log(firstcate)
+    }, [firstcate])
+    
 
     return (
         <div className='mainHome'>
@@ -76,15 +98,14 @@ function Home() {
                 <div className="productCardWraper mt-3">
                     <div className="productCardWrap">
                         <OwlCarousel className='owl-theme' stagePadding={80} items={1} margin={10} loop dots={false}>
-                            <div className='item d-flex justify-content-center'>
-                                <Productcard />
-                            </div>
-                            <div className='item d-flex justify-content-center'>
-                                <Productcard />
-                            </div>
-                            <div className='item d-flex justify-content-center'>
-                                <Productcard />
-                            </div>
+                            {
+                                firstcate.map((catedata)=>(
+                                    <div className='item d-flex justify-content-center' key={catedata.id}>
+                                        <Productcard cate={catedata.cate} img={catedata.img} name={catedata.name} keyfeat={catedata.keyfeat} price={catedata.price}/>
+                                    </div>
+                                ))
+                            }
+                            {/* <Productcard cate='somecate' img="../images/mistfanBlack.webp" name='somename' keyfeat='somefeat' price={9000}/> */}
                         </OwlCarousel>
                     </div>
                 </div>

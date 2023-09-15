@@ -1,11 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Detail.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import Reviewcard from '../../Components/Reviewcard/Reviewcard';
+import Data from '../../Data/Product.json';
 
 function Detail() {
+
+    // const { category } = useParams();
+    const { proname } = useParams();
 
     useEffect(()=>{
         window.scrollTo(0,0);
@@ -21,6 +25,17 @@ function Detail() {
     const [loadingpopup, setLoadingpopup] = useState('none');
     const [thankpopup, setThankpopup] = useState('none');
     const datePickerRef = useRef(null);
+
+    let foundPro = null;
+    for(const productkey in Data){
+        const products = Data[productkey].products;
+        foundPro = products.find((e)=> e.name === proname);
+        if(foundPro){
+            break;
+        }
+    }
+
+    console.log('this is console out', foundPro);
 
     const detstarNum = [];
     for (let index = 1; index <= 5; index++) {
@@ -49,7 +64,7 @@ function Detail() {
                 <div className="backBtn fs-4">
                     <i className="fas fa-chevron-left text-white fs-5" onClick={() => navigate(-1)}></i>
                 </div>
-                <p className="mb-0 bricolage-bold text-white text-end w-50 ms-4 fs-5">Mist fan</p>
+                <p className="mb-0 bricolage-bold text-white text-end text-capitalize w-50 ms-4 fs-5">{foundPro.cate}</p>
             </div>
             <div className="detailProContainer rounded-pill rounded-bottom-0 bg-white">
                 <div className="mainImgWrap pt-4 px-5">
@@ -70,7 +85,7 @@ function Detail() {
                     </div>
                 </div>
                 <div className="detailProData mt-4 container px-4">
-                    <p className="detailProName mb-0 fs-3 text-capitalize text-start bricolage-bold text-brand-blue">mist fan high end <br /> <span className='text-uppercase bricolage-bold text-brand-blue'>blue tank</span></p>
+                    <p className="detailProName mb-0 fs-3 text-capitalize text-start bricolage-bold text-brand-blue">{proname} <br /> <span className='text-uppercase bricolage-bold text-brand-blue'>{foundPro.keyfeat}</span></p>
                     <p className="detailMainRating mt-1 d-flex align-items-center">
                         {
                             detstarNum.map((mun, i) => (
@@ -80,20 +95,11 @@ function Detail() {
                         <span className="ms-1 text-muted bricolage-semibold">{detstarNum[detstarNum.length - 1]} (202)</span>
                     </p>
                     <div className="mainDetailPriceDiv d-flex justify-content-between mt-4">
-                        <div className="detailPriceTag border-brand-skin bricolage-bold bg-brand-skin p-2 fs-5 text-white text-center">₹499 <br /><span className='bricolage-medium'>/day</span></div>
+                        <div className="detailPriceTag border-brand-skin bricolage-bold bg-brand-skin p-2 fs-5 text-white text-center">₹{foundPro.price} <br /><span className='bricolage-medium'>/day</span></div>
                         <div className="detailPriceTag border-brand-skin bricolage-bold bg-brand-skin p-2 fs-5 text-white text-center">₹999 <br /><span className='bricolage-medium'>/week</span></div>
                         <div className="detailPriceTag border-brand-skin bricolage-bold bg-brand-skin p-2 fs-5 text-white text-center">₹1299 <br /><span className='bricolage-medium'>/month</span></div>
                     </div>
-                    <p className="mainDetailProAboutTxt mb-0 text-muted bricolage-regular mt-3">Rent our Mist Fans for instant relief from the
-                        scorching heat! Our Mist Fans combine powerful airflow with a refreshing mist to keep you
-                        cool and comfortable, whether you're hosting
-                        an outdoor event, working in a warehouse, or
-                        simply enjoying your backyard. With
-                        adjustable mist intensity, large water tanks
-                        for extended use, and easy mobility, our Mist
-                        Fans are the perfect solution for beating the
-                        heat. Stay cool and refreshed with our
-                        hassle-free mist fan rentals.</p>
+                    <p className="mainDetailProAboutTxt mb-0 text-muted bricolage-regular mt-3">{foundPro.desc}.</p>
                 </div>
 
                 <div className="featuresDiv px-4 mt-4">
@@ -106,6 +112,23 @@ function Detail() {
                         <li className="featureLi text-muted lh-sm mb-0"><span className="text-muted bricolage-bold">Safety Features:</span> Automatic shut-of when the water tank is empty</li>
                         <li className="featureLi text-muted lh-sm mb-0"><span className="text-muted bricolage-bold">Easy Mobility:</span> Wheels for effortless transportation</li>
                     </ul>
+                </div>
+
+                <div className="reviewFormWrap mt-5 px-4">
+                    <h2 className="featureHead mb-0 bricolage-bold fs-5 text-muted mb-0">Rate Us</h2>
+                    <p className="mb-0 text-muted bricolage-medium">Share your experience to help others</p>
+                    <div className="ratingFormStar d-flex justify-content-between align-items-center px-4 mt-3">
+                        <i className="far fa-star fs-1 me-2"></i>
+                        <i className="far fa-star fs-1 me-2"></i>
+                        <i className="far fa-star fs-1 me-2"></i>
+                        <i className="far fa-star fs-1 me-2"></i>
+                        <i className="far fa-star fs-1 me-2"></i>
+                    </div>
+                    <div className="inputWrap">
+                        <input type="text" placeholder='Enter your name' className='form-control mt-4 rounded-brand border shadow-none' />
+                        <textarea type="text" name="review" id="reviewInpu" className='form-control rounded-brand mt-2 shadow-none border' placeholder='Enter your review' rows={3} style={{resize: 'none'}}></textarea>
+                        <button className='btn bg-brand-skin text-white nunito-bold px-3 fs-5 mt-2 rounded-brand'>Submit</button>
+                    </div>
                 </div>
 
                 <div className="reviewDiv mb-5 pb-5 px-4 mt-5">

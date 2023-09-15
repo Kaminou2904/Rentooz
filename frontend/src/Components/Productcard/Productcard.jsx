@@ -2,15 +2,15 @@ import React from 'react';
 import './Productcard.css';
 import { Link } from 'react-router-dom';
 
-function Productcard() {
+function Productcard(props) {
   return (
     <div className='mainProductCard border-brand-skin p-3 pb-2 pt-3'>
         <div className="productCardImg">
-            <img src="../images/mistfanBlack.webp" className='img-fluid' alt="mist fan" />
+            <img src={props.img} className='img-fluid' alt={props.name} />
         </div>
         <div className="productCardData">
             <div className="productName">
-                <Link to='/detail' className='nav-link'><p className="mb-0 text-brand-blue text-center lh-sm bricolage-extrabold mt-2">Mist Fan High End <br /><span className="text-uppercase bricolage-extrabold">blue tank</span></p></Link>
+                <Link to={`/${props.cate}/${props.name}`} className='nav-link'><p className="mb-0 text-brand-blue text-center text-capitalize lh-sm bricolage-extrabold mt-2">{props.name} <br /><span className="text-capitalize bricolage-extrabold">{props.keyfeat}</span></p></Link>
             </div>
             <div className="productCardRating mt-1 d-flex justify-content-center align-items-center">
                 <i className="fas fa-star text-warning"></i>
@@ -22,7 +22,7 @@ function Productcard() {
             </div>
             <div className="productCardPrice">
                 <p className="mb-0 text-white bg-brand-skin px-4 mt-3 mb-1 mx-auto bricolage-medium text-center rounded-pill">
-                    <span className='bricolage-extrabold'>₹499</span>/day
+                    <span className='bricolage-extrabold'>₹{props.price}</span>/day
                 </p>
             </div>
         </div>
