@@ -122,7 +122,7 @@ function Home() {
                             {
                                 firstcate.map((catedata)=>(
                                     <div className='item px-2 d-flex justify-content-center' key={catedata.id}>
-                                        <Productcard cate={catedata.cate} img={catedata.img} name={catedata.name} keyfeat={catedata.keyfeat} price={catedata.price}/>
+                                        <Productcard cate={catedata.cate} img={catedata.img[0]} name={catedata.name} keyfeat={catedata.keyfeat} price={catedata.price}/>
                                     </div>
                                 ))
                             }
@@ -325,7 +325,7 @@ function Home() {
                     </div>
                     <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3) }}>
                         <div className="svgWraper d-flex">
-                            <img src="./images/download.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} style={{filter: 'invert(0%) sepia(99%) saturate(2%) hue-rotate(90deg) brightness(111%) contrast(100%);'}}/>
+                            <img src="./images/download.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} style={{filter: 'invert(0%) sepia(99%) saturate(2%) hue-rotate(90deg) brightness(111%) contrast(100%)'}}/>
                         </div>
                         {
                             navTabIndex === 3 ? (

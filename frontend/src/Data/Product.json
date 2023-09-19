@@ -9,7 +9,7 @@
                 "keyfeat": "41 ltrs",
                 "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
                 "price": 1000,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../proimg/MIST FAN SILVER - 4.png", "../proimg/MIST FAN SILVER - 1.png", "../proimg/MIST FAN SILVER - 2.png", "../proimg/MIST FAN SILVER - 5.png"],
                 "cate": "mist fan"
             },
             {
@@ -18,7 +18,7 @@
                 "keyfeat": "41 ltrs",
                 "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
                 "price": 1500,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../images/mistfanBlack.webp"],
                 "cate": "mist fan"
             }
         ]
@@ -33,7 +33,7 @@
                 "keyfeat": "90 degree",
                 "desc": "Silent Fan 90 degree swing 6 ft height",
                 "price": 500,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../proimg/PEDESTIAL FAN - 2.png", "../proimg/PEDESTIAL FAN - 1.png", "../proimg/PEDESTIAL FAN - 3.png", "../proimg/PEDESTIAL FAN - 5.png"],
                 "cate": "pedestal fan"
             }
         ]
@@ -48,7 +48,7 @@
                 "keyfeat": "1.5 ton",
                 "desc": "Portable Ac 1.5ton covers the area of about 100to110 sqfeet 2.25KW Electricity",
                 "price": 1500,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../proimg/PORTABLE AC - 1.png", "../proimg/PORTABLE AC - 2.png", "../proimg/PORTABLE AC - 3.png", "../proimg/PORTABLE AC - 4.png"],
                 "cate": "portable AC"
             }
         ]
@@ -63,7 +63,7 @@
                 "keyfeat": "Plug n Play",
                 "desc": "Plug n Play unit 6 feet height 2 KW Electricity",
                 "price": 1800,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../proimg/Heater - 2.png", "../proimg/Heater - 1.png"],
                 "cate": "heater"
             }
         ]
@@ -78,7 +78,7 @@
                 "keyfeat": "90 ltrs",
                 "desc": "90ltrs upto 18 Feet Throw 4.9feet Height",
                 "price": 1000,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../proimg/COOLER 90 LTR - 1.png", "../proimg/COOLER 90 LTR - 2.png", "../proimg/COOLER 90 LTR - 3.png"],
                 "cate": "air cooler"
             },
             {
@@ -87,7 +87,7 @@
                 "keyfeat": "90 ltrs",
                 "desc": "90 Ltrs Black Handle upto 18 Feet Throw 4.9feet Height",
                 "price": 1000,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../proimg/COOLER 90 LTR - 1.png", "../proimg/COOLER 90 LTR - 2.png", "../proimg/COOLER 90 LTR - 3.png"],
                 "cate": "air cooler"
             },
             {
@@ -96,7 +96,7 @@
                 "keyfeat": "100 ltrs",
                 "desc": "100 Ltrs water Tank Capacity Silent in Nature with Auto swing option upto 15 ft Throw 5 ft height",
                 "price": 1500,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../images/mistfanBlack.webp"],
                 "cate": "air cooler"
             },
             {
@@ -105,7 +105,7 @@
                 "keyfeat": "100 ltrs ",
                 "desc": "100 ltrs Grey upto 25 ft 5 (Height 5ft)",
                 "price": 1500,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../images/mistfanBlack.webp"],
                 "cate": "air cooler"
             },
             {
@@ -114,7 +114,7 @@
                 "keyfeat": "120 ltrs",
                 "desc": "120 Ltrs water tank Capacity upto 15 to 18 feet Throw (5.5 ft Height)",
                 "price": 2000,
-                "img": "../images/mistfanBlack.webp",
+                "img": ["../images/mistfanBlack.webp"],
                 "cate": "air cooler"
             }
         ]
