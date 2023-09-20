@@ -18,7 +18,7 @@
                 "keyfeat": "41 ltrs",
                 "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
                 "price": 1500,
-                "img": ["../images/mistfanBlack.webp"],
+                "img": ["../proimg/White Mist Fan - 111.png", "../proimg/White Mist Fan - 22.png", "../proimg/White Mist Fan - 3.png"],
                 "cate": "mist fan"
             }
         ]
@@ -75,10 +75,10 @@
             {
                 "id": 41,
                 "name": "air cooler",
-                "keyfeat": "90 ltrs",
+                "keyfeat": "75 ltrs",
                 "desc": "90ltrs upto 18 Feet Throw 4.9feet Height",
                 "price": 1000,
-                "img": ["../proimg/COOLER 90 LTR - 1.png", "../proimg/COOLER 90 LTR - 2.png", "../proimg/COOLER 90 LTR - 3.png"],
+                "img": ["../proimg/Air Cooler - 75  ltrs - 1.png", "../proimg/Air Cooler - 75  ltrs - 2.png", "../proimg/Air Cooler - 75  ltrs - 1.png"],
                 "cate": "air cooler"
             },
             {

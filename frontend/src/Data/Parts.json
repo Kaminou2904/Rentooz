@@ -1,0 +1,82 @@
+{
+    "parts":[
+        {
+            "id": 1,
+            "name": "black grill",
+            "price": 1999,
+            "img": "../proimg/BACK GRILL - 1999.png"
+        },
+        {
+            "id": 2,
+            "name": "blade",
+            "price": 999,
+            "img": "../proimg/BLADE - 999.png"
+        },
+        {
+            "id": 3,
+            "name": "handle",
+            "price": 399,
+            "img": "../proimg/HANDLE - 399.png"
+        },
+        {
+            "id": 4,
+            "name": "grill front",
+            "price": 999,
+            "img": "../proimg/GRILL FRONT - 999.png"
+        },
+        {
+            "id": 5,
+            "name": "mist kit",
+            "price": 3500,
+            "img": "../proimg/MIST KIT - 3500.png"
+        },
+        {
+            "id": 6,
+            "name": "motor",
+            "price": 3000,
+            "img": "../proimg/MOTOR - 3000.png"
+        },
+        {
+            "id": 7,
+            "name": "panel",
+            "price": 3000,
+            "img": "../proimg/PANEL - 3000.png"
+        },
+        {
+            "id": 8,
+            "name": "pin",
+            "price": 99,
+            "img": "../proimg/PINS - 99.png"
+        },
+        {
+            "id": 9,
+            "name": "pump og",
+            "price": 999,
+            "img": "../proimg/PUMP OG - 999.png"
+        },
+        {
+            "id": 10,
+            "name": "submersible pump",
+            "price": 499,
+            "img": "../proimg/SUBMERSIBLE PUMP - 499.png"
+        },
+        {
+            "id": 11,
+            "name": "tank",
+            "price": 1499,
+            "img": "../proimg/TANK - 1499.png"
+        },
+        {
+            "id": 12,
+            "name": "trolley",
+            "price": 999,
+            "img": "../proimg/TROLLEY - 999.png"
+        },
+        {
+            "id": 13,
+            "name": "tyres",
+            "price": 399,
+            "img": "../proimg/TYRES - 399.png"
+        }
+    ]
+}
