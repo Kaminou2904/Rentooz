@@ -45,11 +45,11 @@ function Listing() {
                 {
                     category === 'View All' ? (
                         proarr.map((data)=>(
-                            <Lisitngcard key={data.id} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
+                            <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
                         ))
                     ): (
                         listData.map((data)=>(
-                            <Lisitngcard key={data.id} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
+                            <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
                         ))
                     )
                 }

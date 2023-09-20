@@ -9,7 +9,7 @@ function Lisitngcard(props) {
   return (
     <div className='mainListingcard d-flex p-2 px-2 align-items-center rounded-brand border-brand-skin text-capitalize mt-3' onClick={()=>navigate(`/${props.cate}/${props.name}`)}>
         <div className="listingcardImg">
-            <img src="../images/mistfanBlack.webp" alt="mist fan" className="img-fluid rounded-brand" />
+            <img src={props.img} alt="mist fan" className="img-fluid rounded-brand" />
         </div>
         <div className="listingcardData d-flex flex-column justify-content-between">
             <p className="listincardName mb-0 text-brand-blue lh-sm fs-5 bricolage-bold">

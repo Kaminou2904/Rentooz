@@ -10,12 +10,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Productcard from '../../Components/Productcard/Productcard';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
 
     useEffect(()=>{
         window.scrollTo(0,0);
-    }, [])
+    }, []);
+
+    const navigate = useNavigate();
 
     const [topnav, setTopnav] = useState(0);
     const [navTabIndex, setNavTabIndex] = useState(0);
@@ -293,7 +296,7 @@ function Home() {
 
             <div className="bottomNavCont container pb-2">
                 <div className="bottomNav mx-auto px-3 d-flex justify-content-between align-items-center rounded-pill bg-brand-skin">
-                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 0 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(0) }}>
+                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 0 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(0); navigate('/')}}>
                         <div className="svgWraper d-flex">
                             <img src="./images/Home.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 0 ? 'svgiconActive' : ''}`} />
                             {
@@ -303,29 +306,9 @@ function Home() {
                             }
                         </div>
                     </div>
-                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1) }}>
+                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3); navigate('/View All') }}>
                         <div className="svgWraper d-flex">
-                            <img src="./images/Chat.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 1 ? 'svgiconActive' : ''}`} />
-                        </div>
-                        {
-                            navTabIndex === 1 ? (
-                                <span className="navTabSpan bricolage-bold ms-2">Chat</span>
-                            ) : ''
-                        }
-                    </div>
-                    <div className={`tabIcon  align-items-center text-center mb-0 p-0 ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2) }}>
-                        <div className="svgWraper d-flex">
-                            <img src="./images/SuitCase.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 2 ? 'svgiconActive' : ''}`} />
-                        </div>
-                        {
-                            navTabIndex === 2 ? (
-                                <span className="navTabSpan bricolage-bold ms-2">Book</span>
-                            ) : ''
-                        }
-                    </div>
-                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3) }}>
-                        <div className="svgWraper d-flex">
-                            <img src="./images/download.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} style={{filter: 'invert(0%) sepia(99%) saturate(2%) hue-rotate(90deg) brightness(111%) contrast(100%)'}}/>
+                            <img src="./images/download.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`}/>
                         </div>
                         {
                             navTabIndex === 3 ? (
@@ -333,6 +316,27 @@ function Home() {
                             ) : ''
                         }
                     </div>
+                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1); window.open('https://wa.me/+917666911159') }}>
+                        <div className="svgWraper d-flex">
+                            <img src="./images/whatsapp.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 1 ? 'svgiconActive' : ''}`}/>
+                        </div>
+                        {
+                            navTabIndex === 1 ? (
+                                <span className="navTabSpan bricolage-bold ms-2">Chat</span>
+                            ) : ''
+                        }
+                    </div>
+                    <div className={`tabIcon  align-items-center text-center mb-0 p-0 ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2); window.open('tel:+917666911159') }}>
+                        <div className="svgWraper d-flex">
+                            <img src="./images/phone-call.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 2 ? 'svgiconActive' : ''}`} />
+                        </div>
+                        {
+                            navTabIndex === 2 ? (
+                                <span className="navTabSpan bricolage-bold ms-2">Call</span>
+                            ) : ''
+                        }
+                    </div>
+                    
                 </div>
             </div>
         </div>

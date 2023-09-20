@@ -96,7 +96,7 @@
                 "keyfeat": "100 ltrs",
                 "desc": "100 Ltrs water Tank Capacity Silent in Nature with Auto swing option upto 15 ft Throw 5 ft height",
                 "price": 1500,
-                "img": ["../images/mistfanBlack.webp"],
+                "img": ["../proimg/Cooler - 100 Ltr Silent.png", "../proimg/Cooler - 100 Ltr Silent - 2.png", "../proimg/Cooler - 100 Ltr Silent - 3.png", "../proimg/Cooler - 100 Ltr Silent - 4.png"],
                 "cate": "air cooler"
             },
             {
@@ -105,7 +105,7 @@
                 "keyfeat": "100 ltrs ",
                 "desc": "100 ltrs Grey upto 25 ft 5 (Height 5ft)",
                 "price": 1500,
-                "img": ["../images/mistfanBlack.webp"],
+                "img": ["../proimg/Cooler - 100 Ltr Silent.png", "../proimg/Cooler - 100 Ltr Silent - 2.png", "../proimg/Cooler - 100 Ltr Silent - 3.png", "../proimg/Cooler - 100 Ltr Silent - 4.png"],
                 "cate": "air cooler"
             },
             {
@@ -114,7 +114,7 @@
                 "keyfeat": "120 ltrs",
                 "desc": "120 Ltrs water tank Capacity upto 15 to 18 feet Throw (5.5 ft Height)",
                 "price": 2000,
-                "img": ["../images/mistfanBlack.webp"],
+                "img": ["../proimg/COOLER 120 LTRS - 1.png", "../proimg/COOLER 120 LTRS - 2.png", "../proimg/COOLER 120 LTRS - 3.png"],
                 "cate": "air cooler"
             }
         ]
