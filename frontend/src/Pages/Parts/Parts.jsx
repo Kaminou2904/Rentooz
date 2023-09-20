@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Parts.css';
 import { useNavigate } from 'react-router-dom';
 import Partcard from '../../Components/Partcard/Partcard';
 import Data from '../../Data/Parts.json';
 
 function Parts() {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    }, [])
 
     const navigate = useNavigate();
 
