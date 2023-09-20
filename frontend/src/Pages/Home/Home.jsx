@@ -70,13 +70,13 @@ function Home() {
         setCatedata(maindata);
     }, []);
 
-    useEffect(()=> {
-        console.log(firstcate)
-    }, [firstcate])
+    // useEffect(()=> {
+    //     console.log(firstcate)
+    // }, [firstcate])
 
-    useEffect(()=> {
-        console.log(catedata)
-    }, [catedata])
+    // useEffect(()=> {
+    //     console.log(catedata)
+    // }, [catedata])
     
     return (
         <div className='mainHome'>
@@ -316,7 +316,7 @@ function Home() {
                             ) : ''
                         }
                     </div>
-                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1); window.open('https://wa.me/+917666911159') }}>
+                    <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1); window.open('https://wa.me/+917666911159', '_self') }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/whatsapp.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 1 ? 'svgiconActive' : ''}`}/>
                         </div>
@@ -326,7 +326,7 @@ function Home() {
                             ) : ''
                         }
                     </div>
-                    <div className={`tabIcon  align-items-center text-center mb-0 p-0 ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2); window.open('tel:+917666911159') }}>
+                    <div className={`tabIcon  align-items-center text-center mb-0 p-0 ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2); window.open('tel:+917666911159', '_self') }}>
                         <div className="svgWraper d-flex">
                             <img src="./images/phone-call.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 2 ? 'svgiconActive' : ''}`} />
                         </div>
