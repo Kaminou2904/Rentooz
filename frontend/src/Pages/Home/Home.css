@@ -110,7 +110,7 @@
     letter-spacing: 1px;
 }
 
-.bottomNav{
+/* .bottomNav{
     padding-top: 12px !important;
     padding-bottom: 12px !important;
     border-radius: 20px !important;
@@ -151,12 +151,12 @@
     }
 }
 
-/* .activeNavTab::after{
+.activeNavTab::after{
     content: "Book";
     color: #808080;
     margin-left: 5px;
     font-family: 'bricolage-bold';
-} */
+}
 
 .svgWraper{
     width: 25px;
@@ -201,4 +201,4 @@
 
 .extrasvg{
     font-size: 14px !important;
-}
+} */

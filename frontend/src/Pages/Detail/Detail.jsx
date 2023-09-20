@@ -36,8 +36,6 @@ function Detail() {
 
     const [mainImg, setmainimg] = useState(foundPro.img[0]);
 
-    console.log('this is console out', foundPro);
-
     const detstarNum = [];
     for (let index = 1; index <= 5; index++) {
         detstarNum.push(index);
@@ -74,20 +72,11 @@ function Detail() {
                 <div className="proImages d-flex justify-content-around px-5 mt-3">
                     {
                         foundPro.img.map((img, index)=>(
-                            <div className={`proImgWrap p-2 ${imgindex === index ? 'border-brand-blue' : 'border-brand-skin'}`}>
+                            <div key={index} className={`proImgWrap p-2 ${imgindex === index ? 'border-brand-blue' : 'border-brand-skin'}`}>
                                 <img src={img} className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(index)}}/>
                             </div>
                         ))
                     }
-                    {/* <div className={`proImgWrap p-2 ${imgindex === 1 ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                        <img src="../images/1 Event Material.png" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(1)}}/>
-                    </div>
-                    <div className={`proImgWrap p-2 ${imgindex === 2 ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                        <img src="../images/3Mist Fan.png" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(2)}}/>
-                    </div>
-                    <div className={`proImgWrap p-2 ${imgindex === 3 ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                        <img src="../images/mistfanBlack.webp" className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(3)}}/>
-                    </div> */}
                 </div>
                 <div className="detailProData mt-4 container px-4">
                     <p className="detailProName mb-0 fs-3 text-capitalize text-start bricolage-bold text-brand-blue">{proname} <br /> <span className='text-uppercase bricolage-bold text-brand-blue'>{foundPro.keyfeat}</span></p>

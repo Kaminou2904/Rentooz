@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Lisitngcard from '../../Components/Listingcard/Lisitngcard'
 import { useNavigate, useParams } from 'react-router-dom';
 import Data from '../../Data/Product.json'
+import Bottomnav from '../../Components/Bottomnav/Bottomnav';
 
 function Listing() {
 
@@ -16,7 +17,6 @@ function Listing() {
     const proarr = [];
     if(category === "View All"){
         for(const prokey in Data){
-            // console.log(Data[prokey])
             Data[prokey].products.forEach((pro)=> {
                 proarr.push(pro);
             })
@@ -25,15 +25,11 @@ function Listing() {
         listData = Data[category].products;
     }
 
-    
-
-    
-
   return (
     <div className='mainListing'>
         <div className="mainListingHeader bg-brand-skin w-100 position-fixed top-0 px-3 d-flex align-items-center justify-content-center p-3 px-4">
             <i className="fas fa-chevron-left fs-4 text-white" onClick={()=> navigate(-1)}></i>
-            <p className="mb-0 w-100 text-white text-center text-uppercase bricolage-bold fs-5">All products</p>
+            <p className="mb-0 w-100 text-white text-center text-uppercase bricolage-bold fs-5">{category}</p>
         </div>
         <div className="cardWraper px-4 mt-5 pt-4">
             <div className="cardWrap">
@@ -55,6 +51,7 @@ function Listing() {
                 }
             </div>
         </div>
+        <Bottomnav/>
     </div>
   )
 }
