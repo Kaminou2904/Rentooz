@@ -11,8 +11,8 @@ function Detail() {
     // const { category } = useParams();
     const { proname } = useParams();
 
-    useEffect(()=>{
-        window.scrollTo(0,0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, []);
 
     const navigate = useNavigate();
@@ -26,10 +26,10 @@ function Detail() {
     const datePickerRef = useRef(null);
 
     let foundPro = null;
-    for(const productkey in Data){
+    for (const productkey in Data) {
         const products = Data[productkey].products;
-        foundPro = products.find((e)=> e.name === proname);
-        if(foundPro){
+        foundPro = products.find((e) => e.name === proname);
+        if (foundPro) {
             break;
         }
     }
@@ -41,9 +41,9 @@ function Detail() {
         detstarNum.push(index);
     };
 
-    const imgTransi = ()=>{
+    const imgTransi = () => {
         setImgtrans(true)
-        setTimeout(()=>{
+        setTimeout(() => {
             setImgtrans(false)
         }, 500);
     }
@@ -67,13 +67,13 @@ function Detail() {
             </div>
             <div className="detailProContainer rounded-pill rounded-bottom-0 bg-white">
                 <div className="mainImgWrap pt-4 px-5">
-                    <img src={mainImg} className={`img-fluid p-2 ${imgtrans? 'mainImgImg': ''}`} alt="mist fan" />
+                    <img src={mainImg} className={`img-fluid p-2 ${imgtrans ? 'mainImgImg' : ''}`} alt="mist fan" />
                 </div>
                 <div className="proImages d-flex justify-content-around px-5 mt-3">
                     {
-                        foundPro.img.map((img, index)=>(
+                        foundPro.img.map((img, index) => (
                             <div key={index} className={`proImgWrap p-2 ${imgindex === index ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                                <img src={img} className='img-fluid' alt="" onClick={(e)=>{setmainimg(e.target.src); imgTransi();  setImgindex(index)}}/>
+                                <img src={img} className='img-fluid' alt="" onClick={(e) => { setmainimg(e.target.src); imgTransi(); setImgindex(index) }} />
                             </div>
                         ))
                     }
@@ -120,7 +120,7 @@ function Detail() {
                     </div>
                     <div className="inputWrap">
                         <input type="text" placeholder='Enter your name' className='form-control mt-4 rounded-brand border shadow-none' />
-                        <textarea type="text" name="review" id="reviewInpu" className='form-control rounded-brand mt-2 shadow-none border' placeholder='Enter your review' rows={3} style={{resize: 'none'}}></textarea>
+                        <textarea type="text" name="review" id="reviewInpu" className='form-control rounded-brand mt-2 shadow-none border' placeholder='Enter your review' rows={3} style={{ resize: 'none' }}></textarea>
                         <button className='btn bg-brand-skin text-white nunito-bold px-3 fs-5 mt-2 rounded-brand'>Submit</button>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ function Detail() {
                 <div className="checkBtnWrap container py-1 mt-2">
                     <button className='checkBtn btn bg-brand-skin text-uppercase py-2 w-100 text-white bricolage-bold fs-4' onClick={() => {
                         setBookpopup('flex'); setMainheight('100vh')
-                    }}>Check Dates</button>
+                    }}>Check Avaibility</button>
                 </div>
 
                 <div className="bookingPopupCont px-3" style={{ display: bookpopup }} onClick={() => {
@@ -162,36 +162,44 @@ function Detail() {
                         </p>
 
                         <div className="bookingForm px-2">
-                            <div className="datepickerDiv pb-2 pt-4">
-                                <p className="mb-0 text-brand-blue bricolage-bold text-uppercase">select your date</p>
-                                <div className="datepickerWrap d-flex text-center justify-content-center align-items-center border-brand-skin rounded-3 px-2">
-                                    <i className="fas fa-calendar-check fs-4 text-brand-skin border-end pe-2" onClick={() => {
-                                        if (datePickerRef.current) {
-                                            datePickerRef.current.setOpen(true);
-                                        }
-                                    }}></i>
-                                    <DatePicker
-                                        className='mydatePicker text-end fs-5 text-black p-2 pe-1 border-0 outline-0 shadow-none rounded-3 m-0'
-                                        selected={dateval}
-                                        onChange={(date) => setDateval(date)}
-                                        dateFormat="dd/MM/yyyy"
-                                        ref={datePickerRef}
-                                    />
+                            <form action="https://formspree.io/f/maygpjdr" method="post">
+                                <div className="datepickerDiv pb-2 pt-4">
+                                    <p className="mb-0 text-brand-blue bricolage-bold text-uppercase">select your date</p>
+                                    <div className="datepickerWrap d-flex text-center justify-content-center align-items-center border-brand-skin rounded-3 px-2">
+                                        <i className="fas fa-calendar-check fs-4 text-brand-skin border-end pe-2" onClick={() => {
+                                            if (datePickerRef.current) {
+                                                datePickerRef.current.setOpen(true);
+                                            }
+                                        }}></i>
+                                        <DatePicker
+                                            className='mydatePicker text-end fs-5 text-black p-2 pe-1 border-0 outline-0 shadow-none rounded-3 m-0'
+                                            name='date'
+                                            selected={dateval}
+                                            onChange={(date) => setDateval(date)}
+                                            dateFormat="dd/MM/yyyy"
+                                            ref={datePickerRef}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="textInputs mt-4">
-                                <div className='inpuWrap border-brand-blue rounded-pill px-2 pb-2 mt-3'>
-                                    <p className="mb-0 mylegend ms-3 bg-white px-2 bricolage-light text-uppercase">Your Location</p>
-                                    <input type="text" name='location' className='addInpu p-1 bricolage-semibold px-3 rounded-pill outline-none' />
+
+                                <div className="textInputs mt-4">
+                                    <div className='inpuWrap border-brand-blue rounded-pill px-2 pb-2 mt-3'>
+                                        <p className="mb-0 mylegend ms-3 bg-white px-2 bricolage-light text-uppercase">Your Location</p>
+                                        <input type="text" name='location' className='addInpu p-1 bricolage-semibold px-3 rounded-pill outline-none' />
+                                    </div>
+                                    <div className='inpuWrap border-brand-blue rounded-pill px-2 pb-2 mt-3'>
+                                        <p className="mb-0 mylegend ms-3 bg-white px-2 bricolage-light text-uppercase">Your Email.</p>
+                                        <input type='email' name='email' className='addInpu p-1 bricolage-semibold px-3 rounded-pill outline-none' />
+                                    </div>
+                                    <div className='inpuWrap border-brand-blue rounded-pill px-2 pb-2 mt-3'>
+                                        <p className="mb-0 mylegend ms-3 bg-white px-2 bricolage-light text-uppercase">Phone no.</p>
+                                        <input type="tel" name='number' className='addInpu p-1 bricolage-semibold px-3 rounded-pill outline-none' />
+                                    </div>
                                 </div>
-                                <div className='inpuWrap border-brand-blue rounded-pill px-2 pb-2 mt-3'>
-                                    <p className="mb-0 mylegend ms-3 bg-white px-2 bricolage-light text-uppercase">Phone no.</p>
-                                    <input type="tel" name='number' className='addInpu p-1 bricolage-semibold px-3 rounded-pill outline-none' />
+                                <div className="bookBtnDiv">
+                                    <button type='submit' className="bookBtn btn bg-brand-skin text-white text-uppercase w-100 mt-5 p-2 fs-5 bricolage-bold" onClick={submitFunc}>Book Now!</button>
                                 </div>
-                            </div>
-                            <div className="bookBtnDiv">
-                                <button className="bookBtn btn bg-brand-skin text-white text-uppercase w-100 mt-5 p-2 fs-5 bricolage-bold" onClick={submitFunc}>Book Now!</button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
