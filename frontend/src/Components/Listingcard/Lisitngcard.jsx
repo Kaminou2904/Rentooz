@@ -7,11 +7,13 @@ function Lisitngcard(props) {
   const navigate = useNavigate();
 
   return (
-    <div className='mainListingcard d-flex p-2 px-2 align-items-center rounded-brand border-brand-skin text-capitalize mt-3' onClick={()=>navigate(`/${props.cate}/${props.name}`)}>
+    <div className='mainListingcard d-flex p-2 px-2 align-items-center rounded-brand border-brand-skin text-capitalize mt-3' onClick={()=>{
+      props.cate === 'mist fan parts'? window.open('https://wa.me/+91766611159', '_self'): navigate(`/${props.cate}/${props.name}`)
+    }}>
         <div className="listingcardImg">
             <img src={props.img} alt="mist fan" className="img-fluid rounded-brand" />
         </div>
-        <div className="listingcardData d-flex flex-column justify-content-between">
+        <div className="listingcardData d-flex flex-column justify-content-between ps-2">
             <p className="listincardName mb-0 text-brand-blue lh-sm fs-5 bricolage-bold">
             {props.name} <br /> {props.keyfeat}
             </p>

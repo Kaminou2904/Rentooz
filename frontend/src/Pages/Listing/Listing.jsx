@@ -3,6 +3,7 @@ import Lisitngcard from '../../Components/Listingcard/Lisitngcard'
 import { useNavigate, useParams } from 'react-router-dom';
 import Data from '../../Data/Product.json'
 import Bottomnav from '../../Components/Bottomnav/Bottomnav';
+import Parts from '../../Data/Parts.json';
 
 function Listing() {
 
@@ -14,6 +15,7 @@ function Listing() {
     const navigate = useNavigate();
     
     let listData;
+    let partdata;
     const proarr = [];
     if(category === "View All"){
         for(const prokey in Data){
@@ -22,7 +24,11 @@ function Listing() {
             })
         }
     }else{
-        listData = Data[category].products;
+        if(category === 'mist fan parts'){
+            partdata = Parts.parts;
+        }else{
+            listData = Data[category].products;
+        }
     }
 
   return (
@@ -39,14 +45,20 @@ function Listing() {
                     ))
                 } */}
                 {
-                    category === 'View All' ? (
-                        proarr.map((data)=>(
-                            <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
-                        ))
-                    ): (
-                        listData.map((data)=>(
-                            <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
-                        ))
+                    category === 'mist fan parts'? (
+                            partdata.map((part, i)=>(
+                                <Lisitngcard key={part.id} img={part.img} name={part.name} price={part.price} cate={part.cate}/>
+                            ))
+                    ):(
+                        category === 'View All' ? (
+                            proarr.map((data)=>(
+                                <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
+                            ))
+                        ): (
+                            listData.map((data)=>(
+                                <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
+                            ))
+                        )
                     )
                 }
             </div>

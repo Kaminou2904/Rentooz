@@ -8,12 +8,17 @@ import Data from '../../Data/Product.json';
 
 function Detail() {
 
-    // const { category } = useParams();
     const { proname } = useParams();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    // useEffect(()=>{
+    //     if(category === 'mist fan parts'){
+    //         window.open('https://wa.me/+917666911159', '_self');
+    //     }
+    // }, [category])
 
     const navigate = useNavigate();
     const [imgtrans, setImgtrans] = useState(false);

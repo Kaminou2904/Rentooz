@@ -11,15 +11,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Productcard from '../../Components/Productcard/Productcard';
 import Bottomnav from '../../Components/Bottomnav/Bottomnav';
-import { useNavigate } from 'react-router-dom';
 
 function Home() {
 
     useEffect(()=>{
         window.scrollTo(0,0);
     }, []);
-
-    const navigate = useNavigate();
 
     const [topnav, setTopnav] = useState(0);
     
@@ -144,7 +141,7 @@ function Home() {
                             <Categorycard key={ind} img={catdata.icon} text={catdata.procate} />
                         ))
                     }
-                    <Categorycard img="../images/threedots.png" text="View All" />
+                    <Categorycard img="../images/Spare parts.png" text="mist fan parts" />
                 </div>
             </div>
 
@@ -156,7 +153,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="mistpartDiv mt-5 px-4" onClick={()=> navigate('/mist-fan-spare-parts')}>
+            {/* <div className="mistpartDiv mt-5 px-4" onClick={()=> navigate('/mist-fan-spare-parts')}>
                 <div className="rounded-brand p-3 d-flex justify-content-between align-items-center border-brand-skin">
                     <div className="partImgWrap w-25">
                         <img src="../proimg/MIST FAN BLACK - 1.png" alt="fan icon" className='img-fluid'/>
@@ -165,7 +162,7 @@ function Home() {
                         <p className="mb-0 text-brand-blue bricolage-bold fs-5 lh-sm">We Also Deal In Mist Fan Spare Parts</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="aboutRentooz px-4 mt-5">
                 <div className="aboutHeading d-flex justify-content-start align-items-start mb-0 text-brand-skin bricolage-bold fs-4">About <div className="aboutLogo mb-0">
