@@ -20,7 +20,7 @@ function Lisitngcard(props) {
             <p className="listingCardcategory mt-3 text-muted mb-0">Category <span className="bricolage-bold tex-uppercase">{props.cate}</span></p>
             <div className="rateNprice d-flex mt-3 justify-content-between align-items-center">
                 <p className="listingcardRating mb-0 text-nowrap"><i className="fas fa-star text-warning"></i> 4.9 (202)</p>
-                <p className="mb-0 listingcardPrice text-white bg-brand-skin rounded-pill p-1 px-3"><span className="bricolage-bold text-white">₹{props.price}</span>/day</p>
+                <p className="mb-0 listingcardPrice text-white bg-brand-skin rounded-pill p-1 px-3"><span className="bricolage-bold text-white">₹{props.price}</span>{props.cate === 'mist fan parts'? '': '/day'}</p>
             </div>
         </div>
     </div>

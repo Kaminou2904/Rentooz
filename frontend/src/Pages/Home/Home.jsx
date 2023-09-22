@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-// import Productcard from '../../Components/Productcard/Productcard';
-// import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Categorycard from '../../Components/Categorycard/Categorycard';
@@ -65,14 +63,6 @@ function Home() {
         const maindata = productPrinter().maincateData;
         setCatedata(maindata);
     }, []);
-
-    // useEffect(()=> {
-    //     console.log(firstcate)
-    // }, [firstcate])
-
-    // useEffect(()=> {
-    //     console.log(catedata)
-    // }, [catedata])
     
     return (
         <div className='mainHome'>
@@ -152,17 +142,6 @@ function Home() {
                     <button className='callBtn btn border-brand-skin mt-3 text-brand-blue bricolage-bold px-4' onClick={()=> window.open('tel:+917666911159', '_self')}><i className="fas fa-phone-alt text-brand-blue me-3"></i>CALL NOW</button>
                 </div>
             </div>
-
-            {/* <div className="mistpartDiv mt-5 px-4" onClick={()=> navigate('/mist-fan-spare-parts')}>
-                <div className="rounded-brand p-3 d-flex justify-content-between align-items-center border-brand-skin">
-                    <div className="partImgWrap w-25">
-                        <img src="../proimg/MIST FAN BLACK - 1.png" alt="fan icon" className='img-fluid'/>
-                    </div>
-                    <div className="partTxtWrap w-75 ps-2">
-                        <p className="mb-0 text-brand-blue bricolage-bold fs-5 lh-sm">We Also Deal In Mist Fan Spare Parts</p>
-                    </div>
-                </div>
-            </div> */}
 
             <div className="aboutRentooz px-4 mt-5">
                 <div className="aboutHeading d-flex justify-content-start align-items-start mb-0 text-brand-skin bricolage-bold fs-4">About <div className="aboutLogo mb-0">
