@@ -20,6 +20,15 @@
     z-index: 65;
 }
 
+.searchSuggetionDiv{
+    position: relative;
+    z-index: 65;
+}
+
+.selectedSugg{
+    background-color: rgb(226, 226, 226);
+}
+
 .psudoDiv{
     position: fixed;
     top: 0px;

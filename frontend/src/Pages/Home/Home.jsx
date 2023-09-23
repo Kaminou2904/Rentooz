@@ -9,16 +9,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Productcard from '../../Components/Productcard/Productcard';
 import Bottomnav from '../../Components/Bottomnav/Bottomnav';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
-    useEffect(()=>{
-        window.scrollTo(0,0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, []);
 
     const [topnav, setTopnav] = useState(0);
-    
+
     const [searchInpu, setSearchInpu] = useState('none');
+    const [searchTxt, setSearchTxt] = useState('');
+    const [searchSuggetionDiv, setSearchSuggetionDiv] = useState('none');
+    const [selectedSuggestion, setSelectedSuggestion] = useState(-1);
+    const [searchResult, setSearchresult] = useState([]);
     const [searchBtn, setSearchbtn] = useState('38px')
     const [herotxt, setHerotxt] = useState('block');
     const [psudodiv, setPsudodiv] = useState('none');
@@ -29,8 +34,6 @@ function Home() {
         setTopnav(x);
     }
 
-    
-
     const searchIconClick = () => {
         setSearchInpu('block');
         setHerotxt('none');
@@ -38,32 +41,75 @@ function Home() {
         setPsudodiv('block');
     }
 
+    const profinder = () => {
+        const query = searchTxt.toLowerCase();
+        const filteredPro = Object.keys(Data).filter((category) => category.toLowerCase().includes(query));
+        if (filteredPro.length > 0) {
+            const resultObjects = filteredPro.map((cate) => ({ cate }))
+            setSearchresult(resultObjects);
+            setSearchSuggetionDiv('block');
+        } else {
+            setSearchresult(['product not found']);
+            setSearchSuggetionDiv('none');
+        }
+    }
+
+    const handleKeyDown = (e) => {
+        if (searchResult.length > 0) {
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                setSelectedSuggestion((prev) =>
+                    prev < searchResult.length - 1 ? prev + 1 : prev
+                );
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                setSelectedSuggestion((prev) => (prev > 0 ? prev - 1 : prev));
+            } else if (e.key === 'Enter') {
+                if (selectedSuggestion >= 0) {
+                    window.location.href = `/${searchResult[selectedSuggestion].cate}`;
+                } else {
+                    e.preventDefault();
+                }
+            }
+        }
+    };
+
+
+    useEffect(() => {
+        profinder();
+    }, [searchTxt])
+
+    useEffect(() => {
+        setSearchSuggetionDiv('none');
+    }, [])
+
     const psudoClick = () => {
         setSearchInpu('none');
         setHerotxt('block');
         setSearchbtn('38px');
         setPsudodiv('none');
+        setSearchSuggetionDiv('none');
     }
 
     // console.log(Data['mist fan'].mainicon);
 
-    const productPrinter = ()=> {
+    const productPrinter = () => {
         const firstdata = [];
         const maincateData = [];
-        for(const product in Data){
-            maincateData.push({procate: product, icon: Data[product].mainicon})
+        for (const product in Data) {
+            maincateData.push({ procate: product, icon: Data[product].mainicon })
             firstdata.push(Data[product].products[0]);
         };
-        return {firstdata, maincateData};
+        return { firstdata, maincateData };
     };
 
-    useEffect(()=>{
+    useEffect(() => {
         const firstdata = productPrinter().firstdata;
         setFirstcate(firstdata);
         const maindata = productPrinter().maincateData;
         setCatedata(maindata);
     }, []);
-    
+
     return (
         <div className='mainHome'>
             <div className="mainHeader">
@@ -77,8 +123,27 @@ function Home() {
             <div className={`heroDiv px-4 mt-2 d-flex align-items-center ${searchBtn === '100%' ? 'justify-content-end' : 'justify-content-between'}`}>
                 <h2 className='heroTxt mb-0 bricolage-bold text-brand-skin text-nowrap' style={{ display: herotxt }}>Stay Cool, Pay Smart<br /> <span className="text-brand-blue bricolage-regular">The Ultimate Cooling <br />Rental Solutions in Pune</span></h2>
                 <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-4 px-2 ${searchBtn === '100%' ? 'rounded-brand' : 'rounded-pill'}`} onClick={searchIconClick} style={{ width: searchBtn }}>
-                    <input type="text" name="search" className='form-control border-0 shadow-none bricolage-light text-muted m-0 p-0 ps-2' id="searchinpu" placeholder='Search something' style={{ display: searchInpu }} />
+                    <input
+                        type="text"
+                        name="search"
+                        className='form-control border-0 shadow-none bricolage-light text-muted m-0 p-0 ps-2' id="searchinpu"
+                        placeholder='Search something'
+                        style={{ display: searchInpu }}
+                        value={searchTxt}
+                        onChange={(e) => setSearchTxt(e.target.value)}
+                        onKeyDown={(e) => handleKeyDown(e)}
+                    />
                     <i className={`fas fa-search text-brand-skin fs-5 ${searchBtn === '100%' ? 'me-2' : ''}`}></i>
+                </div>
+            </div>
+
+            <div className="searchSuggetionDiv px-4" style={{ display: searchSuggetionDiv }}>
+                <div className="searchSuggetion p-2 bg-white shadow">
+                    {
+                        searchResult.map((result, ind) => (
+                            <Link key={ind} className={`nav-link ${selectedSuggestion === ind ? 'selectedSugg': ''}`} to={`/${result.cate}`} onMouseOver={() => setSelectedSuggestion(ind)} onMouseOut={() => setSelectedSuggestion(-1)}><p className="mb-0 border-bottom mt-2 fs-5">{result.cate}</p></Link>
+                        ))
+                    }
                 </div>
             </div>
 
@@ -109,9 +174,9 @@ function Home() {
                         </OwlCarousel> */}
                         <Slider infinite dots={false} arrows={false} slidesToShow={1} centerMode={true}>
                             {
-                                firstcate.map((catedata)=>(
+                                firstcate.map((catedata) => (
                                     <div className='item px-2 d-flex justify-content-center' key={catedata.id}>
-                                        <Productcard cate={catedata.cate} img={catedata.img[0]} name={catedata.name} keyfeat={catedata.keyfeat} price={catedata.price}/>
+                                        <Productcard cate={catedata.cate} img={catedata.img[0]} name={catedata.name} keyfeat={catedata.keyfeat} price={catedata.price} />
                                     </div>
                                 ))
                             }
@@ -123,11 +188,11 @@ function Home() {
             <div className="categoryWrap text-center mt-5 px-4 mb-5">
                 <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
 
-                
+
 
                 <div className="categoryCardWrap d-flex justify-content-between flex-wrap ">
                     {
-                        catedata.map((catdata, ind)=>(
+                        catedata.map((catdata, ind) => (
                             <Categorycard key={ind} img={catdata.icon} text={catdata.procate} />
                         ))
                     }
@@ -139,7 +204,7 @@ function Home() {
                 <p className="grayText text-gray mb-0 mt-3 px-5 lh-sm bricolage-bold text-capitalize text-center">Elevent Your Pune Events with premium event material for rent.</p>
                 <p className="grayText text-brand-blue px-4 mb-0 lh-sm bricolage-extrabold text-capitalize text-center">explore our wide range from stand ACs to big fans, mist fans to portable toilets.</p>
                 <div className="container text-center">
-                    <button className='callBtn btn border-brand-skin mt-3 text-brand-blue bricolage-bold px-4' onClick={()=> window.open('tel:+917666911159', '_self')}><i className="fas fa-phone-alt text-brand-blue me-3"></i>CALL NOW</button>
+                    <button className='callBtn btn border-brand-skin mt-3 text-brand-blue bricolage-bold px-4' onClick={() => window.open('tel:+917666911159', '_self')}><i className="fas fa-phone-alt text-brand-blue me-3"></i>CALL NOW</button>
                 </div>
             </div>
 
@@ -281,7 +346,7 @@ function Home() {
                     </form>
                 </div>
             </div>
-            <Bottomnav/>
+            <Bottomnav />
         </div>
     );
 };
