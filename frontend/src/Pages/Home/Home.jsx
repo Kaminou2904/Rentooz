@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './Home.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -41,7 +41,7 @@ function Home() {
         setPsudodiv('block');
     }
 
-    const profinder = () => {
+    const profinder = useCallback(() => {
         const query = searchTxt.toLowerCase();
         const filteredPro = Object.keys(Data).filter((category) => category.toLowerCase().includes(query));
         if (filteredPro.length > 0) {
@@ -52,7 +52,7 @@ function Home() {
             setSearchresult(['product not found']);
             setSearchSuggetionDiv('none');
         }
-    }
+    }, [searchTxt]);
 
     const handleKeyDown = (e) => {
         if (searchResult.length > 0) {
@@ -77,7 +77,7 @@ function Home() {
 
     useEffect(() => {
         profinder();
-    }, [searchTxt])
+    }, [searchTxt, profinder])
 
     useEffect(() => {
         setSearchSuggetionDiv('none');
