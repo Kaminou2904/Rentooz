@@ -216,7 +216,7 @@ function Home() {
                     to your Pune occasions. With a focus on providing
                     top-notch solutions, we offer an extensive selection
                     of items, including stand ACs, fans for rent, mist
-                    fans on rent, portable toilets, and more. Our
+                    fans on rent, and more. Our
                     dedication is to ensure your Pune events are a
                     seamless and comfortable experience</p>
             </div>
@@ -256,18 +256,14 @@ function Home() {
                         <img src="./images/Heater.png" className='img-fluid p-2' alt="service icon" />
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Heater Rentals</p>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Beyond cooling solutions, explore our range
-                        of event materials for rent in Pune, including big fans,
-                        outdoor coolers, and more.</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Are you looking to beat the winter chill in Pune? Look no further! We provide top-notch Heaters on rent in Pune. Stay warm and cozy with our efficient Heaters. Don't let the cold get to you – rent a Heater today and enjoy the warmth you deserve.</p>
                 </div>
                 <div className="serviceCard mb-2 mt-0 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/COOLER.png" className='img-fluid' alt="service icon" />
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Cooler on Wheels</p>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Ensure convenience for your Pune guests with our
-                        portable toilets on wheels. Easy to set up
-                        and maintain, they provide hassle-free comfort.</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Whether you're planning a special event or just need daily cooling relief, our air coolers are your ideal solution.Beat the heat this summer with our top-notch air coolers available for rent in Pune, including Hadapsar, Kothrud & More.</p>
                 </div>
             </div>
 
