@@ -63,7 +63,7 @@ function Detail() {
     }
 
     return (
-        <div className='mainDetail bg-brand-skin' style={{ height: mainheight }}>
+        <div className='mainDetail bg-brand-blue' style={{ height: mainheight }}>
             <div className="mainDetailHeader px-4 py-3 pt-4 d-flex container">
                 <div className="backBtn fs-4">
                     <i className="fas fa-chevron-left text-white fs-5" onClick={() => navigate(-1)}></i>
@@ -94,9 +94,7 @@ function Detail() {
                         <span className="ms-1 text-muted bricolage-semibold">{detstarNum[detstarNum.length - 1]} (202)</span>
                     </p>
                     <div className="mainDetailPriceDiv d-flex justify-content-between mt-4">
-                        <div className="detailPriceTag border-brand-skin bricolage-bold bg-brand-skin p-2 fs-5 text-white text-center">₹{foundPro.price} <br /><span className='bricolage-medium'>/day</span></div>
-                        <div className="detailPriceTag border-brand-skin bricolage-bold bg-brand-skin p-2 fs-5 text-white text-center">₹999 <br /><span className='bricolage-medium'>/week</span></div>
-                        <div className="detailPriceTag border-brand-skin bricolage-bold bg-brand-skin p-2 fs-5 text-white text-center">₹1299 <br /><span className='bricolage-medium'>/month</span></div>
+                        <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center">₹{foundPro.price}<span className='bricolage-medium'>/day</span></div>
                     </div>
                     <p className="mainDetailProAboutTxt mb-0 text-muted bricolage-regular mt-3">{foundPro.desc}.</p>
                 </div>
@@ -126,7 +124,7 @@ function Detail() {
                     <div className="inputWrap">
                         <input type="text" placeholder='Enter your name' className='form-control mt-4 rounded-brand border shadow-none' />
                         <textarea type="text" name="review" id="reviewInpu" className='form-control rounded-brand mt-2 shadow-none border' placeholder='Enter your review' rows={3} style={{ resize: 'none' }}></textarea>
-                        <button className='btn bg-brand-skin text-white nunito-bold px-3 fs-5 mt-2 rounded-brand'>Submit</button>
+                        <button className='btn bg-brand-blue text-white nunito-bold px-3 fs-5 mt-2 rounded-brand'>Submit</button>
                     </div>
                 </div>
 
@@ -148,7 +146,7 @@ function Detail() {
                 </div>
 
                 <div className="checkBtnWrap container py-1 mt-2">
-                    <button className='checkBtn btn bg-brand-skin text-uppercase py-2 w-100 text-white bricolage-bold fs-4' onClick={() => {
+                    <button className='checkBtn btn bg-brand-blue text-uppercase py-2 w-100 text-white bricolage-bold fs-4' onClick={() => {
                         setBookpopup('flex'); setMainheight('100vh')
                     }}>Check Avaibility</button>
                 </div>
@@ -171,7 +169,7 @@ function Detail() {
                                 <div className="datepickerDiv pb-2 pt-4">
                                     <p className="mb-0 text-brand-blue bricolage-bold text-uppercase">select your date</p>
                                     <div className="datepickerWrap d-flex text-center justify-content-center align-items-center border-brand-skin rounded-3 px-2">
-                                        <i className="fas fa-calendar-check fs-4 text-brand-skin border-end pe-2" onClick={() => {
+                                        <i className="fas fa-calendar-check fs-4 text-brand-blue border-end pe-2" onClick={() => {
                                             if (datePickerRef.current) {
                                                 datePickerRef.current.setOpen(true);
                                             }
@@ -202,7 +200,7 @@ function Detail() {
                                     </div>
                                 </div>
                                 <div className="bookBtnDiv">
-                                    <button type='submit' className="bookBtn btn bg-brand-skin text-white text-uppercase w-100 mt-5 p-2 fs-5 bricolage-bold" onClick={submitFunc}>Book Now!</button>
+                                    <button type='submit' className="bookBtn btn bg-brand-blue text-white text-uppercase w-100 mt-5 p-2 fs-5 bricolage-bold" onClick={submitFunc}>Book Now!</button>
                                 </div>
                             </form>
                         </div>
@@ -224,7 +222,7 @@ function Detail() {
                             <img src="../images/Done.png" alt="done" className="img-fluid" />
                         </div>
                         <p className="mb-0 fs-4 text-muted mt-3 text-center bricolage-bold lh-sm">Thank you very much <br /> for booking with Rentooz!</p>
-                        <button className='btn bg-brand-skin bricolage-extrabold text-white fs-5 w-75 mx-auto text-uppercase mt-4' onClick={() => navigate('/')}>Done</button>
+                        <button className='btn bg-brand-blue bricolage-extrabold text-white fs-5 w-75 mx-auto text-uppercase mt-4' onClick={() => navigate('/')}>Done</button>
                     </div>
                 </div>
             </div>

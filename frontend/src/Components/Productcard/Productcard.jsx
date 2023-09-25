@@ -21,7 +21,7 @@ function Productcard(props) {
                 <p className="mb-0 text-muted bricolage-semibold">4.9 (202)</p>
             </div>
             <div className="productCardPrice">
-                <p className="mb-0 text-white bg-brand-skin px-4 mt-3 mb-1 mx-auto bricolage-medium text-center rounded-pill">
+                <p className="mb-0 text-white bg-brand-blue px-4 mt-3 mb-1 mx-auto bricolage-medium text-center rounded-pill">
                     <span className='bricolage-extrabold'>₹{props.price}</span>/day
                 </p>
             </div>

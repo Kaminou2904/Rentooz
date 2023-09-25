@@ -20,6 +20,15 @@
                 "price": 1500,
                 "img": ["../proimg/White Mist Fan - 111.png", "../proimg/White Mist Fan  - 22.png", "../proimg/White Mist Fan  - 3.png"],
                 "cate": "mist fan"
+            },
+            {
+                "id": 13,
+                "name": "black mist fan",
+                "keyfeat": "41 ltrs",
+                "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
+                "price": 1500,
+                "img": ["../proimg//MIST FAN BLACK - 1.png", "../proimg//MIST FAN BLACK - 2.png", "../proimg//MIST FAN BLACK - 3.png", "../proimg//MIST FAN BLACK - 4.png", "../proimg//MIST FAN BLACK - 5.png", "../proimg//MIST FAN BLACK - 6.png"],
+                "cate": "mist fan"
             }
         ]
     },
@@ -46,6 +55,15 @@
                 "id": 31,
                 "name": "portable AC",
                 "keyfeat": "1.5 ton",
+                "desc": "Portable Ac 1.5ton covers the area of about 100to110 sqfeet 2.25KW Electricity",
+                "price": 1500,
+                "img": ["../proimg/PORTABLE AC - 1.png", "../proimg/PORTABLE AC - 2.png", "../proimg/PORTABLE AC - 3.png", "../proimg/PORTABLE AC - 4.png"],
+                "cate": "portable AC"
+            },
+            {
+                "id": 32,
+                "name": "portable AC black",
+                "keyfeat": "1 ton",
                 "desc": "Portable Ac 1.5ton covers the area of about 100to110 sqfeet 2.25KW Electricity",
                 "price": 1500,
                 "img": ["../proimg/PORTABLE AC - 1.png", "../proimg/PORTABLE AC - 2.png", "../proimg/PORTABLE AC - 3.png", "../proimg/PORTABLE AC - 4.png"],
@@ -109,12 +127,30 @@
                 "cate": "air cooler"
             },
             {
-                "id": 55,
+                "id": 45,
                 "name": "air cooler (5.5 Ft)",
                 "keyfeat": "120 ltrs",
                 "desc": "120 Ltrs water tank Capacity upto 15 to 18 feet Throw (5.5 ft Height)",
                 "price": 2000,
                 "img": ["../proimg/COOLER 120 LTRS - 1.png", "../proimg/COOLER 120 LTRS - 2.png", "../proimg/COOLER 120 LTRS - 3.png"],
+                "cate": "air cooler"
+            },
+            {
+                "id": 46,
+                "name": "gray air cooler",
+                "keyfeat": "75 ltrs",
+                "desc": "75ltrs upto 18 Feet Throw 4.9feet Height",
+                "price": 1000,
+                "img": ["../proimg/Air Cooler - 75  ltrs - 1.png", "../proimg/Air Cooler - 75  ltrs - 2.png", "../proimg/Air Cooler - 75  ltrs - 1.png"],
+                "cate": "air cooler"
+            },
+            {
+                "id": 47,
+                "name": "white air cooler",
+                "keyfeat": "100 ltrs",
+                "desc": "100ltrs upto 18 Feet Throw 4.9feet Height",
+                "price": 1000,
+                "img": ["../proimg/Air Cooler - 75  ltrs - 1.png", "../proimg/Air Cooler - 75  ltrs - 2.png", "../proimg/Air Cooler - 75  ltrs - 1.png"],
                 "cate": "air cooler"
             }
         ]

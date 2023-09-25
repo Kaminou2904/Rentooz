@@ -150,7 +150,7 @@ function Home() {
 
             <div className="dailyTabs container mt-4">
                 <div className="tabsWrap d-flex bg-brand-gray rounded-pill">
-                    <div className="emptyTab bg-brand-skin p-2 px-3 w-50 rounded-pill" style={{ left: topnav === 0 ? '3%' : '47%' }}></div>
+                    <div className="emptyTab bg-brand-blue p-2 px-3 w-50 rounded-pill" style={{ left: topnav === 0 ? '3%' : '47%' }}></div>
                     <div className="dailyTab text-uppercase w-50 text-center" onClick={() => { topNavFunc(0) }}>
                         <p className={`dailySpan p-2 bricolage-medium rounded-pill mb-0 ${topnav === 0 ? 'text-white' : 'text-muted'}`}>daily</p>
                     </div>
