@@ -66,7 +66,7 @@
                 "keyfeat": "1 ton",
                 "desc": "Portable Ac 1.5ton covers the area of about 100to110 sqfeet 2.25KW Electricity",
                 "price": 1500,
-                "img": ["../proimg/PORTABLE AC - 1.png", "../proimg/PORTABLE AC - 2.png", "../proimg/PORTABLE AC - 3.png", "../proimg/PORTABLE AC - 4.png"],
+                "img": ["../proimg/portableAcblack2.png", "../proimg/portableAcblack1.png", "../proimg/portableAcblack3.png", "../proimg/portableAcblack4.png"],
                 "cate": "portable AC"
             }
         ]
@@ -101,7 +101,7 @@
             },
             {
                 "id": 42,
-                "name": "air cooler black",
+                "name": "air cooler (1)",
                 "keyfeat": "90 ltrs",
                 "desc": "90 Ltrs Black Handle upto 18 Feet Throw 4.9feet Height",
                 "price": 1000,
@@ -119,15 +119,6 @@
             },
             {
                 "id": 44,
-                "name": "silent air cooler gray",
-                "keyfeat": "100 ltrs ",
-                "desc": "100 ltrs Grey upto 25 ft 5 (Height 5ft)",
-                "price": 1500,
-                "img": ["../proimg/Cooler - 100 Ltr Silent.png", "../proimg/Cooler - 100 Ltr Silent - 2.png", "../proimg/Cooler - 100 Ltr Silent - 3.png", "../proimg/Cooler - 100 Ltr Silent - 4.png"],
-                "cate": "air cooler"
-            },
-            {
-                "id": 45,
                 "name": "air cooler (5.5 Ft)",
                 "keyfeat": "120 ltrs",
                 "desc": "120 Ltrs water tank Capacity upto 15 to 18 feet Throw (5.5 ft Height)",
@@ -136,21 +127,30 @@
                 "cate": "air cooler"
             },
             {
+                "id": 45,
+                "name": "air cooler (2)",
+                "keyfeat": "110 ltrs",
+                "desc": "110ltrs upto 18 Feet Throw 4.9feet Height",
+                "price": 1500,
+                "img": ["../proimg/AIR COOLER - 100 LTR FRONT.png", "../proimg/AIR COOLER - 100 LTR BACK.png"],
+                "cate": "air cooler"
+            },
+            {
                 "id": 46,
-                "name": "gray air cooler",
-                "keyfeat": "75 ltrs",
-                "desc": "75ltrs upto 18 Feet Throw 4.9feet Height",
-                "price": 1000,
-                "img": ["../proimg/Air Cooler - 75  ltrs - 1.png", "../proimg/Air Cooler - 75  ltrs - 2.png", "../proimg/Air Cooler - 75  ltrs - 1.png"],
+                "name": "air cooler (3)",
+                "keyfeat": "100 ltrs",
+                "desc": "100ltrs upto 18 Feet Throw 4.9feet Height",
+                "price": 1500,
+                "img": ["../proimg/aircooler1003.png", "../proimg/aircooler1002.png", "../proimg/aircooler1001.png"],
                 "cate": "air cooler"
             },
             {
                 "id": 47,
-                "name": "white air cooler",
-                "keyfeat": "100 ltrs",
-                "desc": "100ltrs upto 18 Feet Throw 4.9feet Height",
+                "name": "silent air cooler (3)",
+                "keyfeat": "75 ltrs",
+                "desc": "75ltrs upto 18 Feet Throw 4.9feet Height",
                 "price": 1000,
-                "img": ["../proimg/Air Cooler - 75  ltrs - 1.png", "../proimg/Air Cooler - 75  ltrs - 2.png", "../proimg/Air Cooler - 75  ltrs - 1.png"],
+                "img": ["../proimg/aircooler752.png", "../proimg/aircooler751.png", "../proimg/aircooler753.png"],
                 "cate": "air cooler"
             }
         ]

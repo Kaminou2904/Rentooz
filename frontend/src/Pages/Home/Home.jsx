@@ -174,9 +174,9 @@ function Home() {
 
             <div className="testDiv my-5 px-4">
                 <Slider infinite dots={true} arrows={false} slidesToShow={1}>
-                    <Cardgroup/>
-                    <Cardgroup/>
-                    <Cardgroup/>
+                    <Cardgroup num={1}/>
+                    <Cardgroup num={2}/>
+                    <Cardgroup num={3}/>
                 </Slider>
             </div>
 
