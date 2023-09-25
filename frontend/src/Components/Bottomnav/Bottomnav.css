@@ -71,14 +71,14 @@
     padding: 10px !important;
 }
 
-.slick-list{
+/* .slick-list{
     padding-top: 40px !important;
-}
+} */
 
-.slick-active{
+/* .slick-active{
     margin-top: -40px !important;
     transition: 0.5s !important;
-}
+} */
 
 .extrasvg{
     font-size: 14px !important;

@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Productcard from '../../Components/Productcard/Productcard';
 import Bottomnav from '../../Components/Bottomnav/Bottomnav';
 import { Link } from 'react-router-dom';
+import Cardgroup from '../../Components/Cardgroup/Cardgroup';
 
 function Home() {
 
@@ -159,8 +160,28 @@ function Home() {
                 </div>
             </div>
 
+            <div className="categoryWrap text-center mt-5 px-4 mb-5">
+                <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
+                <div className="categoryCardWrap d-flex justify-content-between flex-wrap ">
+                    {
+                        catedata.map((catdata, ind) => (
+                            <Categorycard key={ind} img={catdata.icon} text={catdata.procate} />
+                        ))
+                    }
+                    <Categorycard img="../images/Spare parts.png" text="mist fan parts" />
+                </div>
+            </div>
+
+            <div className="testDiv my-5 px-4">
+                <Slider infinite dots={true} arrows={false} slidesToShow={1}>
+                    <Cardgroup/>
+                    <Cardgroup/>
+                    <Cardgroup/>
+                </Slider>
+            </div>
+
             <div className="ourProducts mt-4">
-                <p className="heading">Our Products</p>
+                <p className="heading fs-3">Most Rented Products</p>
                 <div className="productCardWraper mt-3">
                     <div className="productCardWrap pt-4">
                         {/* <OwlCarousel className='owl-theme' stagePadding={80} items={1} margin={10} loop dots={false}>
@@ -182,21 +203,6 @@ function Home() {
                             }
                         </Slider>
                     </div>
-                </div>
-            </div>
-
-            <div className="categoryWrap text-center mt-5 px-4 mb-5">
-                <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
-
-
-
-                <div className="categoryCardWrap d-flex justify-content-between flex-wrap ">
-                    {
-                        catedata.map((catdata, ind) => (
-                            <Categorycard key={ind} img={catdata.icon} text={catdata.procate} />
-                        ))
-                    }
-                    <Categorycard img="../images/Spare parts.png" text="mist fan parts" />
                 </div>
             </div>
 

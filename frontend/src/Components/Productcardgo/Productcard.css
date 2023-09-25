@@ -1,0 +1,18 @@
+.mainProductcard{
+    width: 100%;
+}
+
+.productcardImg{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.mainProductcardName{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.mainProductcardCategory{
+    font-size: 13px;
+    line-height: 14px;
+}
