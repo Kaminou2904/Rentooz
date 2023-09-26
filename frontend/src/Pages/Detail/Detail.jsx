@@ -14,12 +14,6 @@ function Detail() {
         window.scrollTo(0, 0);
     }, []);
 
-    // useEffect(()=>{
-    //     if(category === 'mist fan parts'){
-    //         window.open('https://wa.me/+917666911159', '_self');
-    //     }
-    // }, [category])
-
     const navigate = useNavigate();
     const [imgtrans, setImgtrans] = useState(false);
     const [imgindex, setImgindex] = useState(0);
@@ -38,6 +32,12 @@ function Detail() {
             break;
         }
     }
+
+    const featurearr = [];
+    foundPro.features.map((feat)=>{
+        const featnname = Object.entries(feat);
+        return featurearr.push(featnname);
+    });
 
     const [mainImg, setmainimg] = useState(foundPro.img[0]);
 
@@ -100,14 +100,13 @@ function Detail() {
                 </div>
 
                 <div className="featuresDiv px-4 mt-4">
-                    <h2 className="featureHead bricolage-bold fs-5 text-muted">FEATURES</h2>
+                    <h2 className="featureHead bricolage-bold fs-5 text-muted">Specifications</h2>
                     <ul className="featuresUl ps-4">
-                        <li className="featureLi text-muted lh-sm mb-0"><span className="text-muted bricolage-bold">Cooling Mist:</span> Provides a refreshing mist along with airflow for superior cooling</li>
-                        <li className="featureLi text-muted lh-sm mb-0"><span className="text-muted bricolage-bold">Adjustable Mist Intensity:</span> : Control the mist level to meet your comfort preferences</li>
-                        <li className="featureLi text-muted lh-sm mb-0"><span className="text-muted bricolage-bold">Large Water Tank:</span> Extended operation without frequent refilling</li>
-                        <li className="featureLi text-muted lh-sm mb-0"><span className="text-muted bricolage-bold">Outdoor Use:</span> Ideal for outdoor events, keeping guests cool in hot weather</li>
-                        <li className="featureLi text-muted lh-sm mb-0"><span className="text-muted bricolage-bold">Safety Features:</span> Automatic shut-of when the water tank is empty</li>
-                        <li className="featureLi text-muted lh-sm mb-0"><span className="text-muted bricolage-bold">Easy Mobility:</span> Wheels for effortless transportation</li>
+                        {
+                            foundPro.features.map((feat, index)=>(
+                                <li key={index} className="featureLi text-muted lh-sm mb-0">{feat}</li>
+                            ))
+                        }
                     </ul>
                 </div>
 
