@@ -9,16 +9,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Productcard from '../../Components/Productcard/Productcard';
 import Bottomnav from '../../Components/Bottomnav/Bottomnav';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Cardgroup from '../../Components/Cardgroup/Cardgroup';
 
 function Home() {
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    const [topnav, setTopnav] = useState(0);
+    // const [topnav, setTopnav] = useState(0);
 
     const [searchInpu, setSearchInpu] = useState('none');
     const [searchTxt, setSearchTxt] = useState('');
@@ -31,9 +33,9 @@ function Home() {
     const [firstcate, setFirstcate] = useState([]);
     const [catedata, setCatedata] = useState([]);
 
-    const topNavFunc = (x) => {
-        setTopnav(x);
-    }
+    // const topNavFunc = (x) => {
+    //     setTopnav(x);
+    // }
 
     const searchIconClick = () => {
         setSearchInpu('block');
@@ -148,7 +150,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="dailyTabs container mt-4">
+            {/* <div className="dailyTabs container mt-4">
                 <div className="tabsWrap d-flex bg-brand-gray rounded-pill">
                     <div className="emptyTab bg-brand-blue p-2 px-3 w-50 rounded-pill" style={{ left: topnav === 0 ? '3%' : '47%' }}></div>
                     <div className="dailyTab text-uppercase w-50 text-center" onClick={() => { topNavFunc(0) }}>
@@ -158,7 +160,7 @@ function Home() {
                         <p className={`customSpan p-2 bricolage-medium rounded-pill mb-0 ${topnav === 1 ? 'text-white' : 'text-muted'}`}>custom</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="categoryWrap text-center mt-5 px-4 mb-5">
                 <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
@@ -309,23 +311,23 @@ function Home() {
 
             <div className="blogDiv px-4 mt-5">
                 <p className="mb-4 fs-5 bricolage-bold text-brand-blue lh-sm">Blogs</p>
-                <div className="blogCard">
+                <div className="blogCard" onClick={()=> navigate('/blog/tower-ac-vs-traditional-ac')}>
                     <div className="blogCardImg mb-2">
                         <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
                     </div>
                     <div className="blogCardTxt px-3 mb-4">
-                        <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Choose the right Cooling solution:
-                            <span className="mb-0 text-gray bricolage-bold lh-sm ms-2 fs-14">Lorem ipsum dolor sit amet consectetur.</span>
+                        <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Tower AC vs. Traditional AC:
+                            <span className="mb-0 text-gray bricolage-bold lh-sm ms-2 fs-14">Which is Better for Pune's Climate?</span>
                         </p>
                     </div>
                 </div>
                 <div className="blogCard">
-                    <div className="blogCardImg mb-2">
+                    <div className="blogCardImg mb-2" onClick={()=> navigate('/blog/benifits-of-mist-fan')}>
                         <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
                     </div>
                     <div className="blogCardTxt px-3 mb-4">
-                        <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Choose the right Cooling solution:
-                            <span className="mb-0 text-gray bricolage-bold lh-sm ms-2 fs-14">Lorem ipsum dolor sit amet consectetur.</span>
+                        <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Exploring the Benefits of Mist Fans:
+                            <span className="mb-0 text-gray bricolage-bold lh-sm ms-2 fs-14">The Cool Science Behind Mist Fans.</span>
                         </p>
                     </div>
                 </div>

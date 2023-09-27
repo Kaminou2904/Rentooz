@@ -1,0 +1,11 @@
+.mainFooter{
+    background-color: rgb(251, 251, 251);
+}
+
+.footerUL{
+    list-style: none;
+}
+
+.footerLI:hover{
+    color: #1a4a82 !important;
+}
