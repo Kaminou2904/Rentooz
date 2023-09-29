@@ -1,5 +1,13 @@
-.mainListingcard{
+/* .mainListingcard{
+    width: min(100%, 400px);
+} */
+
+/* .mainListingcard{
     width: 100%;
+} */
+
+.mainListingcard{
+    cursor: pointer;
 }
 
 .listingcardImg{
@@ -21,3 +29,9 @@
 .listingCardcategory{
     font-size: 12px;
 }
+
+/* @media screen and (min-width: 980px) {
+    .mainListingcard{
+        margin-right: 20px !important;
+    }
+} */

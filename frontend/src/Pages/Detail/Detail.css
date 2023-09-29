@@ -1,10 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box !important;
+}
+
 .mainDetail{
     overflow-y: hidden;
 }
 
 .detailProContainer{
-    /* border-top-right-radius: 50%;
-    border-top-left-radius: 50%; */
     overflow: hidden;
 }
 
@@ -36,7 +40,9 @@
 }
 
 .checkBtnWrap{
+    width: 90%;
     position: fixed;
+    left: 5%;
     bottom: 5px;
 }
 
@@ -101,16 +107,6 @@
     font-size: 19px;
     line-height: 17px;
 }
-
-/* date picker styling */
-/* ::-webkit-datetime-edit { padding: 1em; }
-::-webkit-datetime-edit-fields-wrapper { background: silver; }
-::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
-::-webkit-datetime-edit-month-field { color: blue; }
-::-webkit-datetime-edit-day-field { color: green; }
-::-webkit-datetime-edit-year-field { color: purple; }
-::-webkit-inner-spin-button { display: none; }
-::-webkit-calendar-picker-indicator { background: orange; } */
 
 .myDatepicker{
     border-width: 2px !important;
@@ -189,5 +185,11 @@
         margin-left: -100vw;
     }100%{
         margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .detailProContainer{
+        border-radius: 0px !important;
     }
 }

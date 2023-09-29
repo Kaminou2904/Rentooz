@@ -34,7 +34,7 @@ function Detail() {
     }
 
     const featurearr = [];
-    foundPro.features.map((feat)=>{
+    foundPro.features.map((feat) => {
         const featnname = Object.entries(feat);
         return featurearr.push(featnname);
     });
@@ -70,40 +70,43 @@ function Detail() {
                 </div>
                 <p className="mb-0 bricolage-bold text-white text-end text-capitalize w-50 ms-4 fs-5">{foundPro.cate}</p>
             </div>
-            <div className="detailProContainer rounded-pill rounded-bottom-0 bg-white">
-                <div className="mainImgWrap pt-4 px-5">
-                    <img src={mainImg} className={`img-fluid p-2 ${imgtrans ? 'mainImgImg' : ''}`} alt="mist fan" />
-                </div>
-                <div className="proImages d-flex justify-content-around px-5 mt-3">
-                    {
-                        foundPro.img.map((img, index) => (
-                            <div key={index} className={`proImgWrap p-2 ${imgindex === index ? 'border-brand-blue' : 'border-brand-skin'}`}>
-                                <img src={img} className='img-fluid' alt="" onClick={(e) => { setmainimg(e.target.src); imgTransi(); setImgindex(index) }} />
-                            </div>
-                        ))
-                    }
-                </div>
-                <div className="detailProData mt-4 container px-4">
-                    <p className="detailProName mb-0 fs-3 text-capitalize text-start bricolage-bold text-brand-blue">{proname} <br /> <span className='text-uppercase bricolage-bold text-brand-blue'>{foundPro.keyfeat}</span></p>
-                    <p className="detailMainRating mt-1 d-flex align-items-center">
+            <div className="detailProContainer d-flex flex-wrap rounded-pill rounded-bottom-0 bg-white">
+                <div className="col-md-5 p-0 m-0">
+                    <div className="mainImgWrap text-center pt-4 px-5">
+                        <img src={mainImg} className={`img-fluid text-center p-2 ${imgtrans ? 'mainImgImg' : ''}`} alt="mist fan" />
+                    </div>
+                    <div className="proImages d-flex justify-content-around px-5 mt-3">
                         {
-                            detstarNum.map((mun, i) => (
-                                <i key={i} className="fas fa-star text-warning"></i>
+                            foundPro.img.map((img, index) => (
+                                <div key={index} className={`proImgWrap p-2 ${imgindex === index ? 'border-brand-blue' : 'border-brand-skin'}`}>
+                                    <img src={img} className='img-fluid' alt="" onClick={(e) => { setmainimg(e.target.src); imgTransi(); setImgindex(index) }} />
+                                </div>
                             ))
                         }
-                        <span className="ms-1 text-muted bricolage-semibold">{detstarNum[detstarNum.length - 1]} (202)</span>
-                    </p>
-                    <div className="mainDetailPriceDiv d-flex justify-content-between mt-4">
-                        <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center">₹{foundPro.price}<span className='bricolage-medium'>/day</span></div>
                     </div>
-                    <p className="mainDetailProAboutTxt mb-0 text-muted bricolage-regular mt-3">{foundPro.desc}.</p>
+                    <div className="detailProData mt-4 container px-4">
+                        <p className="detailProName mb-0 fs-3 text-capitalize text-start bricolage-bold text-brand-blue">{proname} <br /> <span className='text-uppercase bricolage-bold text-brand-blue'>{foundPro.keyfeat}</span></p>
+                        <p className="detailMainRating mt-1 d-flex align-items-center">
+                            {
+                                detstarNum.map((mun, i) => (
+                                    <i key={i} className="fas fa-star text-warning"></i>
+                                ))
+                            }
+                            <span className="ms-1 text-muted bricolage-semibold">{detstarNum[detstarNum.length - 1]} (202)</span>
+                        </p>
+                        <div className="mainDetailPriceDiv d-flex justify-content-between mt-4">
+                            <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center">₹{foundPro.price}<span className='bricolage-medium'>/day</span></div>
+                        </div>
+                    </div>
                 </div>
 
+                <div className="col-md-7 p-0 m-0">
                 <div className="featuresDiv px-4 mt-4">
+                    <p className="mainDetailProAboutTxt mb-0 text-muted bricolage-regular mt-3 mb-5">{foundPro.desc}.</p>
                     <h2 className="featureHead bricolage-bold fs-5 text-muted">Specifications</h2>
                     <ul className="featuresUl ps-4">
                         {
-                            foundPro.features.map((feat, index)=>(
+                            foundPro.features.map((feat, index) => (
                                 <li key={index} className="featureLi text-muted lh-sm mb-0">{feat}</li>
                             ))
                         }
@@ -144,7 +147,7 @@ function Detail() {
                     </div>
                 </div>
 
-                <div className="checkBtnWrap container py-1 mt-2">
+                <div className="checkBtnWrap py-1 mt-2">
                     <button className='checkBtn btn bg-brand-blue text-uppercase py-2 w-100 text-white bricolage-bold fs-4' onClick={() => {
                         setBookpopup('flex'); setMainheight('100vh')
                     }}>Check Avaibility</button>
@@ -223,6 +226,7 @@ function Detail() {
                         <p className="mb-0 fs-4 text-muted mt-3 text-center bricolage-bold lh-sm">Thank you very much <br /> for booking with Rentooz!</p>
                         <button className='btn bg-brand-blue bricolage-extrabold text-white fs-5 w-75 mx-auto text-uppercase mt-4' onClick={() => navigate('/')}>Done</button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

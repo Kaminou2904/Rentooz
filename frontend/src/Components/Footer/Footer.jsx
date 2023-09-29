@@ -42,17 +42,17 @@ function Footer() {
             <div className="col-md-3">
             <p className="fs-5 bricolage-bold mb-0">Contact Us</p>
                 <ul className="footerUL p-0">
-                    <li className="footerLI mb-0 bricolage-medium"><i className="fas fa-envelope me-2 text-brand-blue"></i>rentinggo@gmail.com</li>
-                    <li className="footerLI mb-0 bricolage-medium"><i className="fas fa-phone-alt me-2 text-brand-blue"></i>+91 8451820012</li>
-                    <li className="footerLI mb-0 bricolage-medium"><i className="fab fa-whatsapp me-2 text-brand-blue"></i>+91 8451820012</li>
-                    <li className="footerLI mb-0 bricolage-medium lh-sm"><i className="fas fa-map-marker-alt me-2 text-brand-blue"></i>101 Powai Plaza, Powai, Mumbai, Maharashtra, India</li>
+                    <li className="footerLI mb-0 "><a className='nav-link bricolage-medium' href='mailto:rentooze@gmail.com'><i className="fas fa-envelope me-2 text-brand-blue"></i>rentooze@gmail.com</a></li>
+                    <li className="footerLI mb-0 bricolage-medium"><a href="tel:+917666911159" className="nav-link bricolage-medium"><i className="fas fa-phone-alt me-2 text-brand-blue"></i>+91 7666911159</a></li>
+                    <li className="footerLI mb-0 bricolage-medium"><a href="https://wa.me/+917666911159" className="nav-link bricolage-medium"><i className="fab fa-whatsapp me-2 text-brand-blue"></i>+91 7666911159</a></li>
+                    <li className="footerLI mb-0 bricolage-medium lh-sm"><i className="fas fa-map-marker-alt me-2 text-brand-blue"></i>Shop Number 3, LSBI/ Multifit Road, Near Niyati Enchante, New Kalyani Nagar, Digambar Nagar, Wadgaon Sheri, Pune - 411014</li>
                 </ul>
             </div>
             <div className="extraFooterInfo container d-flex justify-content-between px-2 border-top border-secondary mt-4 pt-3">
                 <p className="rightTxt mb-0 fs-5 bricolage-semibold text-muted">
                 &copy; 2023 <span className='text-brand-blue bricolage-semibold'>Rentooz</span>
                 </p>
-                <p className="footerWhatsappicon mb-0 fs-2"><i className="fab fa-whatsapp fs-2 text-brand-blue"></i></p>
+                <p className="footerWhatsappicon mb-0 fs-2"><a href="https://wa.me/+917666911159" className="nav-link"><i className="fab fa-whatsapp fs-2 text-brand-blue"></i></a></p>
             </div>
         </div>
     </div>

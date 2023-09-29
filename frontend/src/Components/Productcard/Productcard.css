@@ -3,6 +3,7 @@
     border-radius: 40px;
     /* overflow: hidden; */
     border-width: 2px !important;
+    cursor: pointer;
 }
 
 .productName p{

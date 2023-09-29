@@ -72,3 +72,7 @@
   font-size: 14px !important;
   line-height: 16px !important;
 }
+
+.fa-chevron-left{
+  cursor: pointer;
+}

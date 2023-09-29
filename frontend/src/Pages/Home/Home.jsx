@@ -37,6 +37,58 @@ function Home() {
     //     setTopnav(x);
     // }
 
+    const caroSettings = {
+        infinite : true,
+        dots: true,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+              },
+            },
+          ],
+    }
+
+    const responsiveSet = {
+        infinite: true,
+        dots: true,
+        arrows: false,
+        slidesToShow: 3,
+        centerMode: true,
+        responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+              },
+            },
+          ],
+    }
+
     const searchIconClick = () => {
         setSearchInpu('block');
         setHerotxt('none');
@@ -114,7 +166,7 @@ function Home() {
     }, []);
 
     return (
-        <div className='mainHome'>
+        <div className='mainHome container p-0'>
             <div className="mainHeader">
                 <div className="headerLogoWraper mx-auto py-4 mt-2">
                     <img src="./images/Rentooz Logo.png" className='img-fluid' alt="rentooz logo" />
@@ -175,27 +227,18 @@ function Home() {
             </div>
 
             <div className="testDiv my-5 px-4">
-                <Slider infinite dots={true} arrows={false} slidesToShow={1}>
-                    <Cardgroup num={1}/>
-                    <Cardgroup num={2}/>
-                    <Cardgroup num={3}/>
+                <Slider {...caroSettings}>
+                    <Cardgroup name="silver mist fan" name1="silent air cooler (3)" name2="portable AC"/>
+                    <Cardgroup name="electric heater" name1="air cooler" name2="pedestal fan"/>
+                    <Cardgroup name="portable AC black" name1="black mist fan" name2="silent air cooler"/>
                 </Slider>
             </div>
 
             <div className="ourProducts mt-4">
                 <p className="heading fs-3">Most Rented Products</p>
                 <div className="productCardWraper mt-3">
-                    <div className="productCardWrap pt-4">
-                        {/* <OwlCarousel className='owl-theme' stagePadding={80} items={1} margin={10} loop dots={false}>
-                            {
-                                firstcate.map((catedata)=>(
-                                    <div className='item d-flex justify-content-center' key={catedata.id}>
-                                        <Productcard cate={catedata.cate} img={catedata.img} name={catedata.name} keyfeat={catedata.keyfeat} price={catedata.price}/>
-                                    </div>
-                                ))
-                            }
-                        </OwlCarousel> */}
-                        <Slider infinite dots={false} arrows={false} slidesToShow={1} centerMode={true}>
+                    <div className="productCardWrap pt-4 mb-5">
+                        <Slider {...responsiveSet}>
                             {
                                 firstcate.map((catedata) => (
                                     <div className='item px-2 d-flex justify-content-center' key={catedata.id}>
@@ -229,9 +272,9 @@ function Home() {
                     seamless and comfortable experience</p>
             </div>
 
-            <div className="services mt-5 px-4">
+            <div className="services row justify-content-center mt-5 px-4">
                 <p className="mb-4 text-brand-skin fs-5 bricolage-bold text-center">Our <span className="text-brand-blue bricolage-bold">Services</span></p>
-                <div className="serviceCard mb-2 text-center">
+                <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/5Stand AC.png" className='img-fluid p-2' alt="service icon" />
                     </div>
@@ -240,7 +283,7 @@ function Home() {
                         our stand ACs, designed to deliver efficient
                         cooling for indoor and outdoor events.</p>
                 </div>
-                <div className="serviceCard mb-2 text-center">
+                <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/2Fan.png" alt="service icon" className='img-fluid' />
                     </div>
@@ -250,7 +293,7 @@ function Home() {
                         contemporary designs, we've got the right
                         fan for your event.</p>
                 </div>
-                <div className="serviceCard mb-2 text-center">
+                <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/3Mist Fan.png" className='img-fluid p-2' alt="service icon" />
                     </div>
@@ -259,14 +302,14 @@ function Home() {
                         Pune gatherings with our mist fans on rent.
                         They add a touch of coolness to warm occasions.</p>
                 </div>
-                <div className="serviceCard text-center">
+                <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/Heater.png" className='img-fluid p-2' alt="service icon" />
                     </div>
                     <p className="mb-0 bricolage-bold text-brand-blue">Heater Rentals</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Are you looking to beat the winter chill in Pune? Look no further! We provide top-notch Heaters on rent in Pune. Stay warm and cozy with our efficient Heaters. Don't let the cold get to you – rent a Heater today and enjoy the warmth you deserve.</p>
                 </div>
-                <div className="serviceCard mb-2 mt-0 text-center">
+                <div className="serviceCard col-md-6 mb-2 mt-0 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/COOLER.png" className='img-fluid' alt="service icon" />
                     </div>
@@ -309,9 +352,9 @@ function Home() {
                 </div>
             </div>
 
-            <div className="blogDiv px-4 mt-5">
+            <div className="blogDiv row px-4 mt-5">
                 <p className="mb-4 fs-5 bricolage-bold text-brand-blue lh-sm">Blogs</p>
-                <div className="blogCard" onClick={()=> navigate('/blog/tower-ac-vs-traditional-ac')}>
+                <div className="blogCard col-md-6" onClick={()=> navigate('/blog/tower-ac-vs-traditional-ac')}>
                     <div className="blogCardImg mb-2">
                         <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
                     </div>
@@ -319,9 +362,10 @@ function Home() {
                         <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Tower AC vs. Traditional AC:
                             <span className="mb-0 text-gray bricolage-bold lh-sm ms-2 fs-14">Which is Better for Pune's Climate?</span>
                         </p>
+                        <p className="glimps mb-0 text-muted bricolage-medium lh-sm">Ah, the age-old battle of cooling titans! Pune's climate, with its scorching summers, demands a powerful cooling solution</p>
                     </div>
                 </div>
-                <div className="blogCard">
+                <div className="blogCard col-md-6">
                     <div className="blogCardImg mb-2" onClick={()=> navigate('/blog/benifits-of-mist-fan')}>
                         <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
                     </div>
@@ -329,11 +373,12 @@ function Home() {
                         <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Exploring the Benefits of Mist Fans:
                             <span className="mb-0 text-gray bricolage-bold lh-sm ms-2 fs-14">The Cool Science Behind Mist Fans.</span>
                         </p>
+                        <p className="glimps mb-0 text-muted bricolage-medium lh-sm">a scorching summer day in Pune, and you're desperately seeking refuge from the oppressive heat</p>
                     </div>
                 </div>
             </div>
 
-            <div className="contactDiv px-4">
+            <div className="contactDiv px-4 mt-5">
                 <p className="contactHeading px-3 mb-0 text-center bricolage-extrabold text-brand-skin">
                     Have questions<br /> or ready to make your<br /> Pune event extraordinary?
                 </p>

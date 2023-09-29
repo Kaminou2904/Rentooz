@@ -10,3 +10,9 @@
     width: 37%;
     height: 100%;
 }
+
+@media screen and (min-width: 1200px) {
+    .mainCradgroup{
+        padding: 10px;
+    }
+}

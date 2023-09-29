@@ -9,7 +9,7 @@ function Productcard(props) {
             <img src={props.img} className='img-fluid' alt="handBag" />
         </div>
         <div className="mainProductcardData p-2">
-            <Link to={`/${props.category}/${props.name}`} className='nav-link'><p className="mainProductcardName bricolage-bold text-capitalize mb-0 text-brand-blue">{props.name} {props.keyfeat}</p></Link>
+            <Link to={`/${props.category}/${props.name}`} className='nav-link'><p className="mainProductcardName bricolage-bold text-capitalize mb-0 text-brand-blue">{props.name} <br /> {props.keyfeat}</p></Link>
             <p className="mainProductcardCategory mb-0 text-muted text-uppercase">{props.category}</p>
             <div className="mainProductcardPrice text-brand-purp bricolage-bold fs-5">₹{props.rentprice} <span className='text-muted bricolage-semibold fs-6 text-capitalize'>/Day</span></div>
         </div>

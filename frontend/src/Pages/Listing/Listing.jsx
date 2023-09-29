@@ -38,33 +38,30 @@ function Listing() {
                 <i className="fas fa-chevron-left fs-4 text-white" onClick={() => navigate(-1)}></i>
                 <p className="mb-0 w-100 text-white text-center text-uppercase bricolage-bold fs-5">{category}</p>
             </div>
-            <div className="cardWraper px-4 mt-5 pt-4 pb-5 mb-5">
-                <div className="cardWrap">
-                    {/* {
-                    listData.map((data)=>(
-                        <Lisitngcard key={data.id} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate}/>
-                    ))
-                } */}
-                    {
-                        category === 'mist fan parts' ? (
-                            partdata.map((part, i) => (
-                                <Lisitngcard key={part.id} img={part.img} name={part.name} price={part.price} cate={part.cate} />
-                            ))
-                        ) : (
-                            category === 'View All' ? (
-                                proarr.map((data) => (
-                                    <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate} />
+            <div className="container p-0">
+                <div className="cardWraper px-4 mt-5 pt-4 pb-5 mb-5">
+                    <div className="cardWrap row p-0 justify-content-start">
+                        {
+                            category === 'mist fan parts' ? (
+                                partdata.map((part, i) => (
+                                    <Lisitngcard key={part.id} img={part.img} name={part.name} price={part.price} cate={part.cate} />
                                 ))
                             ) : (
-                                listData.map((data) => (
-                                    <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate} />
-                                ))
+                                category === 'View All' ? (
+                                    proarr.map((data) => (
+                                        <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate} />
+                                    ))
+                                ) : (
+                                    listData.map((data) => (
+                                        <Lisitngcard key={data.id} img={data.img[0]} name={data.name} keyfeat={data.keyfeat} price={data.price} cate={data.cate} />
+                                    ))
+                                )
                             )
-                        )
-                    }
+                        }
+                    </div>
                 </div>
+                <Bottomnav />
             </div>
-            <Bottomnav />
         </div>
     )
 }

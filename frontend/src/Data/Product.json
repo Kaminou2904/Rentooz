@@ -59,16 +59,20 @@
         "products": [
             {
                 "id": 21,
-                "name": "silent fan",
+                "name": "pedestal fan",
                 "keyfeat": "90 degree",
                 "desc": "Silent Fan 90 degree swing 6 ft height",
                 "price": 500,
                 "img": ["../proimg/PEDESTIAL FAN - 2.png", "../proimg/PEDESTIAL FAN - 1.png", "../proimg/PEDESTIAL FAN - 3.png", "../proimg/PEDESTIAL FAN - 5.png"],
                 "cate": "pedestal fan",
                 "features": [
+                    "6 FEET HEIGHT",
+                    "90° swing",
+                    "Plug & Play",
                     "features",
-                    "features",
-                    "features"
+                    "High quality Grill Blade and Framework",
+                    "Minimum throw of 8 - 12 feet",
+                    "Ideal for events, weddings, shootings, exhibition etc"
                 ]
             }
         ]
@@ -197,9 +201,12 @@
                 "img": ["../proimg/COOLER 120 LTRS - 1.png", "../proimg/COOLER 120 LTRS - 2.png", "../proimg/COOLER 120 LTRS - 3.png"],
                 "cate": "air cooler",
                 "features": [
-                    "features",
-                    "features",
-                    "features"
+                    "Plug & Play",
+                    "ZERO Water drainage",
+                    "Minimum Space requirement",
+                    "Covers an approx. area up to 2000 – 2500 sq. ft",
+                    "Wheels for easy mobilization",
+                    "Ideal for events, weddings, shootings, exhibition etc"
                 ]
             },
             {

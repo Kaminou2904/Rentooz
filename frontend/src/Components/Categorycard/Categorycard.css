@@ -1,5 +1,5 @@
 .mainCategorycard{
-    width: 30%;
+    width: min(30%, 150px) !important;
 }
 
 .cateTxt{
