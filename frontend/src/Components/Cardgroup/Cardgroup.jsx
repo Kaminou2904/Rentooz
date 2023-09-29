@@ -8,15 +8,29 @@ function Cardgroup(props) {
 
   const allpro = [];
 
+  // console.log(Data);
+
   const data = Object.entries(Data);
+
   data.forEach(cate => {
-    const products = Data[cate[0]].products;
+    const categoryName = cate[0];
+    const products = cate[1].products;
     products.forEach(product => {
-      allpro.push(product);
+      allpro.push({...product, category: categoryName});
     });
   });
 
-  const chosen = allpro.slice((3 * props.num) - 3, 3 * props.num);
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  const suffleArr = shuffleArray(allpro);
+
+  const chosen = suffleArr.slice((3 * props.num) - 3, 3 * props.num);
 
   return (
     <div className='mainCradgroup d-flex justify-content-between align-items-center mb-3'>
