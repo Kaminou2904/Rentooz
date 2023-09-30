@@ -228,7 +228,7 @@ function Home() {
 
             <div className="testDiv my-5 px-4">
                 <Slider {...caroSettings}>
-                    <Cardgroup name="silver mist fan" name1="silent air cooler (3)" name2="portable AC 1.5 ton"/>
+                    <Cardgroup name="silver mist fan" name1="silent air cooler" name2="portable AC 1.5 ton"/>
                     <Cardgroup name="electric heater" name1="air cooler" name2="pedestal fan"/>
                     <Cardgroup name="portable AC" name1="black mist fan" name2="silent air cooler"/>
                 </Slider>
@@ -272,8 +272,8 @@ function Home() {
                     seamless and comfortable experience</p>
             </div>
 
-            <div className="services row justify-content-center mt-5 px-4">
-                <p className="mb-4 text-brand-skin fs-5 bricolage-bold text-center">Our <span className="text-brand-blue bricolage-bold">Services</span></p>
+            <div className="services d-flex flex-wrap justify-content-center mt-5 px-4">
+                <p className="mb-4 text-brand-skin fs-5 bricolage-bold text-center w-100">Our <span className="text-brand-blue bricolage-bold">Services</span></p>
                 <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/5Stand AC.png" className='img-fluid p-2' alt="service icon" />
@@ -352,8 +352,8 @@ function Home() {
                 </div>
             </div>
 
-            <div className="blogDiv row px-4 mt-5">
-                <p className="mb-4 fs-5 bricolage-bold text-brand-blue lh-sm">Blogs</p>
+            <div className="blogDiv d-flex flex-wrap justify-content-between px-4 mt-5">
+                <p className="mb-4 fs-5 bricolage-bold text-brand-blue lh-sm w-100">Blogs</p>
                 <div className="blogCard col-md-6" onClick={()=> navigate('/blog/tower-ac-vs-traditional-ac')}>
                     <div className="blogCardImg mb-2">
                         <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
