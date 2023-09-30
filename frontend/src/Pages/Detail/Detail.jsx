@@ -84,7 +84,10 @@ function Detail() {
                             ))
                         }
                     </div>
-                    <div className="detailProData mt-4 container px-4">
+                </div>
+
+                <div className="col-md-7 p-0 m-0">
+                <div className="detailProData mt-4 container px-4">
                         <p className="detailProName mb-0 fs-3 text-capitalize text-start bricolage-bold text-brand-blue">{proname} <br /> <span className='text-uppercase bricolage-bold text-brand-blue'>{foundPro.keyfeat}</span></p>
                         <p className="detailMainRating mt-1 d-flex align-items-center">
                             {
@@ -98,9 +101,6 @@ function Detail() {
                             <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center">₹{foundPro.price}<span className='bricolage-medium'>/day</span></div>
                         </div>
                     </div>
-                </div>
-
-                <div className="col-md-7 p-0 m-0">
                 <div className="featuresDiv px-4 mt-4">
                     <p className="mainDetailProAboutTxt mb-0 text-muted bricolage-regular mt-3 mb-5">{foundPro.desc}.</p>
                     <h2 className="featureHead bricolage-bold fs-5 text-muted">Specifications</h2>
