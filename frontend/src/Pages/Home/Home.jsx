@@ -253,7 +253,7 @@ function Home() {
 
             <div className="callToActionDiv">
                 <p className="grayText text-gray mb-0 mt-3 px-5 lh-sm bricolage-bold text-capitalize text-center">Elevent Your Pune Events with premium event material for rent.</p>
-                <p className="grayText text-brand-blue px-4 mb-0 lh-sm bricolage-extrabold text-capitalize text-center">explore our wide range from stand ACs to big fans, mist fans to portable toilets.</p>
+                <p className="grayText text-brand-blue px-4 mb-0 lh-sm bricolage-extrabold text-capitalize text-center">explore our wide range from portable ACs to mist fans, air cooler to electric heater.</p>
                 <div className="container text-center">
                     <button className='callBtn btn border-brand-skin mt-3 text-brand-blue bricolage-bold px-4' onClick={() => window.open('tel:+917666911159', '_self')}><i className="fas fa-phone-alt text-brand-blue me-3"></i>CALL NOW</button>
                 </div>
@@ -266,7 +266,7 @@ function Home() {
                     material rentals that add convenience and charm
                     to your Pune occasions. With a focus on providing
                     top-notch solutions, we offer an extensive selection
-                    of items, including stand ACs, fans for rent, mist
+                    of items, including portable ACs, fans for rent, mist
                     fans on rent, and more. Our
                     dedication is to ensure your Pune events are a
                     seamless and comfortable experience</p>
@@ -287,7 +287,7 @@ function Home() {
                     <div className="serviceCardImg mt-3">
                         <img src="./images/2Fan.png" alt="service icon" className='img-fluid' />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Padestal Fans For Rent</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Pedestal Fans For Rent</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Beat the heat at your Pune events with our variety
                         of fans available for rent. From classic fans to
                         contemporary designs, we've got the right

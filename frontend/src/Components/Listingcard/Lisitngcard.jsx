@@ -9,7 +9,7 @@ function Lisitngcard(props) {
   return (
     <div className="col-md-4 px-2">
       <div className='mainListingcard d-flex p-2 px-2 align-items-center rounded-brand border-brand-skin text-capitalize mt-3' onClick={() => {
-        props.cate === 'mist fan parts' ? window.open('https://wa.me/+91766611159', '_self') : navigate(`/${props.cate}/${props.name}`)
+        props.cate === 'mist fan parts' ? window.open('https://wa.me/+91766611159') : navigate(`/${props.cate}/${props.name}`)
       }}>
         <div className="listingcardImg">
           <img src={props.img} alt="mist fan" className="img-fluid rounded-brand" />

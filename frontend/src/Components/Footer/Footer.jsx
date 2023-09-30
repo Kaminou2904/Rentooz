@@ -13,8 +13,8 @@ function Footer() {
                 <div className="socialLinks mt-3 mb-3">
                     <p className="fs-5 bricolage-bold mb-1">Social Links</p>
                     <div className="socialIcons d-flex align-items-center">
-                        <a href='https://instagram.com/rentinggo' className='nav-link'><i className="fab fa-instagram fs-4 me-3 text-brand-skin"></i></a>
-                        <a href='https://www.facebook.com/profile.php?id=61550976643927' className='nav-link'><i className="fab fa-facebook-f fs-4 me-3 text-brand-skin"></i></a>
+                        <a href='https://instagram.com/rentooz_official?igshid=MzRlODBiNWFlZA==' className='nav-link'><i className="fab fa-instagram fs-4 me-3 text-brand-skin"></i></a>
+                        <a href='https://https://www.facebook.com/profile.php?id=61550486177431&mibextid=2JQ9oc' className='nav-link'><i className="fab fa-facebook-f fs-4 me-3 text-brand-skin"></i></a>
                         <a href='https://youtube.com/@RentingGO?si=bVNEGB36Bh7jNeT4' className='nav-link'><i className="fab fa-youtube fs-4 me-3 text-brand-skin"></i></a>
                         <a href='https://twitter.com/Rentinggo12' className='nav-link'><i className="fab fa-twitter fs-4 me-3 text-brand-skin"></i></a>
                         <a href='https://youtube.com/@RentingGO?si=bVNEGB36Bh7jNeT4' className='nav-link'><i className="fab fa-linkedin-in fs-4 me-3 text-brand-skin"></i></a>
