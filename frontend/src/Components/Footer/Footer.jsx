@@ -18,7 +18,7 @@ function Footer() {
                         <a href='https://youtube.com/@RentingGO?si=bVNEGB36Bh7jNeT4' className='nav-link'><i className="fab fa-youtube fs-4 me-3 text-brand-skin"></i></a>
                         <a href='https://twitter.com/Rentinggo12' className='nav-link'><i className="fab fa-twitter fs-4 me-3 text-brand-skin"></i></a>
                         <a href='https://youtube.com/@RentingGO?si=bVNEGB36Bh7jNeT4' className='nav-link'><i className="fab fa-linkedin-in fs-4 me-3 text-brand-skin"></i></a>
-                        <a href='https://wa.me/+918451820012' className='nav-link'><i className="fab fa-whatsapp fs-4 me-3 text-brand-skin"></i></a>
+                        <a href='https://wa.me/+917666911159' className='nav-link'><i className="fab fa-whatsapp fs-4 me-3 text-brand-skin"></i></a>
                     </div>
                 </div>
             </div>
@@ -27,8 +27,8 @@ function Footer() {
                 <ul className="footerUL p-0">
                     <li className="footerLI mb-0 bricolage-medium"><Link to='/' className='nav-link mb-0 bricolage-medium'>Home</Link></li>
                     <li className="footerLI mb-0 bricolage-medium"><Link to='/View%20All' className='nav-link mb-0 bricolage-medium'>Products</Link></li>
-                    <li className="footerLI mb-0 bricolage-medium"><a href='https://wa.me/+918451820012' className='nav-link mb-0 bricolage-medium'>Call</a></li>
-                    <li className="footerLI mb-0 bricolage-medium"><a href='https://wa.me/+918451820012' className='nav-link mb-0 bricolage-medium'>Chat</a></li>
+                    <li className="footerLI mb-0 bricolage-medium"><a href='tel:+917666911159' className='nav-link mb-0 bricolage-medium'>Call</a></li>
+                    <li className="footerLI mb-0 bricolage-medium"><a href='https://wa.me/+917666911159' className='nav-link mb-0 bricolage-medium'>Chat</a></li>
                 </ul>
             </div>
             <div className="col-md-3">

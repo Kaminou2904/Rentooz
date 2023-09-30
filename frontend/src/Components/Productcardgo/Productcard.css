@@ -1,5 +1,6 @@
 .mainProductcard{
     width: 100%;
+    cursor: pointer;
 }
 
 .productcardImg{
