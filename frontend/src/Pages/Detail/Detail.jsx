@@ -68,17 +68,17 @@ function Detail() {
                 <div className="backBtn fs-4">
                     <i className="fas fa-chevron-left text-white fs-5" onClick={() => navigate(-1)}></i>
                 </div>
-                <p className="mb-0 bricolage-bold text-white text-end text-capitalize w-50 ms-4 fs-5">{foundPro.cate}</p>
+                <p className="mb-0 bricolage-bold text-white text-capitalize w-75 text-center ms-4 fs-5">{foundPro.cate}</p>
             </div>
             <div className="detailProContainer d-flex flex-wrap rounded-pill rounded-bottom-0 bg-white">
                 <div className="col-md-5 p-0 m-0">
                     <div className="mainImgWrap text-center pt-4 px-5">
                         <img src={mainImg} className={`img-fluid text-center p-2 ${imgtrans ? 'mainImgImg' : ''}`} alt="mist fan" />
                     </div>
-                    <div className="proImages d-flex justify-content-around px-5 mt-3">
+                    <div className="proImages d-flex justify-content-center px-5 mt-3">
                         {
                             foundPro.img.map((img, index) => (
-                                <div key={index} className={`proImgWrap p-2 ${imgindex === index ? 'border-brand-blue' : 'border-brand-skin'}`}>
+                                <div key={index} className={`proImgWrap me-2 p-2 ${imgindex === index ? 'border-brand-blue' : 'border-brand-skin'}`}>
                                     <img src={img} className='img-fluid' alt="" onClick={(e) => { setmainimg(e.target.src); imgTransi(); setImgindex(index) }} />
                                 </div>
                             ))

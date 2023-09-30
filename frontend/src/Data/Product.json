@@ -9,7 +9,7 @@
                 "keyfeat": "41 ltrs",
                 "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
                 "price": 1000,
-                "img": ["../proimg/MISTFANSILVER-6.PNG", "../proimg/MIST FAN SILVER - 4.png", "../proimg/MIST FAN SILVER - 1.png", "../proimg/MIST FAN SILVER - 2.png", "../proimg/MIST FAN SILVER - 5.png"],
+                "img": ["../proimg/MISTFANSILVER-6.PNG", "../proimg/MIST FAN SILVER - 1.png", "../proimg/MIST FAN SILVER - 2.png", "../proimg/MIST FAN SILVER - 5.png"],
                 "cate": "mist fan",
                 "features": [
                     "Plug N Play unit.",
@@ -21,11 +21,11 @@
             },
             {
                 "id": 12,
-                "name": "white mist fan",
+                "name": "black mist fan",
                 "keyfeat": "41 ltrs",
-                "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
-                "price": 1500,
-                "img": ["../proimg/White Mist Fan - 111.png", "../proimg/White Mist Fan  - 22.png", "../proimg/White Mist Fan  - 3.png"],
+                "desc": "balck Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
+                "price": 1000,
+                "img": ["../proimg//MIST FAN BLACK - 1.png", "../proimg//MIST FAN BLACK - 2.png", "../proimg//MIST FAN BLACK - 3.png", "../proimg//MIST FAN BLACK - 4.png", "../proimg//MIST FAN BLACK - 5.png", "../proimg//MIST FAN BLACK - 6.png"],
                 "cate": "mist fan",
                 "features": [
                     "Plug N Play unit.",
@@ -37,11 +37,11 @@
             },
             {
                 "id": 13,
-                "name": "black mist fan",
+                "name": "white mist fan",
                 "keyfeat": "41 ltrs",
-                "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
+                "desc": "white Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
                 "price": 1500,
-                "img": ["../proimg//MIST FAN BLACK - 1.png", "../proimg//MIST FAN BLACK - 2.png", "../proimg//MIST FAN BLACK - 3.png", "../proimg//MIST FAN BLACK - 4.png", "../proimg//MIST FAN BLACK - 5.png", "../proimg//MIST FAN BLACK - 6.png"],
+                "img": ["../proimg/whitemistfan.jpeg", "../proimg/whitemistfan1.jpeg", "../proimg/whitemistfan2.jpeg", "../proimg/whitemistfan3.jpeg"],
                 "cate": "mist fan",
                 "features": [
                     "Plug N Play unit.",
@@ -82,10 +82,26 @@
         "mainicon": "../images/5Stand AC.png",
         "products": [
             {
-                "id": 31,
+                "id": 32,
                 "name": "portable AC",
-                "keyfeat": "1.5 ton",
-                "desc": "Portable Ac 1.5ton covers the area of about 100to110 sqfeet 2.25KW Electricity",
+                "keyfeat": "1 ton",
+                "desc": "Portable Ac 1ton covers the area of about 80 to 100 sqfeet 1.75 KW Electricity",
+                "price": 1000,
+                "img": ["../proimg/portableAcblack2.png", "../proimg/portableAcblack1.png", "../proimg/portableAcblack3.png", "../proimg/portableAcblack4.png"],
+                "cate": "portable AC",
+                "features": [
+                    "Plug & Play",
+                    "In built compressor",
+                    "Minimum area coverage of 80-100 sq ft",
+                    "Wheels for easy mobilization",
+                    "Used for House Party, Events, Weddings, shootings & exhibitions"
+                ]
+            },
+            {
+                "id": 31,
+                "name": "portable AC 1.5 ton",
+                "keyfeat": "",
+                "desc": "Portable Ac 1.5ton covers the area of about 100 to 120 sqfeet 2.25KW Electricity",
                 "price": 1500,
                 "img": ["../proimg/PORTABLE AC - 1.png", "../proimg/PORTABLE AC - 2.png", "../proimg/PORTABLE AC - 3.png", "../proimg/PORTABLE AC - 4.png"],
                 "cate": "portable AC",
@@ -93,22 +109,6 @@
                     "Plug & Play",
                     "In built compressor",
                     "Minimum area coverage of 100 -120 sq ft",
-                    "Wheels for easy mobilization",
-                    "Used for House Party, Events, Weddings, shootings & exhibitions"
-                ]
-            },
-            {
-                "id": 32,
-                "name": "portable AC black",
-                "keyfeat": "1 ton",
-                "desc": "Portable Ac 1ton covers the area of about 100to110 sqfeet 2.25KW Electricity",
-                "price": 1500,
-                "img": ["../proimg/portableAcblack2.png", "../proimg/portableAcblack1.png", "../proimg/portableAcblack3.png", "../proimg/portableAcblack4.png"],
-                "cate": "portable AC",
-                "features": [
-                    "Plug & Play",
-                    "In built compressor",
-                    "Minimum area coverage of 80-100 sq ft",
                     "Wheels for easy mobilization",
                     "Used for House Party, Events, Weddings, shootings & exhibitions"
                 ]
@@ -123,7 +123,7 @@
                 "id": 71,
                 "name": "electric heater",
                 "keyfeat": "Plug n Play",
-                "desc": "Plug n Play unit 6 feet height 2 KW Electricity",
+                "desc": "Plug n Play unit 6 feet height 2000 Watts Electricity",
                 "price": 1800,
                 "img": ["../proimg/Heater - 2.png", "../proimg/Heater - 1.png"],
                 "cate": "heater",
@@ -131,7 +131,7 @@
                     "Plug & Play",
                     "Sturdy and high quality design",
                     "Halogen heating element: clean, odorless, instant heat, safe and convenient",
-                    "Approx power consumption 1500 Watts to 1800 Watts",
+                    "Approx power consumption 2000 Watts",
                     "Occupies minimal space"
                 ]
             }
@@ -232,7 +232,7 @@
                 "keyfeat": "100 ltrs",
                 "desc": "100ltrs upto 18 Feet Throw 4.9feet Height",
                 "price": 1500,
-                "img": ["../proimg/aircooler1003.png", "../proimg/aircooler1002.png", "../proimg/aircooler1001.png"],
+                "img": ["../proimg/aircooler1001.png", "../proimg/aircooler1003.png", "../proimg/aircooler1002.png"],
                 "cate": "air cooler",
                 "features": [
                     "Plug & Play",

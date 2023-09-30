@@ -32,6 +32,20 @@ function Listing() {
         }
     }
 
+    if(partdata){
+        const sortProductsByPrice = (arr) => {
+            return partdata =  arr.slice().sort((a, b) => a.price - b.price)
+        };
+        sortProductsByPrice(partdata);
+    };
+
+    if(listData){
+        const sortProductsByPrice = (arr) => {
+            return listData =  arr.slice().sort((a, b) => a.price - b.price)
+        };
+        sortProductsByPrice(listData);
+    };
+
     return (
         <div className='mainListing'>
             <div className="mainListingHeader bg-brand-blue w-100 position-fixed top-0 px-3 d-flex align-items-center justify-content-center p-3 px-4">
@@ -43,7 +57,7 @@ function Listing() {
                     <div className="cardWrap row p-0 justify-content-start">
                         {
                             category === 'mist fan parts' ? (
-                                partdata.map((part, i) => (
+                                partdata.map((part) => (
                                     <Lisitngcard key={part.id} img={part.img} name={part.name} price={part.price} cate={part.cate} />
                                 ))
                             ) : (

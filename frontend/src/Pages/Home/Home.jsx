@@ -228,9 +228,9 @@ function Home() {
 
             <div className="testDiv my-5 px-4">
                 <Slider {...caroSettings}>
-                    <Cardgroup name="silver mist fan" name1="silent air cooler (3)" name2="portable AC"/>
+                    <Cardgroup name="silver mist fan" name1="silent air cooler (3)" name2="portable AC 1.5 ton"/>
                     <Cardgroup name="electric heater" name1="air cooler" name2="pedestal fan"/>
-                    <Cardgroup name="portable AC black" name1="black mist fan" name2="silent air cooler"/>
+                    <Cardgroup name="portable AC" name1="black mist fan" name2="silent air cooler"/>
                 </Slider>
             </div>
 

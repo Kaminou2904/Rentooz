@@ -173,6 +173,11 @@
 }
 
 .mainImgWrap{
+    min-height: 288px;
+    width: 100vw;
+}
+
+.mainImgWrap{
     transition: opacity 2s ease-in-out !important;
 }
 
@@ -191,5 +196,9 @@
 @media screen and (min-width: 500px) {
     .detailProContainer{
         border-radius: 0px !important;
+    }
+    .mainImgWrap{
+        min-height: auto;
+        width: auto;
     }
 }
