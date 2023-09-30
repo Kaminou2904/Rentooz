@@ -86,7 +86,7 @@ function Detail() {
                     </div>
                 </div>
 
-                <div className="col-md-7 p-0 m-0">
+                <div className="col-md-7 p-0 m-0 data-container">
                 <div className="detailProData mt-4 container px-4">
                         <p className="detailProName mb-0 fs-3 text-capitalize text-start bricolage-bold text-brand-blue">{proname} <br /> <span className='text-uppercase bricolage-bold text-brand-blue'>{foundPro.keyfeat}</span></p>
                         <p className="detailMainRating mt-1 d-flex align-items-center">

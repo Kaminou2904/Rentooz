@@ -37,6 +37,7 @@
     border-radius: 15px !important;
     padding-top: 12px !important;
     padding-bottom: 12px !important;
+    width: min(100%, 600px) !important;
 }
 
 .checkBtnWrap{
@@ -44,6 +45,7 @@
     position: fixed;
     left: 5%;
     bottom: 5px;
+    text-align: center;
 }
 
 .featuresUl{
@@ -79,8 +81,8 @@
 }
 
 .bookingpopup, .loadingpopup, .thankspopup{
-    min-height: 80vh;
-    width: 100%;
+    min-height: 90vh;
+    width: min(100%, 600px);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     background-color: white;
@@ -200,5 +202,15 @@
     .mainImgWrap{
         min-height: auto;
         width: auto;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .data-container{
+        height: 100vh;
+        overflow-y: auto;
+    }
+    .data-container::-webkit-scrollbar{
+        display: none;
     }
 }
