@@ -229,7 +229,7 @@ function Home() {
             <div className="testDiv my-5 px-4">
                 <Slider {...caroSettings}>
                     <Cardgroup name="silver mist fan" name1="silent air cooler" name2="portable AC 1.5 ton"/>
-                    <Cardgroup name="electric heater" name1="air cooler" name2="pedestal fan"/>
+                    <Cardgroup name="electric heater" name1="air cooler" name2="pedestal fan 26 inch"/>
                     <Cardgroup name="portable AC" name1="black mist fan" name2="silent air cooler"/>
                 </Slider>
             </div>
@@ -253,7 +253,7 @@ function Home() {
 
             <div className="callToActionDiv">
                 <p className="grayText text-gray mb-0 mt-3 px-5 lh-sm bricolage-bold text-capitalize text-center">Elevent Your Pune Events with premium event material for rent.</p>
-                <p className="grayText text-brand-blue px-4 mb-0 lh-sm bricolage-extrabold text-capitalize text-center">explore our wide range from portable ACs to mist fans, air cooler to electric heater.</p>
+                <p className="grayText text-brand-blue px-4 mb-0 lh-sm bricolage-extrabold text-capitalize text-center">explore our wide range of products from portable ACs to mist fans, air cooler to electric heater.</p>
                 <div className="container text-center">
                     <button className='callBtn btn border-brand-skin mt-3 text-brand-blue bricolage-bold px-4' onClick={() => window.open('tel:+917666911159', '_self')}><i className="fas fa-phone-alt text-brand-blue me-3"></i>CALL NOW</button>
                 </div>
@@ -266,7 +266,7 @@ function Home() {
                     material rentals that add convenience and charm
                     to your Pune occasions. With a focus on providing
                     top-notch solutions, we offer an extensive selection
-                    of items, including portable ACs, fans for rent, mist
+                    of items, including portable ACs, pedeatal fans, mist fans, air cooler and electric heater for rent, mist
                     fans on rent, and more. Our
                     dedication is to ensure your Pune events are a
                     seamless and comfortable experience</p>
@@ -278,7 +278,7 @@ function Home() {
                     <div className="serviceCardImg mt-3">
                         <img src="./images/5Stand AC.png" className='img-fluid p-2' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Portable AC<span className='text-brand-skin bricolage-bold'>s</span></p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Portable AC<span className='text-brand-skin bricolage-bold'>s on Rent</span></p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Keep your Pune guests cool and comfortable with
                         our stand ACs, designed to deliver efficient
                         cooling for indoor and outdoor events.</p>
@@ -306,14 +306,14 @@ function Home() {
                     <div className="serviceCardImg mt-3">
                         <img src="./images/Heater.png" className='img-fluid p-2' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Heater Rentals</p>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Are you looking to beat the winter chill in Pune? Look no further! We provide top-notch Heaters on rent in Pune. Stay warm and cozy with our efficient Heaters. Don't let the cold get to you – rent a Heater today and enjoy the warmth you deserve.</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Electric Heater on Rent</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Are you looking to beat the winter chill in Pune? Look no further! We provide top-notch Electric Heaters on rent in Pune. Stay warm and cozy with our efficient Electric Heaters. Don't let the cold get to you – rent a Electric Heater today and enjoy the warmth you deserve.</p>
                 </div>
                 <div className="serviceCard col-md-6 mb-2 mt-0 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/COOLER.png" className='img-fluid' alt="service icon" />
                     </div>
-                    <p className="mb-0 bricolage-bold text-brand-blue">Cooler on Wheels</p>
+                    <p className="mb-0 bricolage-bold text-brand-blue">Air Cooler on Rent</p>
                     <p className="serviceTxt text-gray mb-0 mt-1">Whether you're planning a special event or just need daily cooling relief, our air coolers are your ideal solution.Beat the heat this summer with our top-notch air coolers available for rent in Pune, including Hadapsar, Kothrud & More.</p>
                 </div>
             </div>

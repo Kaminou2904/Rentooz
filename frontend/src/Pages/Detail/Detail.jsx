@@ -157,7 +157,8 @@ function Detail() {
                     setMainheight('auto')
                 }}>
                     <div className="extarDiv" onClick={() => setBookpopup('none')}></div>
-                    <div className="bookingpopup p-3">
+                    <div className="bookingpopup p-3 pt-0">
+                        <div className="crossBtn fs-4 rounded-circle w-100 text-end bg-white text-muted m-0 p-0" onClick={()=> setBookpopup('none')}>&times;</div>
                         {/* <p className="mb-0 p-0 crossBtn text-muted text-end fs-5">&times;</p> */}
                         <div className="popupLogo mx-auto mt-3">
                             <img src="../images/Rentooz Logo front.png" alt="rentooz logo" className="img-fluid" />

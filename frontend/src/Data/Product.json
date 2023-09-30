@@ -23,9 +23,9 @@
                 "id": 12,
                 "name": "black mist fan",
                 "keyfeat": "41 ltrs",
-                "desc": "balck Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity6ft height 90 degree swing",
+                "desc": "Balck Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity 6ft height 90 degree swing",
                 "price": 1000,
-                "img": ["../proimg//MIST FAN BLACK - 1.png", "../proimg//MIST FAN BLACK - 2.png", "../proimg//MIST FAN BLACK - 3.png", "../proimg//MIST FAN BLACK - 4.png", "../proimg//MIST FAN BLACK - 5.png", "../proimg//MIST FAN BLACK - 6.png"],
+                "img": ["../proimg//MIST FAN BLACK - 1.png", "../proimg//MIST FAN BLACK - 2.png", "../proimg//MIST FAN BLACK - 6.png"],
                 "cate": "mist fan",
                 "features": [
                     "Plug N Play unit.",
@@ -59,7 +59,7 @@
         "products": [
             {
                 "id": 21,
-                "name": "pedestal fan",
+                "name": "pedestal fan 26 inch",
                 "keyfeat": "90 degree",
                 "desc": "Silent Fan 90 degree swing 6 ft height",
                 "price": 500,
@@ -69,9 +69,9 @@
                     "6 FEET HEIGHT",
                     "90° swing",
                     "Plug & Play",
-                    "features",
+                    "Silent in nature",
                     "High quality Grill Blade and Framework",
-                    "Minimum throw of 8 - 12 feet",
+                    "Minimum throw of 10 - 12 feet",
                     "Ideal for events, weddings, shootings, exhibition etc"
                 ]
             }
@@ -94,7 +94,7 @@
                     "In built compressor",
                     "Minimum area coverage of 80-100 sq ft",
                     "Wheels for easy mobilization",
-                    "Used for House Party, Events, Weddings, shootings & exhibitions"
+                    "Used for House Party, Events, Weddings, Shooting & Exhibitions"
                 ]
             },
             {
@@ -110,7 +110,7 @@
                     "In built compressor",
                     "Minimum area coverage of 100 -120 sq ft",
                     "Wheels for easy mobilization",
-                    "Used for House Party, Events, Weddings, shootings & exhibitions"
+                    "Used for House Party, Events, Weddings, Shooting & Exhibitions"
                 ]
             }
         ]
@@ -123,7 +123,7 @@
                 "id": 71,
                 "name": "electric heater",
                 "keyfeat": "Plug n Play",
-                "desc": "Plug n Play unit 6 feet height 2000 Watts Electricity",
+                "desc": "Plug n Play unit 6 feet height 2 KW Electricity",
                 "price": 1800,
                 "img": ["../proimg/Heater - 2.png", "../proimg/Heater - 1.png"],
                 "cate": "heater",
@@ -145,7 +145,7 @@
                 "id": 41,
                 "name": "air cooler",
                 "keyfeat": "75 ltrs",
-                "desc": "75 ltrs Black Handle upto 18 Feet Throw 4.9feet Height",
+                "desc": "75 ltrs water tank Black Handle upto 15 Feet Throw 4.9feet Height",
                 "price": 1000,
                 "img": ["../proimg/Air Cooler - 75  ltrs - 1.png", "../proimg/Air Cooler - 75  ltrs - 2.png", "../proimg/Air Cooler - 75  ltrs - 1.png"],
                 "cate": "air cooler",
@@ -153,7 +153,7 @@
                     "Plug & Play",
                     "ZERO Water drainage",
                     "Minimum Space requirement",
-                    "Air Throw of about 15 to 18 ft",
+                    "Air Throw of about 15 ft",
                     "Wheels for easy mobilization",
                     "Ideal for events, weddings, shootings, exhibition etc"
                 ]
@@ -162,7 +162,7 @@
                 "id": 42,
                 "name": "air cooler 75 ltrs",
                 "keyfeat": "",
-                "desc": "90 Ltrs upto 18 Feet Throw 4.9feet Height",
+                "desc": "90 Ltrs water tank upto 18 Feet Throw 4.9feet Height",
                 "price": 1000,
                 "img": ["../proimg/COOLER 90 LTR - 1.png", "../proimg/COOLER 90 LTR - 2.png", "../proimg/COOLER 90 LTR - 3.png"],
                 "cate": "air cooler",
@@ -179,7 +179,7 @@
                 "id": 43,
                 "name": "silent air cooler",
                 "keyfeat": "100 ltrs",
-                "desc": "100 Ltrs water Tank Capacity Silent in Nature with Auto swing option upto 15 ft Throw 5 ft height",
+                "desc": "100 Ltrs water tank Capacity Silent in Nature with Auto swing option upto 15 ft Throw 5 ft height",
                 "price": 1500,
                 "img": ["../proimg/Cooler - 100 Ltr Silent.png", "../proimg/Cooler - 100 Ltr Silent - 2.png", "../proimg/Cooler - 100 Ltr Silent - 3.png", "../proimg/Cooler - 100 Ltr Silent - 4.png"],
                 "cate": "air cooler",
@@ -187,7 +187,7 @@
                     "Plug & Play",
                     "ZERO Water drainage",
                     "Minimum Space requirement",
-                    "Covers an approx. area up to 1000-1250 sq. ft",
+                    "Covers an approx. area up to 500 sq. ft",
                     "Wheels for easy mobilization",
                     "Ideal for events, weddings, shootings, exhibition etc"
                 ]
@@ -204,16 +204,33 @@
                     "Plug & Play",
                     "ZERO Water drainage",
                     "Minimum Space requirement",
-                    "Covers an approx. area up to 2000 – 2500 sq. ft",
+                    "Covers an approx. area up to 2000 sq. ft",
                     "Wheels for easy mobilization",
                     "Ideal for events, weddings, shootings, exhibition etc"
                 ]
             },
             {
                 "id": 45,
+                "name": "air cooler 100 ltrs",
+                "keyfeat": "",
+                "desc": "Air cooler 100ltrs water tank, Silent in nature with auto swing option upto 15 Feet Throw 4.9feet Height",
+                "price": 1500,
+                "img": ["../proimg/aircooler1001.png", "../proimg/aircooler1003.png", "../proimg/aircooler1002.png"],
+                "cate": "air cooler",
+                "features": [
+                    "Plug & Play",
+                    "ZERO Water drainage",
+                    "Minimum Space requirement",
+                    "Covers an approx. area up to 500 sq. ft",
+                    "Wheels for easy mobilization",
+                    "Ideal for events, weddings, shootings, exhibition etc"
+                ]
+            },
+            {
+                "id": 46,
                 "name": "air cooler 110 ltrs",
                 "keyfeat": "",
-                "desc": "110ltrs upto 18 Feet Throw 4.9feet Height",
+                "desc": "110ltrs water tank upto 18 Feet Throw 4.9feet Height",
                 "price": 1500,
                 "img": ["../proimg/AIR COOLER - 100 LTR FRONT.png", "../proimg/AIR COOLER - 100 LTR BACK.png"],
                 "cate": "air cooler",
@@ -227,27 +244,10 @@
                 ]
             },
             {
-                "id": 46,
-                "name": "air cooler 100 ltrs",
-                "keyfeat": "",
-                "desc": "Air cooler 100ltrs, Silent in nature with auto swing option upto 15 Feet Throw 4.9feet Height",
-                "price": 1500,
-                "img": ["../proimg/aircooler1001.png", "../proimg/aircooler1003.png", "../proimg/aircooler1002.png"],
-                "cate": "air cooler",
-                "features": [
-                    "Plug & Play",
-                    "ZERO Water drainage",
-                    "Minimum Space requirement",
-                    "Covers an approx. area up to 1000-1250 sq. ft",
-                    "Wheels for easy mobilization",
-                    "Ideal for events, weddings, shootings, exhibition etc"
-                ]
-            },
-            {
                 "id": 47,
                 "name": "silent air cooler 75 ltrs",
                 "keyfeat": "",
-                "desc": "75ltrs upto 10 to 15 Feet Throw 4.5 feet Height, Auto swing option",
+                "desc": "75ltrs water tank upto 10 to 15 Feet Throw 4.5 feet Height, Auto swing option",
                 "price": 1000,
                 "img": ["../proimg/aircooler752.png", "../proimg/aircooler751.png", "../proimg/aircooler753.png"],
                 "cate": "air cooler",
@@ -255,7 +255,6 @@
                     "Plug & Play",
                     "ZERO Water drainage",
                     "Minimum Space requirement",
-                    "Covers an approx. area up to 400 sq. ft",
                     "Wheels for easy mobilization",
                     "Ideal for events, weddings, shootings, exhibition etc"
                 ]

@@ -76,3 +76,7 @@
 .fa-chevron-left{
   cursor: pointer;
 }
+
+/* body{
+  cursor: url('../public/images/cursor.svg'), auto;
+} */
