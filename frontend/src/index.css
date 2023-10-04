@@ -5,6 +5,10 @@
   font-family: 'bricolage-regular', sans-serif;
 }
 
+body{
+  cursor: url('../public/images/cursor2.png'), auto;
+}
+
 ::-moz-selection{
   color: #1a4a82;
   background-color: #daaa84;
@@ -76,7 +80,3 @@
 .fa-chevron-left{
   cursor: pointer;
 }
-
-/* body{
-  cursor: url('../public/images/cursor.svg'), auto;
-} */
