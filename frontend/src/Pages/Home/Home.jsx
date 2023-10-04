@@ -354,7 +354,7 @@ function Home() {
 
             <div className="blogDiv d-flex flex-wrap justify-content-between px-4 mt-5">
                 <p className="mb-4 fs-5 bricolage-bold text-brand-blue lh-sm w-100">Blogs</p>
-                <div className="blogCard col-md-6" onClick={()=> navigate('/blog/tower-ac-vs-traditional-ac')}>
+                <div className="blogCard px-2 col-md-6" onClick={()=> navigate('/blog/tower-ac-vs-traditional-ac')}>
                     <div className="blogCardImg mb-2">
                         <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
                     </div>
@@ -365,7 +365,7 @@ function Home() {
                         <p className="glimps mb-0 text-muted bricolage-medium lh-sm">Ah, the age-old battle of cooling titans! Pune's climate, with its scorching summers, demands a powerful cooling solution</p>
                     </div>
                 </div>
-                <div className="blogCard col-md-6">
+                <div className="blogCard px-2 col-md-6">
                     <div className="blogCardImg mb-2" onClick={()=> navigate('/blog/benifits-of-mist-fan')}>
                         <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
                     </div>
