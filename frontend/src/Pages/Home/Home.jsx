@@ -356,7 +356,7 @@ function Home() {
                 <p className="mb-4 fs-5 bricolage-bold text-brand-blue lh-sm w-100">Blogs</p>
                 <div className="blogCard px-2 col-md-6" onClick={()=> navigate('/blog/tower-ac-vs-traditional-ac')}>
                     <div className="blogCardImg mb-2">
-                        <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
+                        <img src="../images/fanvacblog.jpg" alt="ac vs fan" className="img-fluid" />
                     </div>
                     <div className="blogCardTxt px-3 mb-4">
                         <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Tower AC vs. Traditional AC:
@@ -367,13 +367,13 @@ function Home() {
                 </div>
                 <div className="blogCard px-2 col-md-6">
                     <div className="blogCardImg mb-2" onClick={()=> navigate('/blog/benifits-of-mist-fan')}>
-                        <img src="https://www.cielowigle.com/wp-content/uploads/2020/06/Fan-vs-Ac-final-decision.jpg" alt="ac vs fan" className="img-fluid" />
+                        <img src="../images/portacblog.jpg" alt="ac vs fan" className="img-fluid" />
                     </div>
                     <div className="blogCardTxt px-3 mb-4">
-                        <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Exploring the Benefits of Mist Fans:
-                            <span className="mb-0 text-gray bricolage-bold lh-sm ms-2 fs-14">The Cool Science Behind Mist Fans.</span>
+                        <p className="mb-0 text-brand-blue bricolage-bold lh-sm fs-14">Why to choose Portable AC:
+                            <span className="mb-0 text-gray bricolage-bold lh-sm ms-2 fs-14">Compared to Traditional AC portable AC is a cheaper.</span>
                         </p>
-                        <p className="glimps mb-0 text-muted bricolage-medium lh-sm">a scorching summer day in Pune, and you're desperately seeking refuge from the oppressive heat</p>
+                        <p className="glimps mb-0 text-muted bricolage-medium lh-sm">Summer is around the corner you might be exploring different cooling solutions</p>
                     </div>
                 </div>
             </div>
