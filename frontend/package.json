@@ -36,11 +36,11 @@
     "source": "build",
     "destination": "build",
     "include": [
-      "^/$",
-      "^/privacy-policy$",
-      "^/about-us$",
-      "^/terms-and-conditions$",
-      "^/blog/benifits-of-mist-fan$"
+      "^rentooz.com/$",
+      "^rentooz.com/privacy-policy$",
+      "^rentooz.com/about-us$",
+      "^rentooz.com/terms-and-conditions$",
+      "^rentooz.com/blog/benifits-of-mist-fan$"
     ]
   },
   "browserslist": {
