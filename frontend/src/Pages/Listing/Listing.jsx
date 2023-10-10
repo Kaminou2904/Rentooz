@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Data from '../../Data/Product.json'
 import Bottomnav from '../../Components/Bottomnav/Bottomnav';
 import Parts from '../../Data/Parts.json';
+import { Helmet } from 'react-helmet';
 
 function Listing() {
 
@@ -48,9 +49,13 @@ function Listing() {
 
     return (
         <div className='mainListing'>
+            <Helmet>
+                <title>Rentooz | {category} on rent</title>
+                <meta name="description" content={`${category} on rent in Pune`} />
+            </Helmet>
             <div className="mainListingHeader bg-brand-blue w-100 position-fixed top-0 px-3 d-flex align-items-center justify-content-center p-3 px-4">
                 <i className="fas fa-chevron-left fs-4 text-white" onClick={() => navigate(-1)}></i>
-                <p className="mb-0 w-100 text-white text-center text-uppercase bricolage-bold fs-5">{category}</p>
+                <h1 className="mb-0 w-100 text-white text-center text-uppercase bricolage-bold fs-5">{category} On Rent</h1>
             </div>
             <div className="container p-0">
                 <div className="cardWraper px-4 mt-5 pt-4 pb-5 mb-5">

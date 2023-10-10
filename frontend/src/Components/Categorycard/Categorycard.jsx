@@ -11,7 +11,7 @@ function Categorycard(props) {
         <div className="mainCategorycardimg border-brand-blue rounded-brand p-3">
             <img src={props.img} alt="mist fan" className='img-fluid' />
         </div>
-        <span className="cateTxt nunito-bold text-capitalize">{props.text}</span>
+        <h3 className="cateTxt nunito-bold text-capitalize mt-1">{props.text}</h3>
     </div>
   );
 };
