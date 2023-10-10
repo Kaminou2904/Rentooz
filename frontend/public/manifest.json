@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "Fan.png",
+      "src": "3fan.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "Fan.png",
+      "src": "2Fan.png",
       "type": "image/png",
       "sizes": "512x512"
     }

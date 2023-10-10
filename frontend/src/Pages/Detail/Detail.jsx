@@ -142,8 +142,8 @@ function Detail() {
                     </p>
 
                     <div className="reviewCardWrap mt-4">
-                        <Reviewcard img="https://i.pinimg.com/1200x/86/2c/e2/862ce2907b6220ff9614cff0673a6791.jpg" name="Naruto Uzumaki" txt="Nice quality mist fan with perfection" date="13 Sept 2023, 12:38 PM" star={4} />
-                        <Reviewcard img="https://i.pinimg.com/1200x/86/2c/e2/862ce2907b6220ff9614cff0673a6791.jpg" name="Naruto Uzumaki" txt="Provides a refreshing mist along with airflow for superior cooling. best fans for rent in mumbai" date="13 Sept 2023, 12:38 PM" star={5} />
+                        <Reviewcard img="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" name="Naved Shah" txt="Nice quality mist fan with perfection" date="13 Sept 2023, 12:38 PM" star={4} />
+                        <Reviewcard img="https://i.guim.co.uk/img/media/6293c5a867e0cc98812a058582e7952f6714a563/0_0_3122_1874/master/3122.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=91f15b7226a4c1acc86be19a503a33b6" name="Will Smith" txt="Provides a refreshing mist along with airflow for superior cooling. best fans for rent in mumbai" date="13 Sept 2023, 12:38 PM" star={5} />
                     </div>
                 </div>
 
