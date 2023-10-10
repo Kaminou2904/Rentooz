@@ -37,10 +37,10 @@
     "destination": "build",
     "include": [
       "^https://rentooz.com/$",
-      "^https://rentooz.com/privacy-policy$",
-      "^https://rentooz.com/about-us$",
-      "^https://rentooz.com/terms-and-conditions$",
-      "^https://rentooz.com/blog/benifits-of-mist-fan$"
+      "^https://rentooz.com/privacy-policy",
+      "^https://rentooz.com/about-us",
+      "^https://rentooz.com/terms-and-conditions",
+      "^https://rentooz.com/blog/benifits-of-mist-fan"
     ]
   },
   "browserslist": {
