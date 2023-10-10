@@ -22,7 +22,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "postdeploy": "npm run deploy",
+    "snap": "react-snap && npm run build"
+  },
+  "reactSnap":{
+    "source": "build",
+    "include": [
+      "^/",
+      "^/about-us",
+      "^/privacy-policy"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
   }
 }
