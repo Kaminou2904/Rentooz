@@ -28,14 +28,6 @@
     "postdeploy": "npm run deploy",
     "snap": "react-snap && npm run build"
   },
-  "reactSnap":{
-    "source": "build",
-    "include": [
-      "^/",
-      "^/about-us",
-      "^/privacy-policy"
-    ]
-  },
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -161,7 +161,7 @@ function Detail() {
                         <div className="crossBtn fs-4 rounded-circle w-100 text-end bg-white text-muted m-0 p-0" onClick={()=> setBookpopup('none')}>&times;</div>
                         {/* <p className="mb-0 p-0 crossBtn text-muted text-end fs-5">&times;</p> */}
                         <div className="popupLogo mx-auto mt-3">
-                            <img src="../images/Rentooz Logo front.png" alt="rentooz logo" className="img-fluid" />
+                            <img src="../images/Rentooze Logo front.png" alt="Rentooze logo" className="img-fluid" />
                         </div>
                         <p className="popupSogen bricolage-extrabold text-center text-muted text-uppercase mt-3">
                             your trusted <br /> rental partner
@@ -224,7 +224,7 @@ function Detail() {
                         <div className="doneimg mt-5 mx-auto">
                             <img src="../images/Done.png" alt="done" className="img-fluid" />
                         </div>
-                        <p className="mb-0 fs-4 text-muted mt-3 text-center bricolage-bold lh-sm">Thank you very much <br /> for booking with Rentooz!</p>
+                        <p className="mb-0 fs-4 text-muted mt-3 text-center bricolage-bold lh-sm">Thank you very much <br /> for booking with Rentooze!</p>
                         <button className='btn bg-brand-blue bricolage-extrabold text-white fs-5 w-75 mx-auto text-uppercase mt-4' onClick={() => navigate('/')}>Done</button>
                     </div>
                 </div>

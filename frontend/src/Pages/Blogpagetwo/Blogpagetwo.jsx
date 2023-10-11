@@ -64,7 +64,7 @@ function Blogpagetwo() {
                     </div>
                     <div className="contentCard">
                         {/* <h2 className="fs-5 mt-2 mb-0 text-brand-blue bricolage-bold">How to Choose the Best Mist Fan in Pune</h2> */}
-                        <p className="text-muted lh-sm mb-0">In the above article, we have discussed the benefits of portable AC but along with its benefits, it also possesses some disadvantages like less cooling power, noise because of the inbuilt compressor etc. decide on buying after considering every aspect and as per your convenience and need. Before going for the buying option you can rent the Portable AC from rentooz.com where we have a variety of options which will cater for your every need.</p>
+                        <p className="text-muted lh-sm mb-0">In the above article, we have discussed the benefits of portable AC but along with its benefits, it also possesses some disadvantages like less cooling power, noise because of the inbuilt compressor etc. decide on buying after considering every aspect and as per your convenience and need. Before going for the buying option you can rent the Portable AC from Rentooze.com where we have a variety of options which will cater for your every need.</p>
                     </div>
                     {/* <div className="contentCard">
                         <h2 className="fs-5 mt-2 mb-0 text-brand-blue bricolage-bold">Size Matters</h2>

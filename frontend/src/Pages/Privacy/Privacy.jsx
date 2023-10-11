@@ -20,10 +20,10 @@ function Privacy() {
             <div className="privacyWrap container mt-4 pt-5">
                 <div className="content row align-items-center">
                     <div className="col-md-6">
-                    <h1 className="fs-2 mt-2 bricolage-bold">Privacy Policy for Rentooz</h1>
+                    <h1 className="fs-2 mt-2 bricolage-bold">Privacy Policy for Rentooze</h1>
                         <h2 className='mb-0 text-brand-blue fs-4 bricolage-bold mt-4'>Introduction</h2>
                         <p className="mb-0 text-muted lh-sm">
-                            Welcome to Rentooz! At Rentooz, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or use our services.
+                            Welcome to Rentooze! At Rentooze, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or use our services.
                         </p>
                     </div>
                     <div className="col-md-6">

@@ -20,10 +20,10 @@ function Terms() {
             <div className="privacyWrap container mt-4 pt-5">
                 <div className="content row align-items-center">
                     <div className="col-md-6">
-                        <h1 className="fs-2 mt-2 bricolage-bold">Terms & conditions for Rentooz</h1>
+                        <h1 className="fs-2 mt-2 bricolage-bold">Terms & conditions for Rentooze</h1>
                         <h2 className='mb-0 text-brand-blue fs-4 bricolage-bold mt-4'>Acceptance of Terms</h2>
                         <p className="mb-0 text-muted lh-sm">
-                            By accessing or using the Rentooz website ("Website") and any related services, you agree to comply with and be bound by these Terms and Conditions ("Terms"). If you do not agree with these Terms, please do not use our Website.
+                            By accessing or using the Rentooze website ("Website") and any related services, you agree to comply with and be bound by these Terms and Conditions ("Terms"). If you do not agree with these Terms, please do not use our Website.
                         </p>
                     </div>
                     <div className="col-md-6">
@@ -47,13 +47,13 @@ function Terms() {
                         <div className="collectiveInfo">
                             <h2 className='mb-0 text-brand-blue fs-5 bricolage-bold mt-2'>Renting Services:</h2>
                             <ul className="ps-4">
-                                <li className='infoLi text-muted'>Rentooz offers rental services for various products. When renting, you agree to abide by the terms and conditions specific to each rental agreement</li>
+                                <li className='infoLi text-muted'>Rentooze offers rental services for various products. When renting, you agree to abide by the terms and conditions specific to each rental agreement</li>
                             </ul>
                         </div>
                         <div className="collectiveInfo">
                             <h2 className='mb-0 text-brand-blue fs-5 bricolage-bold mt-2'>Sales Services</h2>
                             <ul className="ps-4">
-                                <li className='infoLi text-muted'>Rentooz also offers products for sale. When making a purchase, you agree to the terms and conditions specific to the sale, including pricing, payment, and shipping</li>
+                                <li className='infoLi text-muted'>Rentooze also offers products for sale. When making a purchase, you agree to the terms and conditions specific to the sale, including pricing, payment, and shipping</li>
                             </ul>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ function Terms() {
                     <div className="col-md-6">
                         <h2 className='mb-0 text-brand-blue bricolage-bold mt-4'>Intellectual Property</h2>
                         <p className="mb-0 text-muted lh-sm bricolage-medium">
-                            All content and materials on the Rentooz Website, including but not limited to text, graphics, logos, images, and software, are protected by intellectual property laws. You may not use, reproduce, or distribute these materials without our explicit permission
+                            All content and materials on the Rentooze Website, including but not limited to text, graphics, logos, images, and software, are protected by intellectual property laws. You may not use, reproduce, or distribute these materials without our explicit permission
                         </p>
                     </div>
                     <div className="col-md-6">
@@ -121,7 +121,7 @@ function Terms() {
                     <div className="col-md-6">
                         <h2 className='mb-0 text-brand-blue bricolage-bold mt-4'>Limitation of Liability</h2>
                         <p className="mb-0 text-muted lh-sm bricolage-medium">
-                            Rentooz is not liable for any direct, indirect, incidental, consequential, or punitive damages arising from the use of our Website or any products or services obtained through it
+                            Rentooze is not liable for any direct, indirect, incidental, consequential, or punitive damages arising from the use of our Website or any products or services obtained through it
                         </p>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ function Terms() {
                     <div className="col-md-6">
                         <h2 className='mb-0 text-brand-blue bricolage-bold mt-4'>Termination</h2>
                         <p className="mb-0 text-muted lh-sm bricolage-medium">
-                            Rentooz reserves the right to terminate or suspend your access to the Website at any time, with or without notice, for violations of these Terms or for any other reason
+                            Rentooze reserves the right to terminate or suspend your access to the Website at any time, with or without notice, for violations of these Terms or for any other reason
                         </p>
                     </div>
                     <div className="col-md-6">
@@ -143,7 +143,7 @@ function Terms() {
                     <div className="col-md-6">
                         <h2 className='mb-0 text-brand-blue bricolage-bold mt-4'>Changes to Terms and Conditions</h2>
                         <p className="mb-0 text-muted lh-sm bricolage-medium">
-                            Rentooz may update these Terms and Conditions from time to time. Any changes will be posted on the Website, and your continued use of the Website constitutes your acceptance of the revised Terms
+                            Rentooze may update these Terms and Conditions from time to time. Any changes will be posted on the Website, and your continued use of the Website constitutes your acceptance of the revised Terms
                         </p>
                     </div>
                 </div>

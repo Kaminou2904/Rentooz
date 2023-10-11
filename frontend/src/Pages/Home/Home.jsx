@@ -169,7 +169,7 @@ function Home() {
         <div className='mainHome container p-0'>
             <div className="mainHeader">
                 <div className="headerLogoWraper mx-auto py-4 mt-2">
-                    <img src="./images/Rentooz Logo.png" className='img-fluid' alt="rentooz logo" />
+                    <img src="./images/Rentooze Logo New.png" className='img-fluid' alt="Rentooze logo" />
                 </div>
             </div>
 
@@ -259,10 +259,10 @@ function Home() {
                 </div>
             </div>
 
-            <div className="aboutRentooz px-4 mt-5">
+            <div className="aboutRentooze px-4 mt-5">
                 <div className="aboutHeading d-flex justify-content-start align-items-start mb-0 text-brand-skin bricolage-bold fs-4">About <div className="aboutLogo mb-0">
-                    <img src="./images/Rentooz Logo front.png" className='img-fluid ps-2 mb-0' alt="rentooz logo" /></div></div>
-                <p className="aboutTxt mb-0 text-gray bricolage-medium mt-1">At Rentooz, we're your trusted partner for event
+                    <img src="./images/Rentooze Logo New.png" className='img-fluid ps-2 mb-0' alt="Rentooze logo" /></div></div>
+                <p className="aboutTxt mb-0 text-gray bricolage-medium mt-1">At Rentooze, we're your trusted partner for event
                     material rentals that add convenience and charm
                     to your Pune occasions. With a focus on providing
                     top-notch solutions, we offer an extensive selection
@@ -279,14 +279,14 @@ function Home() {
                         <img src="./images/5Stand AC.png" className='img-fluid p-2' alt="service icon" />
                     </div>
                     <h2 className="mb-0 bricolage-bold text-brand-blue fs-6">Portable ACs on Rent</h2>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Stay cool this summer with Rentooz's <h3 className="d-inline text-gray bricolage-medium serviceTxt">Portable ACs on Rent in Pune</h3>. Beat the heat hassle-free with our efficient, affordable, and convenient cooling solutions. Don't let the sweltering heat get to you – choose Rentooz for instant relief!</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Stay cool this summer with Rentooze's <h3 className="d-inline text-gray bricolage-medium serviceTxt">Portable ACs on Rent in Pune</h3>. Beat the heat hassle-free with our efficient, affordable, and convenient cooling solutions. Don't let the sweltering heat get to you – choose Rentooze for instant relief!</p>
                 </div>
                 <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/2Fan.png" alt="service icon" className='img-fluid' />
                     </div>
                     <h2 className="mb-0 bricolage-bold text-brand-blue fs-6">Pedestal Fans on Rent</h2>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Rentooz offers Pedestal Fans on Rent in Pune. Stay cool with our efficient, adjustable-height fans, suitable for indoor and outdoor use. They're energy-efficient and quiet, providing comfort without high electricity costs or noise disturbances. Beat the heat affordably with Rentooz. Book yours today and enjoy a cool Pune summer!</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Rentooze offers Pedestal Fans on Rent in Pune. Stay cool with our efficient, adjustable-height fans, suitable for indoor and outdoor use. They're energy-efficient and quiet, providing comfort without high electricity costs or noise disturbances. Beat the heat affordably with Rentooze. Book yours today and enjoy a cool Pune summer!</p>
                 </div>
                 <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
@@ -317,7 +317,7 @@ function Home() {
                 <div className="whyHeading mb-4">
                     <p className="mb-0 fs-5 bricolage-bold text-brand-skin lh-sm">WHY <span className="bricolage-bold text-brand-blue">CHOOSE</span></p>
                     <div className="whyLogo">
-                        <img src="./images/Rentooz Logo front.png" alt="whylogo" className="img-fluid" />
+                        <img src="./images/Rentooze Logo New.png" alt="whylogo" className="img-fluid" />
                     </div>
                 </div>
                 <div className="whyCard mb-3">

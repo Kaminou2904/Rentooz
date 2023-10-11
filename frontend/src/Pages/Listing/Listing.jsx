@@ -50,7 +50,7 @@ function Listing() {
     return (
         <div className='mainListing'>
             <Helmet>
-                <title>Rentooz | {category} on rent</title>
+                <title>Rentooze | {category} on rent</title>
                 <meta name="description" content={`${category} on rent in Pune`} />
             </Helmet>
             <div className="mainListingHeader bg-brand-blue w-100 position-fixed top-0 px-3 d-flex align-items-center justify-content-center p-3 px-4">
