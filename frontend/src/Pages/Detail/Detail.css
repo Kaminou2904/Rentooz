@@ -218,3 +218,7 @@
 .crossBtn{
     cursor: pointer;
 }
+
+.accordion-button:not(.collapsed){
+    background-color: #ffe8d5;
+}

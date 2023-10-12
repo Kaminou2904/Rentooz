@@ -7,10 +7,22 @@
                 "id": 11,
                 "name": "silver mist fan",
                 "keyfeat": "41 ltrs",
-                "desc": "Silver Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity 6ft height 90 degree swing",
+                "desc": "Silver Mist Fan available for rent, offering a powerful cooling experience with its remarkable 8 to 10 feet range, ensuring you stay refreshed even in the sweltering weather. Equipped with a massive 41-liter water tank, this mist fan keeps you cool for hours without frequent refills. Its adjustable height of 6 feet allows you to customize the breeze to your preference, and the 90-degree swing feature ensures wide coverage, making it the ideal choice for gatherings and outdoor events. Stay cool and comfortable in Pune with our mist fan rental service.",
                 "price": 1000,
                 "img": ["../proimg/MISTFANSILVER-6.PNG", "../proimg/MIST FAN SILVER - 1.png", "../proimg/MIST FAN SILVER - 2.png", "../proimg/MIST FAN SILVER - 5.png"],
                 "cate": "mist fan",
+                "faqs":[
+                    ["How does the Silver Mist Fan work?", "The mist fan operates by releasing a fine mist of water into the air, which evaporates and cools the surrounding area"],
+                    ["Can I adjust the fan's height?", "Yes, the Silver Mist Fanhas an adjustable height, making it easy to direct the cooling breeze where you need it"],
+                    ["How long can the mist fan run on a full tank of water?", "With its 41 liters water tank capacity, the fan can run for several hours without needing a refill, depending on the settings and weather conditions"],
+                    ["Is it suitable for indoor use?", "While it's primarily designed for outdoor use, you can use it indoors with proper ventilation"],
+                    ["Is the mist fan environmentally friendly?", "Yes, our mist fan is eco-friendly, as it's energy-efficient and uses minimal water to create a cooling effect"],
+                    ["What events are suitable for the Black Mist Fan?", "It's ideal for a wide range of events, including outdoor parties, weddings, sports events, and any occasion where you need to beat the heat"],
+                    ["Do you offer delivery and setup services?", "Yes, we provide delivery and setup to ensure a hassle-free experience. Contact us for more details"],
+                    ["How can I rent the Silver Mist Fan in Pune?", "Renting our mist fan is easy. Simply get in touch with us via phone or email to make a reservation"],
+                    ["Can I rent the mist fan for multiple days?", "Absolutely! We offer flexible rental options, so you can keep the mist fan for as long as you need it"],
+                    ["Is there a maintenance fee for the mist fan?", "There are no additional maintenance fees. We ensure that our mist fans are in top condition for your use"]
+                ],
                 "features": [
                     "Plug N Play unit.",
                     "Easy to Install.",
@@ -23,10 +35,22 @@
                 "id": 12,
                 "name": "black mist fan",
                 "keyfeat": "41 ltrs",
-                "desc": "Balck Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity 6ft height 90 degree swing",
+                "desc": "Black Mist Fan available for rent, offering a powerful cooling experience with its remarkable 8 to 10 feet range, ensuring you stay refreshed even in the sweltering weather. Equipped with a massive 41-liter water tank, this mist fan keeps you cool for hours without frequent refills. Its adjustable height of 6 feet allows you to customize the breeze to your preference, and the 90-degree swing feature ensures wide coverage, making it the ideal choice for gatherings and outdoor events. Stay cool and comfortable in Pune with our mist fan rental service.",
                 "price": 1000,
                 "img": ["../proimg//MIST FAN BLACK - 1.png", "../proimg//MIST FAN BLACK - 2.png", "../proimg//MIST FAN BLACK - 6.png"],
                 "cate": "mist fan",
+                "faqs":[
+                    ["How does the Black Mist Fan work?", "The mist fan operates by releasing a fine mist of water into the air, which evaporates and cools the surrounding area."],
+                    ["Can I adjust the fan's height?", "Yes, the Black Mist Fan has an adjustable height, making it easy to direct the cooling breeze where you need it."],
+                    ["How long can the mist fan run on a full tank of water?", "With its 41 liters water tank capacity, the fan can run for several hours without needing a refill, depending on the settings and weather conditions."],
+                    ["Is it suitable for indoor use?", "While it's primarily designed for outdoor use, you can use it indoors with proper ventilation."],
+                    ["Is the mist fan environmentally friendly?", "Yes, our mist fan is eco-friendly, as it's energy-efficient and uses minimal water to create a cooling effect."],
+                    ["What events are suitable for the Black Mist Fan?", "It's ideal for a wide range of events, including outdoor parties, weddings, sports events, and any occasion where you need to beat the heat."],
+                    ["Do you offer delivery and setup services?", "Yes, we provide delivery and setup to ensure a hassle-free experience. Contact us for more details."],
+                    ["How can I rent the Black Mist Fan in Pune?", "Renting our mist fan is easy. Simply get in touch with us via phone or email to make a reservation."],
+                    ["Can I rent the mist fan for multiple days?", "Absolutely! We offer flexible rental options, so you can keep the mist fan for as long as you need it."],
+                    ["Is there a maintenance fee for the mist fan?", "There are no additional maintenance fees. We ensure that our mist fans are in top condition for your use."]
+                ],
                 "features": [
                     "Plug N Play unit.",
                     "Easy to Install.",
@@ -39,10 +63,22 @@
                 "id": 13,
                 "name": "white mist fan",
                 "keyfeat": "41 ltrs",
-                "desc": "white Mist Fan 8 to 10 Feet Throw 41 ltrs water tank capacity 6ft height 90 degree swing",
+                "desc": "White Mist Fan available for rent, offering a powerful cooling experience with its remarkable 8 to 10 feet range, ensuring you stay refreshed even in the sweltering weather. Equipped with a massive 41-liter water tank, this mist fan keeps you cool for hours without frequent refills. Its adjustable height of 6 feet allows you to customize the breeze to your preference, and the 90-degree swing feature ensures wide coverage, making it the ideal choice for gatherings and outdoor events. Stay cool and comfortable in Pune with our mist fan rental service",
                 "price": 1500,
                 "img": ["../proimg/whitemistfan.jpeg", "../proimg/whitemistfan2.jpeg", "../proimg/whitemistfan3.jpeg"],
                 "cate": "mist fan",
+                "faqs":[
+                    ["How does the White Mist Fan work?", "The mist fan operates by releasing a fine mist of water into the air, which evaporates and cools the surrounding area"],
+                    ["Can I adjust the fan's height?", "Yes, the White Mist Fan has an adjustable height, making it easy to direct the cooling breeze where you need it"],
+                    ["How long can the mist fan run on a full tank of water?", "With its 41 liters water tank capacity, the fan can run for several hours without needing a refill, depending on the settings and weather conditions"],
+                    ["Is it suitable for indoor use?", "While it's primarily designed for outdoor use, you can use it indoors with proper ventilation"],
+                    ["Is the mist fan environmentally friendly?", "Yes, our mist fan is eco-friendly, as it's energy-efficient and uses minimal water to create a cooling effect"],
+                    ["What events are suitable for the White Mist Fan?", "It's ideal for a wide range of events, including outdoor parties, weddings, sports events, and any occasion where you need to beat the heat"],
+                    ["Do you offer delivery and setup services?", "Yes, we provide delivery and setup to ensure a hassle-free experience. Contact us for more details"],
+                    ["How can I rent the White Mist Fan in Pune?", "Renting our mist fan is easy. Simply get in touch with us via phone or email to make a reservation"],
+                    ["Can I rent the mist fan for multiple days?", "Absolutely! We offer flexible rental options, so you can keep the mist fan for as long as you need it"],
+                    ["Is there a maintenance fee for the mist fan?", "There are no additional maintenance fees. We ensure that our mist fans are in top condition for your use"]
+                ],
                 "features": [
                     "Plug N Play unit.",
                     "Easy to Install.",
@@ -61,10 +97,22 @@
                 "id": 21,
                 "name": "pedestal fan 26 inch",
                 "keyfeat": "90 degree",
-                "desc": "Silent Fan 90 degree swing 6 ft height",
+                "desc": "Rentooz's 26-inch Pedestal Fan For Rent in Pune is the ultimate cooling solution for hot summer days. With adjustable height, quiet operation, elegant design, and energy efficiency, it offers both style and functionality. Get cool and comfortable while enhancing your space with our sleek fan.",
                 "price": 500,
                 "img": ["../proimg/PEDESTIAL FAN - 2.png", "../proimg/PEDESTIAL FAN - 1.png", "../proimg/PEDESTIAL FAN - 3.png", "../proimg/PEDESTIAL FAN - 5.png"],
                 "cate": "pedestal fan",
+                "faqs":[
+                    ["What is a pedestal fan, and can I rent one from Rentooze in Pune?", "A pedestal fan is a portable, electric fan with a vertical stand that can be adjusted in height. It is designed to circulate air in a room, providing cooling and ventilation. You can rent pedestal fans from Rentooze in Pune, making it a convenient option for temporary cooling needs"],
+                    ["How does a pedestal fan work, and where can I rent one from Rentooze in Pune?", "Pedestal fans work by drawing in air and blowing it outwards. The blades of the fan rotate, creating airflow that helps cool the room. To rent a pedestal fan in Pune, you can check Rentooze's website or contact them directly"],
+                    ["What are the advantages of using a pedestal fan from Rentooze, and are they available for rent in Pune?", "Pedestal fans are portable, energy-efficient, and versatile. They provide immediate cooling and can be placed in various locations, making them ideal for home and office use. Yes, you can rent pedestal fans from Rentooze in Pune to meet your cooling requirements"],
+                    ["Can I rent a pedestal fan from Rentooze in Pune for outdoor events?", "Certainly, you can rent pedestal fans from Rentooze in Pune for outdoor events. Many rental services, including Rentooze, offer models suitable for outdoor use. Just make sure to inquire about the availability of such models when renting"],
+                    ["How can I maintain a rented pedestal fan from Rentooze in Pune for optimal performance?", "While using a rented pedestal fan from Rentooze, keep it clean by wiping the blades and the housing regularly. Follow any maintenance guidelines provided by Rentooze to ensure it works effectively throughout your rental period in Pune"],
+                    ["Are pedestal fans energy-efficient, and can I rent them from Rentooze in Pune for a longer duration?", "Yes, pedestal fans are generally energy-efficient compared to air conditioners or other cooling methods. They consume less electricity, making them a cost-effective cooling solution, especially when renting for an extended period from Rentooze in Pune"],
+                    ["Can I use a rented pedestal fan from Rentooze during a power outage in Pune?", "Pedestal fans typically require electricity to operate, so they won't work during a power outage unless you have a backup power source like a generator. When renting from Rentooze in Pune, consider your power supply options if outages are a concern"],
+                    ["Do Rentooze offer a variety of pedestal fan models in Pune for rent?", "Yes, Rentooze usually offers a variety of pedestal fan models to choose from in Pune, allowing you to select the one that best suits your cooling needs and preferences"],
+                    ["What factors should I consider when renting a pedestal fan from Rentooze in Pune, and what are the rental rates?", "When renting a pedestal fan, consider factors like the fan's size, power, and the duration you need it for. Make sure to inquire about rental rates and any additional terms and conditions specific to renting from Rentooze in Pune"],
+                    ["Where can I find Rentooze's rental services for pedestal fans in Pune, and what are their contact details?", "To rent a pedestal fan from Rentooze in Pune, you can visit their website or contact them directly through their provided contact details. Rentooze will provide you with information about available options and how to proceed with the rental process"]
+                ],
                 "features": [
                     "6 FEET HEIGHT",
                     "90° swing",
@@ -85,10 +133,17 @@
                 "id": 32,
                 "name": "portable AC",
                 "keyfeat": "1 ton",
-                "desc": "Portable Ac 1ton covers the area of about 80 to 100 sqfeet 1.75 KW Electricity",
+                "desc": "Beat the heat in Pune with Rentooz's 1 Ton Portable AC rental service. Our compact and powerful units offer cost-effective cooling, hassle-free maintenance, and flexible rental durations. Stay cool and comfortable with Rentooz, the ultimate cooling solution for your space",
                 "price": 1000,
                 "img": ["../proimg/portableAcblack2.png", "../proimg/portableAcblack1.png", "../proimg/portableAcblack3.png", "../proimg/portableAcblack4.png"],
                 "cate": "portable AC",
+                "faqs":[
+                    ["How much does it cost to rent a 1 Ton Portable AC in Pune from Rentooz?", "The cost varies depending on the duration of your rental. Contact us for a customized quote"],
+                    ["Is the installation included in the rental price?", "Yes, we provide free installation by our professional technicians"],
+                    ["What if the AC unit requires maintenance or repair during the rental period?", "We offer hassle-free maintenance and repair services, which are included in your rental"],
+                    ["Can I rent the Portable AC for events and special occasions in Pune?", "Absolutely! We cater to events and special occasions, ensuring your guests stay comfortable"],
+                    ["How quickly can I get the Portable AC delivered to my location in Pune?", "We aim for on-time delivery, usually within a few hours of your booking. Rentooz is your answer to affordable, efficient, and portable cooling solutions in Pune. Don't let the heat get the best of you - rent a 1 Ton Portable AC today!"]
+                ],
                 "features": [
                     "Plug & Play",
                     "In built compressor",
@@ -101,10 +156,17 @@
                 "id": 31,
                 "name": "portable AC 1.5 ton",
                 "keyfeat": "",
-                "desc": "Portable Ac 1.5ton covers the area of about 100 to 120 sqfeet 2.25KW Electricity",
+                "desc": "Beat the heat in Pune with Rentooz's 1.5 Ton Portable AC rental service. Our compact and powerful units offer cost-effective cooling, hassle-free maintenance, and flexible rental durations. Stay cool and comfortable with Rentooz, the ultimate cooling solution for your space",
                 "price": 1500,
                 "img": ["../proimg/PORTABLE AC - 1.png", "../proimg/PORTABLE AC - 2.png", "../proimg/PORTABLE AC - 3.png", "../proimg/PORTABLE AC - 4.png"],
                 "cate": "portable AC",
+                "faqs":[
+                    ["How much does it cost to rent a 1.5 Ton Portable AC in Pune from Rentooz?", "The cost varies depending on the duration of your rental. Contact us for a customized quote"],
+                    ["Is the installation included in the rental price?", "Yes, we provide free installation by our professional technicians"],
+                    ["What if the AC unit requires maintenance or repair during the rental period?", "We offer hassle-free maintenance and repair services, which are included in your rental"],
+                    ["Can I rent the Portable AC for events and special occasions in Pune?", "Absolutely! We cater to events and special occasions, ensuring your guests stay comfortable"],
+                    ["How quickly can I get the Portable AC delivered to my location in Pune?", "We aim for on-time delivery, usually within a few hours of your booking. Rentooz is your answer to affordable, efficient, and portable cooling solutions in Pune. Don't let the heat get the best of you - rent a 1.5 Ton Portable AC today"]
+                ],
                 "features": [
                     "Plug & Play",
                     "In built compressor",
@@ -123,10 +185,18 @@
                 "id": 71,
                 "name": "electric heater",
                 "keyfeat": "Plug n Play",
-                "desc": "Plug n Play unit 6 feet height 2 KW Electricity",
+                "desc": "Beat the Pune winter chill with our affordable Electric Heater rentals. We offer high-quality, energy-efficient heaters with adjustable settings and safety features. Renting is a breeze on our website, and we ensure hassle-free delivery and setup. Enjoy peace of mind with our dedicated customer support and regular maintenance. Stay cozy this winter with us. Electric Heater rental Pune",
                 "price": 1800,
                 "img": ["../proimg/Heater - 2.png", "../proimg/Heater - 1.png"],
                 "cate": "heater",
+                "faqs":[
+                    ["How long can I rent an electric heater in Pune?", "You can rent our electric heaters for as short as a day or for an extended period, depending on your needs. We offer flexible rental options"],
+                    ["Are your electric heaters energy-efficient?", "Yes, our electric heaters are designed to be energy-efficient, helping you stay warm without breaking the bank on energy bills"],
+                    ["Can I get assistance with the setup and operation of the heater?", "Certainly! We provide assistance with the setup and operation of the heater, ensuring you have a hassle-free experience"],
+                    ["Do you offer delivery to all areas in Pune?", "We offer delivery to most areas in Pune. During the booking process, you can check if your location is within our delivery range"],
+                    ["What happens if the heater malfunctions during my rental period?", "In the rare event of a malfunction, please contact our customer support team. We will promptly address the issue and provide a replacement heater if necessary"],
+                    ["Can I extend my rental period if needed?", "Yes, you can extend your rental period by contacting us in advance. We'll be happy to accommodate your request"]
+                ],
                 "features": [
                     "Plug & Play",
                     "Sturdy and high quality design",
@@ -145,10 +215,23 @@
                 "id": 41,
                 "name": "air cooler",
                 "keyfeat": "75 ltrs",
-                "desc": "75 ltrs water tank Black Handle upto 15 Feet Throw 4.9feet Height",
+                "desc": "Rentooz offers a top-notch Air Cooler 75 LTRS collection in Pune. Our air coolers provide powerful and energy-efficient cooling with stylish designs to elevate your space. The 75 LTRS capacity ensures uninterrupted cooling convenience",
                 "price": 1000,
                 "img": ["../proimg/Air Cooler - 75  ltrs - 1.png", "../proimg/Air Cooler - 75  ltrs - 2.png", "../proimg/Air Cooler - 75  ltrs - 1.png"],
                 "cate": "air cooler",
+                "faqs":[
+                    ["How does the rental process work in Pune?", "Renting from us in Pune is easy! Simply select the product you need, choose your rental period, and complete the checkout process. We'll deliver it to your doorstep"],
+                    ["Can I extend my rental period if I need more time in Pune?", "Yes, you can extend your rental period while you're in Pune. Just contact our customer support, and they'll assist you with the process"],
+                    ["What happens if the rented product gets damaged during my rental period in Pune?", "Don't worry; minor wear and tear are expected while you're renting in Pune. However, if there's significant damage, please inform us, and we'll guide you through the next steps"],
+                    [" Is there a security deposit required when renting in Pune?", "Yes, we may require a security deposit in Pune. The deposit will be refunded when you return the product in good condition"],
+                    ["Can I cancel my rental order while in Pune?", "Yes, you can cancel your rental order in Pune. Please check our cancellation policy for details on refunds and any associated fees"],
+                    ["What if I need the rented product for a longer duration than initially planned in Pune?", "No problem! You can typically extend your rental period while you're in Pune, but please contact us in advance to make necessary arrangements"],
+                    [" Do you offer delivery and pickup services for rented products in Pune?", "Yes, we offer delivery and pickup services for most of our rental products in Pune. Delivery fees may apply"],
+                    ["Can I rent multiple products at once while in Pune?", "Yes, you can rent multiple products simultaneously while you're in Pune. Simply add them to your cart and proceed with the rental process"],
+                    ["Are there any restrictions on where I can use the rented product in Pune?", "Some products may have specific usage restrictions. Please refer to the product description and rental agreement for any such limitations while renting in Pune"],
+                    ["Can I rent a product for a single-day event or occasion in Pune?", "Yes, you can typically rent products for short-term events or occasions while you're in Pune. We offer flexible rental options to suit your needs"],
+                    ["What should I do if I have a problem with the rented product during my rental period in Pune?", "Contact our customer support immediately while you're in Pune. We'll provide assistance or arrange for a replacement if necessary"]
+                ],
                 "features": [
                     "Plug & Play",
                     "ZERO Water drainage",
@@ -166,6 +249,12 @@
                 "price": 1000,
                 "img": ["../proimg/COOLER 90 LTR - 1.png", "../proimg/COOLER 90 LTR - 2.png", "../proimg/COOLER 90 LTR - 3.png"],
                 "cate": "air cooler",
+                "faqs":[
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"]
+                ],
                 "features": [
                     "Plug & Play",
                     "ZERO Water drainage",
@@ -183,6 +272,12 @@
                 "price": 1500,
                 "img": ["../proimg/Cooler - 100 Ltr Silent.png", "../proimg/Cooler - 100 Ltr Silent - 2.png", "../proimg/Cooler - 100 Ltr Silent - 3.png", "../proimg/Cooler - 100 Ltr Silent - 4.png"],
                 "cate": "air cooler",
+                "faqs":[
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"]
+                ],
                 "features": [
                     "Plug & Play",
                     "ZERO Water drainage",
@@ -200,6 +295,12 @@
                 "price": 2000,
                 "img": ["../proimg/COOLER 120 LTRS - 1.png", "../proimg/COOLER 120 LTRS - 2.png", "../proimg/COOLER 120 LTRS - 3.png"],
                 "cate": "air cooler",
+                "faqs":[
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"]
+                ],
                 "features": [
                     "Plug & Play",
                     "ZERO Water drainage",
@@ -217,6 +318,12 @@
                 "price": 1500,
                 "img": ["../proimg/aircooler1001.png", "../proimg/aircooler1003.png", "../proimg/aircooler1002.png"],
                 "cate": "air cooler",
+                "faqs":[
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"]
+                ],
                 "features": [
                     "Plug & Play",
                     "ZERO Water drainage",
@@ -234,6 +341,12 @@
                 "price": 1500,
                 "img": ["../proimg/AIR COOLER - 100 LTR FRONT.png", "../proimg/AIR COOLER - 100 LTR BACK.png"],
                 "cate": "air cooler",
+                "faqs":[
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"]
+                ],
                 "features": [
                     "Plug & Play",
                     "ZERO Water drainage",
@@ -251,6 +364,12 @@
                 "price": 1000,
                 "img": ["../proimg/aircooler752.png", "../proimg/aircooler751.png", "../proimg/aircooler753.png"],
                 "cate": "air cooler",
+                "faqs":[
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"],
+                    ["question?", "answer"]
+                ],
                 "features": [
                     "Plug & Play",
                     "ZERO Water drainage",

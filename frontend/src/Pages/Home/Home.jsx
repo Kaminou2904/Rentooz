@@ -279,23 +279,21 @@ function Home() {
                         <img src="./images/5Stand AC.png" className='img-fluid p-2' alt="service icon" />
                     </div>
                     <h2 className="mb-0 bricolage-bold text-brand-blue fs-6">Portable ACs on Rent</h2>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Stay cool this summer with Rentooze's <h3 className="d-inline text-gray bricolage-medium serviceTxt">Portable ACs on Rent in Pune</h3>. Beat the heat hassle-free with our efficient, affordable, and convenient cooling solutions. Don't let the sweltering heat get to you – choose Rentooze for instant relief!</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Stay cool this summer with Rentooz's Portable ACs on Rent in Pune. Beat the heat hassle-free with our efficient, affordable, and convenient cooling solutions. Don't let the sweltering heat get to you – choose Rentooz for instant relief!</p>
                 </div>
                 <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/2Fan.png" alt="service icon" className='img-fluid' />
                     </div>
                     <h2 className="mb-0 bricolage-bold text-brand-blue fs-6">Pedestal Fans on Rent</h2>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Rentooze offers Pedestal Fans on Rent in Pune. Stay cool with our efficient, adjustable-height fans, suitable for indoor and outdoor use. They're energy-efficient and quiet, providing comfort without high electricity costs or noise disturbances. Beat the heat affordably with Rentooze. Book yours today and enjoy a cool Pune summer!</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Rentooz offers Pedestal Fans on Rent in Pune. Stay cool with our efficient, adjustable-height fans, suitable for indoor and outdoor use. They're energy-efficient and quiet, providing comfort without high electricity costs or noise disturbances. Beat the heat affordably with Rentooz. Book yours today and enjoy a cool Pune summer!</p>
                 </div>
                 <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
                         <img src="./images/3Mist Fan.png" className='img-fluid p-2' alt="service icon" />
                     </div>
                     <h2 className="mb-0 bricolage-bold text-brand-blue fs-6">Mist Fans on Rent</h2>
-                    <p className="serviceTxt text-gray mb-0 mt-1">Create a refreshing atmosphere for your outdoor
-                        Pune gatherings with our mist fans on rent.
-                        They add a touch of coolness to warm occasions.</p>
+                    <p className="serviceTxt text-gray mb-0 mt-1">Revitalize Your Events in Pune with Rentooz's Exclusive Mist Fans for Rent! Don't miss out on the cooling sensation; our Mist Fans are the key to unforgettable outdoor gatherings! Grab the ultimate cooling solution today and make every event a cool success.</p>
                 </div>
                 <div className="serviceCard col-md-6 mb-2 text-center">
                     <div className="serviceCardImg mt-3">
