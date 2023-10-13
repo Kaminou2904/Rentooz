@@ -1,3 +1,13 @@
 .mainListing{
     min-height: 100vh;
 }
+
+.mainListingHeader{
+    padding: 17px;
+}
+
+@media screen and (min-width: 900px) {
+    .mainListingHeader{
+        padding: 0px;
+    }
+}

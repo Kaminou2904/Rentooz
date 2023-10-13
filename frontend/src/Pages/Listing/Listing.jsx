@@ -76,6 +76,24 @@ function Listing() {
                     </Helmet>
                 )
             }
+            {
+                category.toLocaleLowerCase() === 'air cooler' && (
+                    <Helmet>
+                        <title>Rent Air Coolers in Pune - Affordable & Reliable</title>
+                        <meta name="description" content="Rentooz offers affordable and reliable air cooler rentals in Pune. Stay comfortable this summer with our efficient cooling solutions. Rent today!" />
+                        <meta name="keywords" content="air cooler on rent, air cooler on rent in pune, cooler on rent pune, rent air cooler near me, rent cooler in pune, air cooler on rent near me, cooler on rent in pune near me" />
+                    </Helmet>
+                )
+            }
+            {
+                category.toLocaleLowerCase() === 'electric heater' && (
+                    <Helmet>
+                        <title>Electric Heater For Rent In Pune On Retooz</title>
+                        <meta name="description" content="Rent an Electric Heater in Pune for ultimate warmth. Our rentals provide comfort and convenience during the cold season. Reserve yours today!" />
+                        <meta name="keywords" content="electric heater on rent, electric heater rental near me, room heater on rent, industrial heaters for rent, electric heater hire, portable heater for rent" />
+                    </Helmet>
+                )
+            }
             <div className="mainListingHeader bg-brand-blue w-100 position-fixed top-0 px-3 d-flex align-items-center justify-content-center px-4">
                 <i className="fas fa-chevron-left fs-4 text-white" onClick={() => navigate(-1)}></i>
                 <h1 className="mb-0 w-100 text-white text-uppercase bricolage-bold fs-5 ps-3">{category} On Rent</h1>
