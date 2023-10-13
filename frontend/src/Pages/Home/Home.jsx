@@ -167,10 +167,11 @@ function Home() {
 
     return (
         <div className='mainHome container p-0'>
-            <div className="mainHeader">
-                <div className="headerLogoWraper mx-auto py-4 mt-2">
+            <div className="mainHeader d-flex justify-content-between align-items-center">
+                <div className="headerLogoWraper py-4 mt-2">
                     <img src="./images/Rentooze Logo New.png" className='img-fluid' alt="Rentooze logo" />
                 </div>
+                <Bottomnav />
             </div>
 
             <div className="psudoDiv" style={{ display: psudodiv }} onClick={psudoClick}></div>
@@ -388,7 +389,6 @@ function Home() {
                     </form>
                 </div>
             </div>
-            <Bottomnav />
         </div>
     );
 };

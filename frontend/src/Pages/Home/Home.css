@@ -1,5 +1,6 @@
 .headerLogoWraper{
     width: min(45%, 350px);
+    margin: auto !important;
 }
 
 .heroDiv{
@@ -112,4 +113,11 @@
 
 .submitBtn{
     letter-spacing: 1px;
+}
+
+@media screen and (min-width: 900px) {
+    .headerLogoWraper{
+        margin: 0px !important;
+        width: 200px;
+    }
 }

@@ -64,11 +64,11 @@ function Detail() {
 
     return (
         <div className='mainDetail bg-brand-blue' style={{ height: mainheight }}>
-            <div className="mainDetailHeader px-4 py-3 pt-4 d-flex container">
+            <div className="mainDetailHeader px-4 d-flex align-items-center container">
                 <div className="backBtn fs-4">
                     <i className="fas fa-chevron-left text-white fs-5" onClick={() => navigate(-1)}></i>
                 </div>
-                <p className="mb-0 bricolage-bold text-white text-capitalize w-75 text-center ms-4 fs-5">{foundPro.cate}</p>
+                <p className="mb-0 bricolage-bold text-white text-capitalize w-75 ms-4 fs-5">{foundPro.cate} on rent</p>
             </div>
             <div className="detailProContainer d-flex flex-wrap rounded-pill rounded-bottom-0 bg-white">
                 <div className="col-md-5 p-0 m-0">
@@ -97,8 +97,14 @@ function Detail() {
                             }
                             <span className="ms-1 text-muted bricolage-semibold">{detstarNum[detstarNum.length - 1]} (202)</span>
                         </p>
-                        <div className="mainDetailPriceDiv d-flex justify-content-between mt-4">
-                            <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center">₹{foundPro.price}<span className='bricolage-medium'>/day</span></div>
+                        <div className="mainDetailPriceDiv d-flex align-items-center mt-4">
+                            <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center">₹{foundPro.price}<span className='bricolage-medium'>/day</span>
+                            </div>
+                            <div className="checkBtnWrap py-1">
+                                <button className='checkBtn btn bg-brand-blue text-uppercase py-2 w-100 text-white bricolage-bold fs-4' onClick={() => {
+                                    setBookpopup('flex'); setMainheight('100vh')
+                                }}>Check Avaibility</button>
+                            </div>
                         </div>
                     </div>
                     <div className="featuresDiv px-4 mt-4">
@@ -117,7 +123,7 @@ function Detail() {
                         <h2 className="featureHead bricolage-bold fs-5 text-muted">FAQs</h2>
                         <div className="accordion mt-3 accordion-flush" id="accordionFlushExample">
                             {
-                                foundPro.faqs.map((faq, index)=>(
+                                foundPro.faqs.map((faq, index) => (
                                     <div key={index} className="accordion-item mb-2 border-0">
                                         <h2 className="accordion-header">
                                             <button className="accordion-button border shadow-none rounded-brand collapsed bricolage-bold" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${index}`} aria-expanded="false" aria-controls={`flush-collapse${index}`}>
@@ -165,12 +171,6 @@ function Detail() {
                             <Reviewcard img="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" name="Naved Shah" txt="Nice quality mist fan with perfection" date="13 Sept 2023, 12:38 PM" star={4} />
                             <Reviewcard img="https://i.guim.co.uk/img/media/6293c5a867e0cc98812a058582e7952f6714a563/0_0_3122_1874/master/3122.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=91f15b7226a4c1acc86be19a503a33b6" name="Will Smith" txt="Provides a refreshing mist along with airflow for superior cooling. best fans for rent in mumbai" date="13 Sept 2023, 12:38 PM" star={5} />
                         </div>
-                    </div>
-
-                    <div className="checkBtnWrap py-1 mt-2">
-                        <button className='checkBtn btn bg-brand-blue text-uppercase py-2 w-100 text-white bricolage-bold fs-4' onClick={() => {
-                            setBookpopup('flex'); setMainheight('100vh')
-                        }}>Check Avaibility</button>
                     </div>
 
                     <div className="bookingPopupCont px-3" style={{ display: bookpopup }} onClick={() => {
