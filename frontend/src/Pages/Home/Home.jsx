@@ -256,7 +256,7 @@ function Home() {
                 <h1 className="grayText text-gray fs-6 mb-0 mt-3 px-5 lh-sm bricolage-bold text-capitalize text-center">Elevent Your Pune Events with premium event material for rent.</h1>
                 <h2 className="grayText text-brand-blue fs-6 px-4 mb-0 lh-sm bricolage-extrabold text-capitalize text-center">explore our wide range of products from portable ACs to mist fans, air coolers to electric heaters.</h2>
                 <div className="container text-center">
-                    <button className='callBtn btn border-brand-skin mt-3 text-brand-blue bricolage-bold px-4' onClick={() => window.open('tel:+917666911159', '_self')}><i className="fas fa-phone-alt text-brand-blue me-3"></i>CALL NOW</button>
+                    <button className='callBtn btn border-brand-skin mt-3 text-brand-blue bricolage-bold px-4' onClick={() => window.open('tel:+919819570211', '_self')}><i className="fas fa-phone-alt text-brand-blue me-3"></i>CALL NOW</button>
                 </div>
             </div>
 

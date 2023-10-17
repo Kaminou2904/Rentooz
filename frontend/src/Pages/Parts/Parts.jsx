@@ -28,7 +28,7 @@ function Parts() {
         </div>
 
         <div className="floatCall container position-fixed">
-            <div className="w-100 p-3 rounded-brand bg-brand-skin text-white text-center text-uppercase"><a href="tel:+917666911159" className="nav-link bricolage-bold fs-5">enquire Now</a></div>
+            <div className="w-100 p-3 rounded-brand bg-brand-skin text-white text-center text-uppercase"><a href="tel:+919819570211" className="nav-link bricolage-bold fs-5">enquire Now</a></div>
         </div>
     </div>
   )

@@ -18,7 +18,7 @@ function Footer() {
                         <a href='https://youtube.com/@Rentoozeofficial?si=UBnGCtEDEsKPE1gm' className='nav-link'><i className="fab fa-youtube fs-4 me-3 text-brand-skin"></i></a>
                         <a href='https://twitter.com/RentoozeOfficial' className='nav-link'><i className="fab fa-twitter fs-4 me-3 text-brand-skin"></i></a>
                         <a href='https://www.linkedin.com/in/Rentooze-pune-99a399294/' className='nav-link'><i className="fab fa-linkedin-in fs-4 me-3 text-brand-skin"></i></a>
-                        <a href='https://wa.me/+917666911159' className='nav-link'><i className="fab fa-whatsapp fs-4 me-3 text-brand-skin"></i></a>
+                        <a href='https://wa.me/+919819570211' className='nav-link'><i className="fab fa-whatsapp fs-4 me-3 text-brand-skin"></i></a>
                     </div>
                 </div>
             </div>
@@ -27,8 +27,8 @@ function Footer() {
                 <ul className="footerUL p-0">
                     <li className="footerLI mb-0 bricolage-medium"><Link to='/' className='nav-link mb-0 bricolage-medium'>Home</Link></li>
                     <li className="footerLI mb-0 bricolage-medium"><Link to='/View%20All' className='nav-link mb-0 bricolage-medium'>Products</Link></li>
-                    <li className="footerLI mb-0 bricolage-medium"><a href='tel:+917666911159' className='nav-link mb-0 bricolage-medium'>Call</a></li>
-                    <li className="footerLI mb-0 bricolage-medium"><a href='https://wa.me/+917666911159' className='nav-link mb-0 bricolage-medium'>Chat</a></li>
+                    <li className="footerLI mb-0 bricolage-medium"><a href='tel:+919819570211' className='nav-link mb-0 bricolage-medium'>Call</a></li>
+                    <li className="footerLI mb-0 bricolage-medium"><a href='https://wa.me/+919819570211' className='nav-link mb-0 bricolage-medium'>Chat</a></li>
                 </ul>
             </div>
             <div className="col-md-3">
@@ -43,8 +43,8 @@ function Footer() {
             <p className="fs-5 bricolage-bold mb-0">Contact Us</p>
                 <ul className="footerUL p-0">
                     <li className="footerLI mb-0 "><a className='nav-link bricolage-medium' href='mailto:Rentooze@gmail.com'><i className="fas fa-envelope me-2 text-brand-blue"></i>Rentooze@gmail.com</a></li>
-                    <li className="footerLI mb-0 bricolage-medium"><a href="tel:+917666911159" className="nav-link bricolage-medium"><i className="fas fa-phone-alt me-2 text-brand-blue"></i>+91 7666911159</a></li>
-                    <li className="footerLI mb-0 bricolage-medium"><a href="https://wa.me/+917666911159" className="nav-link bricolage-medium"><i className="fab fa-whatsapp me-2 text-brand-blue"></i>+91 7666911159</a></li>
+                    <li className="footerLI mb-0 bricolage-medium"><a href="tel:+919819570211" className="nav-link bricolage-medium"><i className="fas fa-phone-alt me-2 text-brand-blue"></i>+91 9819570211</a></li>
+                    <li className="footerLI mb-0 bricolage-medium"><a href="https://wa.me/+919819570211" className="nav-link bricolage-medium"><i className="fab fa-whatsapp me-2 text-brand-blue"></i>+91 9819570211</a></li>
                     <li className="footerLI mb-0 bricolage-medium lh-sm"><i className="fas fa-map-marker-alt me-2 text-brand-blue"></i>Shop Number 3, LSBI/ Multifit Road, Near Niyati Enchante, New Kalyani Nagar, Digambar Nagar, Wadgaon Sheri, Pune - 411014</li>
                 </ul>
             </div>
@@ -52,7 +52,7 @@ function Footer() {
                 <p className="rightTxt mb-0 fs-5 bricolage-semibold text-muted">
                 &copy; 2023 <span className='text-brand-blue bricolage-semibold'>Rentooze</span>
                 </p>
-                <p className="footerWhatsappicon mb-0 fs-2"><a href="https://wa.me/+917666911159" className="nav-link"><i className="fab fa-whatsapp fs-2 text-brand-blue"></i></a></p>
+                <p className="footerWhatsappicon mb-0 fs-2"><a href="https://wa.me/+919819570211" className="nav-link"><i className="fab fa-whatsapp fs-2 text-brand-blue"></i></a></p>
             </div>
         </div>
     </div>

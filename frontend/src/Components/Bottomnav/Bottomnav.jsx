@@ -43,7 +43,7 @@ function Bottomnav() {
                         ) : ''
                     }
                 </div>
-                <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1); window.open('https://wa.me/+917666911159', '_self') }}>
+                <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1); window.open('https://wa.me/+919819570211', '_self') }}>
                     <div className="svgWraper d-flex">
                         <img src="./images/whatsapp.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 1 ? 'svgiconActive' : ''}`} />
                     </div>
@@ -53,7 +53,7 @@ function Bottomnav() {
                         ) : ''
                     }
                 </div>
-                <div className={`tabIcon  align-items-center text-center mb-0 p-0 ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2); window.open('tel:+917666911159', '_self') }}>
+                <div className={`tabIcon  align-items-center text-center mb-0 p-0 ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2); window.open('tel:+919819570211', '_self') }}>
                     <div className="svgWraper d-flex">
                         <img src="./images/phone-call.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 2 ? 'svgiconActive' : ''}`} />
                     </div>
