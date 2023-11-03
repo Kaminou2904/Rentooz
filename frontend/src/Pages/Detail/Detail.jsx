@@ -4,10 +4,12 @@ import { useNavigate, useParams } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import Reviewcard from '../../Components/Reviewcard/Reviewcard';
+import { Helmet } from 'react-helmet';
 import Data from '../../Data/Product.json';
 
 function Detail() {
 
+    const { category } = useParams();
     const { proname } = useParams();
 
     useEffect(() => {
@@ -62,8 +64,65 @@ function Detail() {
         }, 5000);
     }
 
+    const capitalize = (s) => {
+        const words = s.split(' ');
+        const capitalizedWords = words.map(word => {
+            if (word.length > 0) {
+                return word[0].toUpperCase() + word.slice(1).toLowerCase();
+            } else {
+                return '';
+            }
+        });
+        return capitalizedWords.join(' ');
+    }
+
     return (
         <div className='mainDetail bg-brand-blue' style={{ height: mainheight }}>
+            {
+                category.toLocaleLowerCase() === 'mist fan' && (
+                    <Helmet>
+                        <title>{capitalize(proname)} on Rent in Pune: Rentooze's Top Choice</title>
+                        <meta name="description" content={`Beat the Pune heat with Rentooz's ${capitalize(proname)} on rent. Experience the breeze of luxury cooling. Get your mist fan today!`} />
+                        <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
+                    </Helmet>
+                )
+            }
+            {
+                category.toLocaleLowerCase() === 'portable ac' && (
+                    <Helmet>
+                        <title>{capitalize(proname)} on Rent in Pune | Stay Cool this Summer!</title>
+                        <meta name="description" content={`Looking for ${capitalize(proname)} on rent in Pune? Beat the heat with our cost-effective air conditioning solutions. Stay comfortable all summer long. Rent now!`} />
+                        <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
+                    </Helmet>
+                )
+            }
+            {
+                category.toLocaleLowerCase() === 'pedestal fan' && (
+                    <Helmet>
+                        <title>{capitalize(proname)} On Rent In Pune | Stay Cool in Pune with Rentooz!</title>
+                        <meta name="description" content={`Don't sweat it out! Grab a ${capitalize(proname)} on rent in Pune and stay cool. Quick, easy, and affordable solutions for beating the heat!`} />
+                        <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
+                    </Helmet>
+                )
+            }
+            {
+                category.toLocaleLowerCase() === 'air cooler' && (
+                    <Helmet>
+                        <title>Rent {capitalize(proname)} in Pune - Affordable & Reliable</title>
+                        <meta name="description" content={`Rentooz offers affordable and reliable ${capitalize(proname)} rentals in Pune. Stay comfortable this summer with our efficient cooling solutions. Rent today!`} />
+                        <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
+                    </Helmet>
+                )
+            }
+            {
+                category.toLocaleLowerCase() === 'electric heater' && (
+                    <Helmet>
+                        <title>{capitalize(proname)} For Rent In Pune On Retooz</title>
+                        <meta name="description" content={`Rent an ${capitalize(proname)} in Pune for ultimate warmth. Our rentals provide comfort and convenience during the cold season. Reserve yours today!`} />
+                        <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
+                    </Helmet>
+                )
+            }
             <div className="mainDetailHeader px-4 d-flex align-items-center container">
                 <div className="backBtn fs-4">
                     <i className="fas fa-chevron-left text-white fs-5" onClick={() => navigate(-1)}></i>
