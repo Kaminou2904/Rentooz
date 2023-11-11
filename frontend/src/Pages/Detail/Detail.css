@@ -88,7 +88,7 @@
 }
 
 .bookingpopup, .loadingpopup, .thankspopup{
-    min-height: 90vh;
+    min-height: 75vh;
     width: min(100%, 600px);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -237,6 +237,9 @@
     }
     .mainDetailHeader{
         text-align: start;
+    }
+    .bookingpopup, .loadingpopup, .thankspopup{
+        min-height: 85vh;
     }
 }
 
