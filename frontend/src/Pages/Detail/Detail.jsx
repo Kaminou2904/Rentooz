@@ -159,10 +159,16 @@ function Detail() {
                         <div className="mainDetailPriceDiv p-0 d-flex align-items-center mt-4">
                             {/* <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center">₹{foundPro.price}<span className='bricolage-medium'>/day</span>
                             </div> */}
-                            <div className="checkBtnWrap py-1 m-0">
-                                <button className='checkBtn btn bg-brand-blue text-uppercase w-100 text-white bricolage-bold fs-4' onClick={() => {
+                            <div className="checkBtnWrap d-flex align-items-center py-1 m-0">
+                                <button className='checkBtn btn bg-brand-blue text-uppercase w-100 text-white bricolage-bold fs-4 me-1' onClick={() => {
                                     setBookpopup('flex'); setMainheight('100vh')
                                 }}>Check Avaibility</button>
+                                <p className="mb-0 checkCall bg-brand-blue rounded-3 me-1">
+                                    <a href="tel:+91 9819570211" className="nav-link text-white"><i className="fas fa-phone-alt fs-4"></i></a>
+                                </p>
+                                <p className="mb-0 checkWhat bg-brand-blue rounded-3">
+                                    <a href="https://wa.me/+919819570211" className="nav-link text-white"><i className="fab fa-whatsapp fs-4"></i></a>
+                                </p>
                             </div>
                         </div>
                     </div>
