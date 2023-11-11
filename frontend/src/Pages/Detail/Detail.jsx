@@ -239,12 +239,12 @@ function Detail() {
                         <div className="bookingpopup p-3 pt-0">
                             <div className="crossBtn fs-4 rounded-circle w-100 text-end bg-white text-muted m-0 p-0" onClick={() => setBookpopup('none')}>&times;</div>
                             {/* <p className="mb-0 p-0 crossBtn text-muted text-end fs-5">&times;</p> */}
-                            <div className="popupLogo mx-auto mt-3">
-                                <img src="../images/Rentooze Logo front.png" alt="Rentooze logo" className="img-fluid" />
+                            <div className="popupLogo mx-auto my-3">
+                                <img src="../images/Rentooze Logo New.png" alt="Rentooze logo" className="img-fluid" />
                             </div>
-                            <p className="popupSogen bricolage-extrabold text-center text-muted text-uppercase mt-3">
+                            {/* <p className="popupSogen bricolage-extrabold text-center text-muted text-uppercase mt-3">
                                 your trusted <br /> rental partner
-                            </p>
+                            </p> */}
 
                             <div className="bookingForm px-2">
                                 <form action="https://formspree.io/f/maygpjdr" method="post">
