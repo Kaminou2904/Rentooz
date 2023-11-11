@@ -156,11 +156,11 @@ function Detail() {
                             }
                             <span className="ms-1 text-muted bricolage-semibold">{detstarNum[detstarNum.length - 1]} (202)</span>
                         </p>
-                        <div className="mainDetailPriceDiv d-flex align-items-center mt-4">
+                        <div className="mainDetailPriceDiv p-0 d-flex align-items-center mt-4">
                             {/* <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center">₹{foundPro.price}<span className='bricolage-medium'>/day</span>
                             </div> */}
-                            <div className="checkBtnWrap py-1">
-                                <button className='checkBtn btn bg-brand-blue text-uppercase py-2 w-100 text-white bricolage-bold fs-4' onClick={() => {
+                            <div className="checkBtnWrap py-1 m-0">
+                                <button className='checkBtn btn bg-brand-blue text-uppercase w-100 text-white bricolage-bold fs-4' onClick={() => {
                                     setBookpopup('flex'); setMainheight('100vh')
                                 }}>Check Avaibility</button>
                             </div>
