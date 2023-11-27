@@ -260,4 +260,11 @@
 
 .accordion-button:not(.collapsed){
     background-color: #ffe8d5;
+    /* z-index: -1 !important  ; */
+    z-index: 0 !important;
+}
+.accordion-button .collapsed{
+    background-color: #ffe8d5;
+    /* z-index: -1 !important  ; */
+    z-index: 0 !important;
 }

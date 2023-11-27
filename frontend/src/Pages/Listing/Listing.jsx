@@ -16,8 +16,14 @@ function Listing() {
     const { category } = useParams();
     const navigate = useNavigate();
 
+    function HTMLStringToElement({ htmlString }) {
+        return <div dangerouslySetInnerHTML={{ __html: htmlString }} />;
+    }
+
     let listData;
     let partdata;
+    let extracont;
+    let mainfaq;
     const proarr = [];
     if (category === "View All") {
         for (const prokey in Data) {
@@ -30,19 +36,21 @@ function Listing() {
             partdata = Parts.parts;
         } else {
             listData = Data[category].products;
+            extracont = Data[category].extracontent;
+            mainfaq = Data[category].mainfaqs;
         }
     }
 
-    if(partdata){
+    if (partdata) {
         const sortProductsByPrice = (arr) => {
-            return partdata =  arr.slice().sort((a, b) => a.price - b.price)
+            return partdata = arr.slice().sort((a, b) => a.price - b.price)
         };
         sortProductsByPrice(partdata);
     };
 
-    if(listData){
+    if (listData) {
         const sortProductsByPrice = (arr) => {
-            return listData =  arr.slice().sort((a, b) => a.price - b.price)
+            return listData = arr.slice().sort((a, b) => a.price - b.price)
         };
         sortProductsByPrice(listData);
     };
@@ -52,27 +60,28 @@ function Listing() {
             {
                 category.toLocaleLowerCase() === 'mist fan' && (
                     <Helmet>
-                        <title>Mist Fan on Rent in Pune: Rentooze's Top Choice</title>
-                        <meta name="description" content="Beat the Pune heat with Rentooz's mist fan on rent. Experience the breeze of luxury cooling. Get your mist fan today!" />
-                        <meta name="keywords" content="mist fan on rent, mist fan on rent near me, misting fan rental near me, cooling fan rental, rent misting fans near me, mist fan for rent near me, mist fan on rent in pune" />
+                        <title>Water Sprinkler Mist Fan On Rent @499 In Pune - Rentooze</title>
+                        <meta name="description" content="Water sprinkler mist fan available for rent in Pune at an affordable price of just ₹499
+                        Mist Fan On Hire, Mist Fan rentals for your guests at your Indoor & outdoor events in Pune. Contact Rentooze Now!" />
+                        <meta name="keywords" content="mist fan on rent, mist fan on rent in Pune, water fan rental, cooling fan rental, misting fan rental near me, misting fans for rent near me, Cool Mist fan rentals near me, mist fan on rent near me, mist fan for rent near me, water misting fan rental, sprinkler fan on rent, Rentooze, Rentooze Event Material on rent" />
                     </Helmet>
                 )
             }
             {
                 category.toLocaleLowerCase() === 'portable ac' && (
                     <Helmet>
-                        <title>Affordable AC on Rent in Pune | Stay Cool this Summer!</title>
-                        <meta name="description" content="Looking for portable AC on rent in Pune? Beat the heat with our cost-effective air conditioning solutions. Stay comfortable all summer long. Rent now!" />
-                        <meta name="keywords" content="portable air conditioner rental, portable ac rental, portable ac on rent, portable ac on rent in pune, portable ac on rent near me, standing ac on rent, portable ac unit rental, portable ac on rental, portable ac on rent pune" />
+                        <title>Beat the Heat with Rentooze: Portable AC on Rent in Pune for Cool Comfort Anywhere!</title>
+                        <meta name="description" content="Discover the coolest way to stay comfortable with Rentooze's portable AC rental service in Pune. Get the best portable AC units on rent near you. Stay cool, stay flexible!" />
+                        <meta name="keywords" content="Portable AC on rent, Portable AC on rent in Pune, portable ac rental, Portable AC on rent near me, portable ac, portable air conditioner, small portable air conditioner, mini air conditioner, small air conditioner, best portable air conditioner, portable ac unit" />
                     </Helmet>
                 )
             }
             {
                 category.toLocaleLowerCase() === 'pedestal fan' && (
                     <Helmet>
-                        <title>Pedestal Fan On Rent In Pune | Stay Cool in Pune with Rentooz!</title>
-                        <meta name="description" content="Don't sweat it out! Grab a Pedestal Fan on rent in Pune and stay cool. Quick, easy, and affordable solutions for beating the heat!" />
-                        <meta name="keywords" content="pedestal fan on rent in pune, pedestal fan on rent, pedestal fan on rent near me, pedestal fan for rent, stand fan on rent near me, pedestal fan rental near me, standing fan on rent" />
+                        <title>Standing Pedestal Fan On Rent in Pune @499 | Rentooze</title>
+                        <meta name="description" content="Looking for a standing fan on rent in Pune? Explore our range of high-quality pedestal fans on rent at ₹499.  pedestal Fan rentals for your guests at your Indoor & outdoor events in Pune. Contact Rentooze Now!" />
+                        <meta name="keywords" content="pedestal fan on rent in Pune, pedestal fan on rent, pedestal fan rental, pedestal fan, pedestal fan on rent near me, standing fan, Standing fan on rent in Pune , stand up fan, best pedestal fan, stand fan price, Rentooze, Rentooze Event Material on rent" />
                     </Helmet>
                 )
             }
@@ -88,9 +97,9 @@ function Listing() {
             {
                 category.toLocaleLowerCase() === 'electric heater' && (
                     <Helmet>
-                        <title>Electric Heater For Rent In Pune On Retooz</title>
-                        <meta name="description" content="Rent an Electric Heater in Pune for ultimate warmth. Our rentals provide comfort and convenience during the cold season. Reserve yours today!" />
-                        <meta name="keywords" content="electric heater on rent, electric heater rental near me, room heater on rent, industrial heaters for rent, electric heater hire, portable heater for rent" />
+                        <title>Rent Electric Heaters in Pune @499 with Rentooze Today!</title>
+                        <meta name="description" content="Rent energy-efficient electric heaters in Pune from Rentooze. Choose from a variety of options for any space. Cost-effective, flexible, and eco-friendly solutions. Don't miss out – get cozy now!" />
+                        <meta name="keywords" content="electric heater on rent, electric heater rental, electric heater rental near me, industrial heaters for rent, space heater hire, portable heater for rent, room heater on rent, commercial portable heater rental, Rentooze, Rentooze Event Material on rent" />
                     </Helmet>
                 )
             }
@@ -120,6 +129,28 @@ function Listing() {
                             )
                         }
                     </div>
+                </div>
+            </div>
+            <div className="container extracont mt-5 pt-5">
+                <HTMLStringToElement htmlString={extracont} />
+            </div>
+            <div className="container mt-4">
+                <h2 className="bricolage-bold fs-5">FAQs</h2>
+                <div className="accordion accordion-flush" id="accordionFlushExample">
+                    {
+                        mainfaq.map((faq, index) => (
+                            <div key={index} className="accordion-item mb-2 border-0">
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button border shadow-none rounded-brand collapsed bricolage-bold" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${index}`} aria-expanded="false" aria-controls={`flush-collapse${index}`}>
+                                        {faq[0]}
+                                    </button>
+                                </h2>
+                                <div id={`flush-collapse${index}`} className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div className="accordion-body">{faq[1]}</div>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>

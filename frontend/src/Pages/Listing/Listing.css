@@ -4,10 +4,24 @@
 
 .mainListingHeader{
     padding: 17px;
+    z-index: 15;
 }
 
 @media screen and (min-width: 900px) {
     .mainListingHeader{
         padding: 0px;
     }
+}
+
+.extracont h1{
+    font-size: 26px !important;
+    font-family: 'bricolage-bold', sans-serif !important;
+}
+.extracont h2{
+    font-size: 22px !important;
+    font-family: 'bricolage-bold', sans-serif !important;
+}
+.extracont h3{
+    font-size: 16px !important;
+    font-family: 'bricolage-bold', sans-serif !important;
 }
