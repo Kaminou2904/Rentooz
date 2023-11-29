@@ -121,3 +121,7 @@
         width: 200px;
     }
 }
+
+.readBtn{
+    cursor: pointer;
+}
