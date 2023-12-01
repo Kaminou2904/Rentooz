@@ -7,11 +7,11 @@ function Productcard(props) {
     
         <div className='mainProductCard border-brand-skin p-3 pb-2 pt-3'>
             <div className="productCardImg">
-            <Link to={`/${props.cate}/${props.name}`} className='nav-link'><img src={props.img} className='img-fluid' alt={props.name} /></Link>
+            <Link to={`/${props.cate.replace(/ /g, '-')}/${props.name.replace(/ /g, '-')}-on-rent-in-pune`} className='nav-link'><img src={props.img} className='img-fluid' alt={props.name} /></Link>
             </div>
             <div className="productCardData">
                 <div className="productName">
-                    <Link to={`/${props.cate}/${props.name}`} className='nav-link'><p className="mb-0 text-brand-blue text-center text-capitalize lh-sm bricolage-extrabold mt-2">{props.name} <br /><span className="text-capitalize bricolage-extrabold">{props.keyfeat}</span></p></Link>
+                    <Link to={`/${props.cate.replace(/ /g, '-')}/${props.name.replace(/ /g, '-')}-on-rent-in-pune`} className='nav-link'><p className="mb-0 text-brand-blue text-center text-capitalize lh-sm bricolage-extrabold mt-2">{props.name} <br /><span className="text-capitalize bricolage-extrabold">{props.keyfeat}</span></p></Link>
                 </div>
                 <div className="productCardRating mt-1 d-flex justify-content-center align-items-center pb-3">
                     <i className="fas fa-star text-warning"></i>
