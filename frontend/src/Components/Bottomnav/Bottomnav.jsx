@@ -33,7 +33,7 @@ function Bottomnav() {
                         }
                     </div>
                 </div>
-                <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3); navigate('/View All') }}>
+                <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3); navigate('/View-All') }}>
                     <div className="svgWraper d-flex">
                         <img src="./images/download.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} />
                     </div>
