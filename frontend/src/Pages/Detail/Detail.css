@@ -44,10 +44,11 @@
     padding-bottom: 12px !important;
     width: min(100%, 600px) !important;
     text-align: center;
+    font-size: 20px !important;
 }
 
 .checkCall, .checkWhat{
-    padding: 16px 17px;
+    padding: 13px 13px;
     border-radius: 15px !important;
 }
 
