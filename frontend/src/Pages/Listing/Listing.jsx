@@ -57,22 +57,108 @@ function Listing() {
         sortProductsByPrice(listData);
     };
 
+    const schemaMarkup =  {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Are mist fans suitable for indoor events?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, mist fans are versatile and can be used for both indoor and outdoor events. They provide a refreshing breeze without making the surroundings too damp."
+            }
+        },{
+            "@type": "Question",
+            "name": "How do water misting fans work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Water misting fans spray a fine mist into the air. The mist evaporates quickly, creating a cool breeze. It's like having a natural air conditioner for your events."
+            }
+        },{
+            "@type": "Question",
+            "name": "Can I find mist fans for rent near me?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! Rentooze makes it easy to locate mist fans for rent near your event location. Enjoy the convenience of a local cooling solution."
+            }
+        },{
+            "@type": "Question",
+            "name": "Are water misting fan rentals eco-friendly?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, water misting fan rentals are eco-friendly. They use water as a cooling agent, making them a sustainable choice for your events."
+            }
+        },{
+            "@type": "Question",
+            "name": "What sets Rentooze apart from other rental services?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rentooze stands out with high-quality materials, versatile cooling options, and exceptional service. We go beyond expectations to make your event cool and memorable."
+            }
+        }]
+    }
+
+    const pedestalFanSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "Why should I choose Rentooze for pedestal fan rental in Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rentooze offers a hassle-free and cost-effective solution for staying cool in Pune. Our pedestal fan rental service provides high-quality fans at competitive prices, ensuring you beat the heat without breaking the bank."
+          }
+        },{
+          "@type": "Question",
+          "name": "How do I rent a pedestal fan from Rentooze?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Renting a pedestal fan from Rentooze is easy. Simply browse our collection, select the fan that suits your needs, and follow the straightforward rental process on our website. You can choose your rental period based on your specific requirements."
+          }
+        },{
+          "@type": "Question",
+          "name": "Are there any hidden costs in pedestal fan rental from Rentooze?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, there are no hidden costs. Rentooze believes in transparency. The pedestal fan rental prices displayed on our website include all relevant charges. What you see is what you pay."
+          }
+        },{
+          "@type": "Question",
+          "name": "Can I return the pedestal fan before the agreed rental period ends?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can return the pedestal fan before the agreed-upon rental period ends. However, please note that the rental charges are based on the initially agreed-upon duration."
+          }
+        },{
+          "@type": "Question",
+          "name": "Can I rent multiple pedestal fans for events or larger spaces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Rentooze caters to both individual and bulk orders. Whether you need one fan for personal use or several for events or larger spaces, we can accommodate your requirements. Contact us for special arrangements."
+          }
+        }]
+      }
+      
+
     return (
         <div className='mainListing'>
             {
                 formattedCate.toLocaleLowerCase() === 'mist fan' && (
                     <Helmet>
-                        <title>Water Sprinkler Mist Fan On Rent @499 In Pune - Rentooze</title>
+                        <title>Rent Mist Fans | Silver, Black & White 41L @499 in Pune - Rentooze</title>
                         <meta name="description" content="Water sprinkler mist fan available for rent in Pune at an affordable price of just ₹499
                         Mist Fan On Hire, Mist Fan rentals for your guests at your Indoor & outdoor events in Pune. Contact Rentooze Now!" />
                         <meta name="keywords" content="mist fan on rent, mist fan on rent in Pune, water fan rental, cooling fan rental, misting fan rental near me, misting fans for rent near me, Cool Mist fan rentals near me, mist fan on rent near me, mist fan for rent near me, water misting fan rental, sprinkler fan on rent, Rentooze, Rentooze Event Material on rent" />
+                        <script type='application/ld+json'>
+                            {JSON.stringify(schemaMarkup)}
+                        </script>
                     </Helmet>
                 )
             }
             {
                 formattedCate.toLocaleLowerCase() === 'portable ac' && (
                     <Helmet>
-                        <title>Beat the Heat with Rentooze: Portable AC on Rent in Pune for Cool Comfort Anywhere!</title>
+                        <title>Portable Air Conditioner Rental in Pune, 1 Ton & 1.5 Ton AC - Rentooze</title>
                         <meta name="description" content="Discover the coolest way to stay comfortable with Rentooze's portable AC rental service in Pune. Get the best portable AC units on rent near you. Stay cool, stay flexible!" />
                         <meta name="keywords" content="Portable AC on rent, Portable AC on rent in Pune, portable ac rental, Portable AC on rent near me, portable ac, portable air conditioner, small portable air conditioner, mini air conditioner, small air conditioner, best portable air conditioner, portable ac unit" />
                     </Helmet>
@@ -81,16 +167,19 @@ function Listing() {
             {
                 formattedCate.toLocaleLowerCase() === 'pedestal fan' && (
                     <Helmet>
-                        <title>Standing Pedestal Fan On Rent in Pune @499 | Rentooze</title>
+                        <title>Rent Affordable Standing Pedestal Fan 26 Inch 90 Degrees - Rentooze</title>
                         <meta name="description" content="Looking for a standing fan on rent in Pune? Explore our range of high-quality pedestal fans on rent at ₹499.  pedestal Fan rentals for your guests at your Indoor & outdoor events in Pune. Contact Rentooze Now!" />
                         <meta name="keywords" content="pedestal fan on rent in Pune, pedestal fan on rent, pedestal fan rental, pedestal fan, pedestal fan on rent near me, standing fan, Standing fan on rent in Pune , stand up fan, best pedestal fan, stand fan price, Rentooze, Rentooze Event Material on rent" />
+                        <script type='application/ld+json'>
+                            {JSON.stringify(pedestalFanSchema)}
+                        </script>
                     </Helmet>
                 )
             }
             {
                 formattedCate.toLocaleLowerCase() === 'air cooler' && (
                     <Helmet>
-                        <title>Rent Air Coolers in Pune - Affordable & Reliable</title>
+                        <title> Rent Silent Air Coolers 75L-120L near Pune | Rentooze</title>
                         <meta name="description" content="Rentooz offers affordable and reliable air cooler rentals in Pune. Stay comfortable this summer with our efficient cooling solutions. Rent today!" />
                         <meta name="keywords" content="air cooler on rent, air cooler on rent in pune, cooler on rent pune, rent air cooler near me, rent cooler in pune, air cooler on rent near me, cooler on rent in pune near me" />
                     </Helmet>
@@ -99,7 +188,7 @@ function Listing() {
             {
                 formattedCate.toLocaleLowerCase() === 'electric heater' && (
                     <Helmet>
-                        <title>Rent Electric Heaters in Pune @499 with Rentooze Today!</title>
+                        <title>Electric Heaters for Rent in Pune@499 | Rentooze</title>
                         <meta name="description" content="Rent energy-efficient electric heaters in Pune from Rentooze. Choose from a variety of options for any space. Cost-effective, flexible, and eco-friendly solutions. Don't miss out – get cozy now!" />
                         <meta name="keywords" content="electric heater on rent, electric heater rental, electric heater rental near me, industrial heaters for rent, space heater hire, portable heater for rent, room heater on rent, commercial portable heater rental, Rentooze, Rentooze Event Material on rent" />
                     </Helmet>
