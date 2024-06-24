@@ -17,6 +17,7 @@ function Parts() {
     <div className='mainParts'>
         <Helmet>
             <title>Mist Fan Parts for Rent in Pune | Rentooze</title>
+            <meta name="description" content="Find mist fan parts for rent in Pune at Rentooze. Keep your cooling system running smoothly with our affordable and convenient rental options. Explore now!" />
         </Helmet>
         <div className="mainListingHeader bg-brand-skin w-100 position-fixed top-0 px-3 d-flex align-items-center justify-content-center p-3 px-4">
             <i className="fas fa-chevron-left fs-4 text-white" onClick={()=> navigate(-1)}></i>

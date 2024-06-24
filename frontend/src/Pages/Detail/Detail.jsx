@@ -84,6 +84,11 @@ function Detail() {
             {
                 formattedCate.toLocaleLowerCase() === 'mist fan' && (
                     <Helmet>
+                        {
+                            formattedPro.toLocaleLowerCase() === 'silver mist fan' && (
+                                <link ref="canonical" url="https://www.rentooze.in/mist-fan/silver-mist-fan-on-rent-in-pune"></link>
+                            )
+                        }
                         <title>{capitalize(formattedPro)} on Rent in Pune: Rentooze's Top Choice</title>
                         <meta name="description" content={`Beat the Pune heat with Rentooz's ${capitalize(formattedPro)} on rent. Experience the breeze of luxury cooling. Get your mist fan today!`} />
                         <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
@@ -93,6 +98,11 @@ function Detail() {
             {
                 formattedCate.toLocaleLowerCase() === 'portable ac' && (
                     <Helmet>
+                        {
+                            formattedPro.toLocaleLowerCase() === 'portable ac' && (
+                                <link ref="canonical" url="https://www.rentooze.in/portable-AC/portable-AC-on-rent-in-pune"></link>
+                            )
+                        }
                         <title>{capitalize(formattedPro)} on Rent in Pune | Stay Cool this Summer!</title>
                         <meta name="description" content={`Looking for ${capitalize(formattedPro)} on rent in Pune? Beat the heat with our cost-effective air conditioning solutions. Stay comfortable all summer long. Rent now!`} />
                         <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
@@ -102,6 +112,11 @@ function Detail() {
             {
                 formattedCate.toLocaleLowerCase() === 'pedestal fan' && (
                     <Helmet>
+                        {
+                            formattedPro.toLocaleLowerCase() === 'pedestal fan 26 inch' && (
+                                <link ref="canonical" url="https://www.rentooze.in/pedestal-fan/pedestal-fan-26-inch-on-rent-in-pune"></link>
+                            )
+                        }
                         <title>{capitalize(formattedPro)} On Rent In Pune | Stay Cool in Pune with Rentooz!</title>
                         <meta name="description" content={`Don't sweat it out! Grab a ${capitalize(formattedPro)} on rent in Pune and stay cool. Quick, easy, and affordable solutions for beating the heat!`} />
                         <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
@@ -111,6 +126,16 @@ function Detail() {
             {
                 formattedCate.toLocaleLowerCase() === 'air cooler' && (
                     <Helmet>
+                        {
+                            formattedPro.toLocaleLowerCase() === 'silent air cooler' && (
+                                <link ref="canonical" url="https://www.rentooze.in/air-cooler/silent-air-cooler-on-rent-in-pune"></link>
+                            )
+                        }
+                        {
+                            formattedPro.toLocaleLowerCase() === 'air cooler' && (
+                                <link ref="canonical" url="https://www.rentooze.in/air-cooler/air-cooler-on-rent-in-pune"></link>
+                            )
+                        }
                         <title>Rent {capitalize(formattedPro)} in Pune - Affordable & Reliable</title>
                         <meta name="description" content={`Rentooz offers affordable and reliable ${capitalize(formattedPro)} rentals in Pune. Stay comfortable this summer with our efficient cooling solutions. Rent today!`} />
                         <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />
@@ -120,6 +145,7 @@ function Detail() {
             {
                 formattedCate.toLocaleLowerCase() === 'electric heater' && (
                     <Helmet>
+                        <link ref="canonical" url="https://www.rentooze.in/heater/electric-heater-on-rent-in-pune"></link>
                         <title>{capitalize(formattedPro)} For Rent In Pune On Retooz</title>
                         <meta name="description" content={`Rent an ${capitalize(formattedPro)} in Pune for ultimate warmth. Our rentals provide comfort and convenience during the cold season. Reserve yours today!`} />
                         <meta name="keywords" content="Rentooze, Mist Fan On Rent In Pune, Portable AC On Rent In Pune, Pedestal Fan On Rent In Pune, Electric Heater On Rent In Pune, Air Cooler  On Rent In Pune, Mist Fan Parts" />

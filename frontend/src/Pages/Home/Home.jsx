@@ -11,6 +11,7 @@ import Productcard from '../../Components/Productcard/Productcard';
 import Bottomnav from '../../Components/Bottomnav/Bottomnav';
 import { Link, useNavigate } from 'react-router-dom';
 import Cardgroup from '../../Components/Cardgroup/Cardgroup';
+import { Helmet } from 'react-helmet';
 
 function Home() {
 
@@ -168,6 +169,9 @@ function Home() {
 
     return (
         <div className='mainHome container p-0'>
+            <Helmet>
+                <link ref="canonical" url="https://www.rentooze.in/"></link>
+            </Helmet>
             <div className="mainHeader d-flex justify-content-between align-items-center">
                 <div className="headerLogoWraper py-4 mt-2">
                     <img src="./images/Rentooze Logo New.png" className='img-fluid' alt="Rentooze logo" />
