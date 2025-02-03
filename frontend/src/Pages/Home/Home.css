@@ -14,6 +14,13 @@
     overflow: hidden;
 }
 
+.herotxt-desk{
+    font-size: 20px;
+    line-height: 22px;
+    width: 30%;
+    overflow: hidden;
+}
+
 .searchIcon{
     width: 38px;
     transition: all 0.5s ease-in-out;
@@ -124,4 +131,29 @@
 
 .readBtn{
     cursor: pointer;
+}
+
+.category-card-wrap{
+    width: calc(100% / 4);
+}
+
+@media screen and (width < 800px) {
+    .desk-hero-div{
+        display: none;
+    }
+    .mob-hero-div{
+        display: flex;
+    }
+}
+
+@media screen and (width > 800px) {
+    .category-card-wrap{
+        width: min(calc(90% / 3), 120px);
+    }
+    .desk-hero-div{
+        display: flex;
+    }
+    .mob-hero-div{
+        display: none;
+    }
 }

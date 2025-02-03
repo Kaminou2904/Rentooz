@@ -25,7 +25,7 @@ function Bottomnav() {
             <div className="bottomNav mx-auto px-3 d-flex justify-content-between align-items-center rounded-pill bg-brand-blue">
                 <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 0 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(0); navigate('/') }}>
                     <div className="svgWraper d-flex">
-                        <img src="./images/Home.svg" alt="suitcase" className={`img-fluid homesvg ${navTabIndex === 0 ? 'svgiconActive' : ''}`} />
+                        <img src="/images/Home.svg" alt="suitcase" className={`img-fluid homesvg ${navTabIndex === 0 ? 'svgiconActive' : ''}`} />
                         {
                             navTabIndex === 0 ? (
                                 <span className="navTabSpan bricolage-bold ms-2">Home</span>
@@ -35,7 +35,7 @@ function Bottomnav() {
                 </div>
                 <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 3 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(3); navigate('/View-All') }}>
                     <div className="svgWraper d-flex">
-                        <img src="./images/download.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} />
+                        <img src="/images/download.svg" alt="suitcase" className={`img-fluid svgicon ${navTabIndex === 3 ? 'svgiconActive' : ''}`} />
                     </div>
                     {
                         navTabIndex === 3 ? (
@@ -45,7 +45,7 @@ function Bottomnav() {
                 </div>
                 <div className={`tabIcon  align-items-center mb-0 p-0 ${navTabIndex === 1 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(1); window.open('https://wa.me/+919819570211', '_self') }}>
                     <div className="svgWraper d-flex">
-                        <img src="./images/whatsapp.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 1 ? 'svgiconActive' : ''}`} />
+                        <img src="/images/whatsapp.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 1 ? 'svgiconActive' : ''}`} />
                     </div>
                     {
                         navTabIndex === 1 ? (
@@ -55,7 +55,7 @@ function Bottomnav() {
                 </div>
                 <div className={`tabIcon  align-items-center text-center mb-0 p-0 ${navTabIndex === 2 ? 'activeNavTab' : ''}`} onClick={() => { navTabFunc(2); window.open('tel:+919819570211', '_self') }}>
                     <div className="svgWraper d-flex">
-                        <img src="./images/phone-call.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 2 ? 'svgiconActive' : ''}`} />
+                        <img src="/images/phone-call.svg" alt="suitcase" className={`img-fluid svgicon whaticon ${navTabIndex === 2 ? 'svgiconActive' : ''}`} />
                     </div>
                     {
                         navTabIndex === 2 ? (

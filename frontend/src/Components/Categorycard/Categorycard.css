@@ -1,7 +1,13 @@
-.mainCategorycard{
-    width: min(30%, 150px) !important;
-}
+/* .mainCategorycard{
+    width: min(30%, 110px) !important;
+} */
 
 .cateTxt{
     font-size: 12px;
+}
+
+@media screen and (width > 800px) {
+    .mainCategorycardimg{
+        padding: 20px !important;
+    }
 }

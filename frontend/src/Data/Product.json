@@ -158,7 +158,7 @@
                 "name": "portable AC",
                 "keyfeat": "1 ton",
                 "desc": "Beat the heat in Pune with Rentooz's 1 Ton Portable AC rental service. Our compact and powerful units offer cost-effective cooling, hassle-free maintenance, and flexible rental durations. Stay cool and comfortable with Rentooz, the ultimate cooling solution for your space",
-                "price": 1000,
+                "price": 2000,
                 "img": ["../proimg/portableAcblack2.png", "../proimg/portableAcblack1.png", "../proimg/portableAcblack3.png", "../proimg/portableAcblack4.png"],
                 "cate": "portable AC",
                 "faqs":[
@@ -181,7 +181,7 @@
                 "name": "portable AC 1.5 ton",
                 "keyfeat": "",
                 "desc": "Beat the heat in Pune with Rentooz's 1.5 Ton Portable AC rental service. Our compact and powerful units offer cost-effective cooling, hassle-free maintenance, and flexible rental durations. Stay cool and comfortable with Rentooz, the ultimate cooling solution for your space",
-                "price": 1500,
+                "price": 2000,
                 "img": ["../proimg/PORTABLE AC - 1.png", "../proimg/PORTABLE AC - 2.png", "../proimg/PORTABLE AC - 3.png", "../proimg/PORTABLE AC - 4.png"],
                 "cate": "portable AC",
                 "faqs":[
@@ -218,7 +218,7 @@
                 "name": "electric heater",
                 "keyfeat": "Plug n Play",
                 "desc": "Beat the Pune winter chill with our affordable Electric Heater rentals. We offer high-quality, energy-efficient heaters with adjustable settings and safety features. Renting is a breeze on our website, and we ensure hassle-free delivery and setup. Enjoy peace of mind with our dedicated customer support and regular maintenance. Stay cozy this winter with us. Electric Heater rental Pune",
-                "price": 1800,
+                "price": 2000,
                 "img": ["../proimg/Heater - 2.png", "../proimg/Heater - 1.png"],
                 "cate": "heater",
                 "faqs":[

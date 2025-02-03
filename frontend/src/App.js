@@ -11,6 +11,8 @@ import Privacy from './Pages/Privacy/Privacy';
 import Bloglist from './Pages/Bloglist/Bloglist';
 import Blogpage from './Pages/Blogpage/Blogpage';
 import Blogpagetwo from './Pages/Blogpagetwo/Blogpagetwo';
+import Buylisting from './Pages/Listing/Buylisting';
+import Buydetail from './Pages/Detail/Buydetail';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path='/mist-fan-spare-parts' element={<Parts/>}/>
         <Route path='/:category' element={<Listing/>}/>
         <Route path='/:category/:proname' element={<Detail/>}/>
+        <Route path='/buy/:category' element={<Buylisting/>}/>
+        <Route path='/buy/:category/:proname' element={<Buydetail/>}/>
         <Route path='/about-us' element={<About/>}/>
         <Route path='/terms-and-conditions' element={<Terms/>}/>
         <Route path='/privacy-policy' element={<Privacy/>}/>

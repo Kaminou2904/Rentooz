@@ -138,7 +138,7 @@ function Home() {
 
     useEffect(() => {
         setSearchSuggetionDiv('none');
-    }, [])
+    }, []);
 
     const psudoClick = () => {
         setSearchInpu('none');
@@ -181,7 +181,7 @@ function Home() {
 
             <div className="psudoDiv" style={{ display: psudodiv }} onClick={psudoClick}></div>
 
-            <div className={`heroDiv px-4 mt-2 d-flex align-items-center ${searchBtn === '100%' ? 'justify-content-end' : 'justify-content-between'}`}>
+            <div className={`heroDiv mob-hero-div px-4 mt-2 align-items-center ${searchBtn === '100%' ? 'justify-content-end' : 'justify-content-between'}`}>
                 <h2 className='heroTxt mb-0 bricolage-bold text-brand-skin text-nowrap' style={{ display: herotxt }}>Stay Cool, Pay Smart<br /> <span className="text-brand-blue bricolage-regular">The Ultimate Cooling <br />Rental Solutions in Pune</span></h2>
                 <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-4 px-2 ${searchBtn === '100%' ? 'rounded-brand' : 'rounded-pill'}`} onClick={searchIconClick} style={{ width: searchBtn }}>
                     <input
@@ -195,6 +195,22 @@ function Home() {
                         onKeyDown={(e) => handleKeyDown(e)}
                     />
                     <i className={`fas fa-search text-brand-skin fs-5 ${searchBtn === '100%' ? 'me-2' : ''}`}></i>
+                </div>
+            </div>
+
+            <div className={`heroDiv desk-hero-div mt-2 align-items-center justify-content-between w-100`}>
+                <h2 className='heroTxt herotxt-desk mb-0 bricolage-bold text-brand-skin text-nowrap'>Stay Cool, Pay Smart<br /> <span className="text-brand-blue bricolage-regular">The Ultimate Cooling <br />Rental Solutions in Pune</span></h2>
+                <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-3 px-2 rounded-brand w-100`}>
+                    <input
+                        type="text"
+                        name="search"
+                        className='form-control border-0 shadow-none bricolage-light text-muted m-0 p-0 ps-2' id="searchinpu"
+                        placeholder='Search something'
+                        value={searchTxt}
+                        onChange={(e) => setSearchTxt(e.target.value)}
+                        onKeyDown={(e) => handleKeyDown(e)}
+                    />
+                    <i className={`fas fa-search text-brand-skin fs-5 me-2`}></i>
                 </div>
             </div>
 
@@ -221,14 +237,34 @@ function Home() {
             </div> */}
 
             <div className="categoryWrap text-center mt-5 px-4 mb-5">
-                <p className="fs-4 text-muted text-center mx-auto bricolage-bold mb-3">BROWSE BY CATEGORY</p>
-                <div className="categoryCardWrap d-flex justify-content-between flex-wrap ">
+                <p className="fs-4 text-muted text-start mx-auto bricolage-bold mb-3">RENTAL PRODUCTS</p>
+                <div className="categoryCardWrap d-flex flex-wrap p-0 m-0">
                     {
                         catedata.map((catdata, ind) => (
-                            <Categorycard key={ind} img={catdata.icon} text={catdata.procate} />
+                            <div className="category-card-wrap p-1">
+                                <Categorycard key={ind} img={catdata.icon} text={catdata.procate} />
+                            </div>
                         ))
                     }
-                    <Categorycard img="../images/Spare parts.png" text="mist fan parts" />
+                    <div className="category-card-wrap p-1">
+                        <Categorycard img="../images/Spare parts.png" text="mist fan parts" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="categoryWrap text-center mt-5 px-4 mb-5">
+                <p className="fs-4 text-muted text-start mx-auto bricolage-bold mb-3">PRODUCTS TO BUY</p>
+                <div className="categoryCardWrap d-flex flex-wrap p-0 m-0">
+                    {
+                        catedata.map((catdata, ind) => (
+                            <div className="category-card-wrap p-1">
+                                <Categorycard key={ind} img={catdata.icon} text={catdata.procate} buy={true} />
+                            </div>
+                        ))
+                    }
+                    <div className="category-card-wrap p-1">
+                        <Categorycard img="../images/Spare parts.png" text="mist fan parts" />
+                    </div>
                 </div>
             </div>
 

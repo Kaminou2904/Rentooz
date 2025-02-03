@@ -8,8 +8,14 @@ function Lisitngcard(props) {
 
   return (
     <div className="col-md-4 px-2">
-      <div className='mainListingcard d-flex p-2 px-2 align-items-center rounded-brand border-brand-skin text-capitalize mt-3' onClick={() => {
-        props.cate === 'mist fan parts' ? window.open('https://wa.me/+919819570211') : navigate(`/${props.cate.replace(/ /g, '-')}/${props.name.replace(/ /g, '-')}-on-rent-in-pune`)
+      <div 
+        className='mainListingcard d-flex p-2 px-2 align-items-center rounded-brand border-brand-skin text-capitalize mt-3' 
+        onClick={() => {
+          props.cate === 'mist fan parts' ? 
+          window.open('https://wa.me/+919819570211') : 
+            props.buy? 
+              navigate(`/buy/${props.cate.replace(/ /g, '-')}/${props.name.replace(/ /g, '-')}-in-pune`) :
+              navigate(`/${props.cate.replace(/ /g, '-')}/${props.name.replace(/ /g, '-')}-on-rent-in-pune`)
       }}>
         <div className="listingcardImg">
           <img src={props.img} alt="mist fan" className="img-fluid rounded-brand" />
@@ -21,7 +27,13 @@ function Lisitngcard(props) {
           <p className="listingCardcategory mt-3 text-muted mb-0">Category <span className="bricolage-bold tex-uppercase">{props.cate}</span></p>
           <div className="rateNprice d-flex mt-3 justify-content-between align-items-center">
             <p className="listingcardRating mb-0 text-nowrap"><i className="fas fa-star text-warning"></i> 4.9 (202)</p>
-            {/* <p className="mb-0 listingcardPrice text-white bg-brand-blue rounded-pill p-1 px-3"><span className="bricolage-bold text-white">₹{props.price}</span>{props.cate === 'mist fan parts' ? '' : '/day'}</p> */}
+            {
+              props.buy? (
+                <p className="mb-0 listingcardPrice text-white bg-brand-blue rounded-pill p-1 px-3"><span className="bricolage-bold text-white">₹{props.price}</span></p>
+              ): (
+                <p className="mb-0 listingcardPrice text-white bg-brand-blue rounded-pill p-1 px-3"><span className="bricolage-bold text-white">₹{props.price}</span>{props.cate === 'mist fan parts' ? '' : '/day'}</p>
+              )
+            }
           </div>
         </div>
       </div>
