@@ -269,6 +269,7 @@ function Home() {
             </div> */}
 
             <div className="testDiv my-5 px-4">
+                <p className="heading fs-3">Most Rented Products</p>
                 <Slider {...caroSettings}>
                     <Cardgroup name="silver mist fan" name1="silent air cooler" name2="portable AC 1.5 ton"/>
                     <Cardgroup name="electric heater" name1="air cooler" name2="pedestal fan 26 inch"/>
@@ -277,7 +278,7 @@ function Home() {
             </div>
 
             <div className="ourProducts mt-4">
-                <p className="heading fs-3">Most Rented Products</p>
+                <p className="heading fs-3">Best Selling Products</p>
                 <div className="productCardWraper mt-3">
                     <div className="productCardWrap pt-4 mb-5">
                         <Slider {...responsiveSet}>
