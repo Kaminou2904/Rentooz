@@ -237,11 +237,11 @@ function Home() {
             </div> */}
 
             <div className="categoryWrap text-center mt-5 px-4 mb-5">
-                <p className="fs-4 text-muted text-start mx-auto bricolage-bold mb-3">RENTAL PRODUCTS</p>
+                <p className="fs-4 text-muted text-start mx-auto bricolage-bold mb-3">EXPLORE OUR PRODUCTS</p>
                 <div className="categoryCardWrap d-flex flex-wrap p-0 m-0">
                     {
                         catedata.map((catdata, ind) => (
-                            <div className="category-card-wrap p-1">
+                            <div key={ind} className="category-card-wrap p-1">
                                 <Categorycard key={ind} img={catdata.icon} text={catdata.procate} />
                             </div>
                         ))
@@ -252,7 +252,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="categoryWrap text-center mt-5 px-4 mb-5">
+            {/* <div className="categoryWrap text-center mt-5 px-4 mb-5">
                 <p className="fs-4 text-muted text-start mx-auto bricolage-bold mb-3">PRODUCTS TO BUY</p>
                 <div className="categoryCardWrap d-flex flex-wrap p-0 m-0">
                     {
@@ -266,7 +266,7 @@ function Home() {
                         <Categorycard img="../images/Spare parts.png" text="mist fan parts" />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="testDiv my-5 px-4">
                 <Slider {...caroSettings}>

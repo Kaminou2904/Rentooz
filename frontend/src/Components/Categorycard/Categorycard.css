@@ -6,6 +6,33 @@
     font-size: 12px;
 }
 
+.rent-or-buy-pop-wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.297);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.rent-or-buy-popup{
+    width: min(500px, 100%);
+}
+
+.buy-btn{
+    background-color: #1a4a82;
+    color: #daaa84;
+}
+
+.rent-btn{
+    color: #1a4a82;
+    background-color: #daaa84;
+}
+
 @media screen and (width > 800px) {
     .mainCategorycardimg{
         padding: 20px !important;
