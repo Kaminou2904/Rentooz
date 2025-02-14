@@ -17,7 +17,7 @@
                 "keyfeat": "41 ltrs",
                 "buy": true,
                 "desc": "Silver Mist Fan available for rent, offering a powerful cooling experience with its remarkable 8 to 10 feet range, ensuring you stay refreshed even in the sweltering weather. Equipped with a massive 41-liter water tank, this mist fan keeps you cool for hours without frequent refills. Its adjustable height of 6 feet allows you to customize the breeze to your preference, and the 90-degree swing feature ensures wide coverage, making it the ideal choice for gatherings and outdoor events. Stay cool and comfortable in Pune with our mist fan rental service.",
-                "price": 1000,
+                "price": 12799,
                 "img": ["/proimg/MIST FAN SILVER - 6.png", "/proimg/MIST FAN SILVER - 1.png", "/proimg/MIST FAN SILVER - 2.png", "/proimg/MIST FAN SILVER - 5.png"],
                 "cate": "mist fan",
                 "faqs":[
@@ -46,7 +46,7 @@
                 "keyfeat": "41 ltrs",
                 "buy": true,
                 "desc": "Black Mist Fan available for rent, offering a powerful cooling experience with its remarkable 8 to 10 feet range, ensuring you stay refreshed even in the sweltering weather. Equipped with a massive 41-liter water tank, this mist fan keeps you cool for hours without frequent refills. Its adjustable height of 6 feet allows you to customize the breeze to your preference, and the 90-degree swing feature ensures wide coverage, making it the ideal choice for gatherings and outdoor events. Stay cool and comfortable in Pune with our mist fan rental service.",
-                "price": 1000,
+                "price": 13799,
                 "img": ["/proimg//MIST FAN BLACK - 1.png", "/proimg//MIST FAN BLACK - 2.png", "/proimg//MIST FAN BLACK - 6.png"],
                 "cate": "mist fan",
                 "faqs":[
@@ -75,7 +75,7 @@
                 "keyfeat": "41 ltrs",
                 "buy": true,
                 "desc": "White Mist Fan available for rent, offering a powerful cooling experience with its remarkable 8 to 10 feet range, ensuring you stay refreshed even in the sweltering weather. Equipped with a massive 41-liter water tank, this mist fan keeps you cool for hours without frequent refills. Its adjustable height of 6 feet allows you to customize the breeze to your preference, and the 90-degree swing feature ensures wide coverage, making it the ideal choice for gatherings and outdoor events. Stay cool and comfortable in Pune with our mist fan rental service",
-                "price": 1500,
+                "price": 13799,
                 "img": ["/proimg/whitemistfan.jpeg", "/proimg/whitemistfan2.jpeg", "/proimg/whitemistfan3.jpeg"],
                 "cate": "mist fan",
                 "faqs":[
@@ -118,7 +118,7 @@
                 "keyfeat": "90 degree",
                 "buy": true,
                 "desc": "Rentooz's 26-inch Pedestal Fan For Rent in Pune is the ultimate cooling solution for hot summer days. With adjustable height, quiet operation, elegant design, and energy efficiency, it offers both style and functionality. Get cool and comfortable while enhancing your space with our sleek fan.",
-                "price": 500,
+                "price": 9899,
                 "img": ["/proimg/PEDESTIAL FAN - 2.png", "/proimg/PEDESTIAL FAN - 1.png", "/proimg/PEDESTIAL FAN - 3.png", "/proimg/PEDESTIAL FAN - 5.png"],
                 "cate": "pedestal fan",
                 "faqs":[
@@ -163,7 +163,7 @@
                 "keyfeat": "1 ton",
                 "buy": true,
                 "desc": "Beat the heat in Pune with Rentooz's 1 Ton Portable AC rental service. Our compact and powerful units offer cost-effective cooling, hassle-free maintenance, and flexible rental durations. Stay cool and comfortable with Rentooz, the ultimate cooling solution for your space",
-                "price": 1000,
+                "price": 40000,
                 "img": ["/proimg/portableAcblack2.png", "/proimg/portableAcblack1.png", "/proimg/portableAcblack3.png", "/proimg/portableAcblack4.png"],
                 "cate": "portable AC",
                 "faqs":[
@@ -187,7 +187,7 @@
                 "keyfeat": "",
                 "buy": true,
                 "desc": "Beat the heat in Pune with Rentooz's 1.5 Ton Portable AC rental service. Our compact and powerful units offer cost-effective cooling, hassle-free maintenance, and flexible rental durations. Stay cool and comfortable with Rentooz, the ultimate cooling solution for your space",
-                "price": 1500,
+                "price": 40000,
                 "img": ["/proimg/PORTABLE AC - 1.png", "/proimg/PORTABLE AC - 2.png", "/proimg/PORTABLE AC - 3.png", "/proimg/PORTABLE AC - 4.png"],
                 "cate": "portable AC",
                 "faqs":[
@@ -225,7 +225,7 @@
                 "keyfeat": "Plug n Play",
                 "buy": true,
                 "desc": "Beat the Pune winter chill with our affordable Electric Heater rentals. We offer high-quality, energy-efficient heaters with adjustable settings and safety features. Renting is a breeze on our website, and we ensure hassle-free delivery and setup. Enjoy peace of mind with our dedicated customer support and regular maintenance. Stay cozy this winter with us. Electric Heater rental Pune",
-                "price": 1800,
+                "price": 12799,
                 "img": ["/proimg/Heater - 2.png", "/proimg/Heater - 1.png"],
                 "cate": "heater",
                 "faqs":[
@@ -258,44 +258,14 @@
             ["Is Rentooze available for residential as well as commercial rentals?", "Absolutely! Whether you need a cooler for your home or a large event space, Rentooze has a diverse range of coolers to meet residential and commercial needs."]
         ],
         "products": [
-            {
-                "id": 41,
-                "name": "air cooler",
-                "keyfeat": "75 ltrs",
-                "buy": true,
-                "desc": "Rentooz offers a top-notch Air Cooler 75 LTRS collection in Pune. Our air coolers provide powerful and energy-efficient cooling with stylish designs to elevate your space. The 75 LTRS capacity ensures uninterrupted cooling convenience",
-                "price": 1000,
-                "img": ["/proimg/Air Cooler - 75  ltrs - 1.png", "/proimg/Air Cooler - 75  ltrs - 2.png", "/proimg/Air Cooler - 75  ltrs - 1.png"],
-                "cate": "air cooler",
-                "faqs":[
-                    ["How does the rental process work in Pune?", "Renting from us in Pune is easy! Simply select the product you need, choose your rental period, and complete the checkout process. We'll deliver it to your doorstep"],
-                    ["Can I extend my rental period if I need more time in Pune?", "Yes, you can extend your rental period while you're in Pune. Just contact our customer support, and they'll assist you with the process"],
-                    ["What happens if the rented product gets damaged during my rental period in Pune?", "Don't worry; minor wear and tear are expected while you're renting in Pune. However, if there's significant damage, please inform us, and we'll guide you through the next steps"],
-                    [" Is there a security deposit required when renting in Pune?", "Yes, we may require a security deposit in Pune. The deposit will be refunded when you return the product in good condition"],
-                    ["Can I cancel my rental order while in Pune?", "Yes, you can cancel your rental order in Pune. Please check our cancellation policy for details on refunds and any associated fees"],
-                    ["What if I need the rented product for a longer duration than initially planned in Pune?", "No problem! You can typically extend your rental period while you're in Pune, but please contact us in advance to make necessary arrangements"],
-                    [" Do you offer delivery and pickup services for rented products in Pune?", "Yes, we offer delivery and pickup services for most of our rental products in Pune. Delivery fees may apply"],
-                    ["Can I rent multiple products at once while in Pune?", "Yes, you can rent multiple products simultaneously while you're in Pune. Simply add them to your cart and proceed with the rental process"],
-                    ["Are there any restrictions on where I can use the rented product in Pune?", "Some products may have specific usage restrictions. Please refer to the product description and rental agreement for any such limitations while renting in Pune"],
-                    ["Can I rent a product for a single-day event or occasion in Pune?", "Yes, you can typically rent products for short-term events or occasions while you're in Pune. We offer flexible rental options to suit your needs"],
-                    ["What should I do if I have a problem with the rented product during my rental period in Pune?", "Contact our customer support immediately while you're in Pune. We'll provide assistance or arrange for a replacement if necessary"]
-                ],
-                "features": [
-                    "Plug & Play",
-                    "ZERO Water drainage",
-                    "Minimum Space requirement",
-                    "Air Throw of about 15 ft",
-                    "Wheels for easy mobilization",
-                    "Ideal for events, weddings, shootings, exhibition etc"
-                ]
-            },
+            
             {
                 "id": 42,
                 "name": "air cooler 75 ltrs",
                 "keyfeat": "",
                 "buy": true,
                 "desc": "Rentooz offers a top-notch Air Cooler 75 LTRS collection in Pune. Our air coolers provide powerful and energy-efficient cooling with stylish designs to elevate your space. The 75 LTRS capacity ensures uninterrupted cooling convenience",
-                "price": 1000,
+                "price": 13799,
                 "img": ["/proimg/COOLER 90 LTR - 1.png", "/proimg/COOLER 90 LTR - 2.png", "/proimg/COOLER 90 LTR - 3.png"],
                 "cate": "air cooler",
                 "faqs":[
@@ -324,48 +294,14 @@
                     "Ideal for events, weddings, shootings, exhibition etc"
                 ]
             },
-            {
-                "id": 43,
-                "name": "silent air cooler",
-                "keyfeat": "100 ltrs",
-                "buy": true,
-                "desc": "Rentooz offers a top-notch Silent Air Cooler 100 LTRS collection in Pune. Our Silent Air Coolers provide powerful and energy-efficient cooling with stylish designs to elevate your space. The 100 LTRS capacity ensures uninterrupted cooling convenience",
-                "price": 1500,
-                "img": ["/proimg/Cooler - 100 Ltr Silent.png", "/proimg/Cooler - 100 Ltr Silent - 2.png", "/proimg/Cooler - 100 Ltr Silent - 3.png", "/proimg/Cooler - 100 Ltr Silent - 4.png"],
-                "cate": "air cooler",
-                "faqs":[
-                    ["How does the rental process work in Pune?", "Renting from us in Pune is easy! Simply select the product you need, choose your rental period, and complete the checkout process. We'll deliver it to your doorstep"],
-                    ["Can I extend my rental period if I need more time in Pune?", "Yes, you can extend your rental period while you're in Pune. Just contact our customer support, and they'll assist you with the process"],
-                    ["What happens if the rented product gets damaged during my rental period in Pune?", "Don't worry; minor wear and tear are expected while you're renting in Pune. However, if there's significant damage, please inform us, and we'll guide you through the next steps"],
-                    ["Is there a security deposit required when renting in Pune?", "Yes, we may require a security deposit in Pune. The deposit will be refunded when you return the product in good condition"],
-                    ["Can I cancel my rental order while in Pune?", "Yes, you can cancel your rental order in Pune. Please check our cancellation policy for details on refunds and any associated fees"],
-                    ["What if I need the rented product for a longer duration than initially planned in Pune?", "No problem! You can typically extend your rental period while you're in Pune, but please contact us in advance to make necessary arrangements"],
-                    ["Do you offer delivery and pickup services for rented products in Pune?", "Yes, we offer delivery and pickup services for most of our rental products in Pune. Delivery fees may apply"],
-                    ["Can I rent multiple products at once while in Pune?", "Yes, you can rent multiple products simultaneously while you're in Pune. Simply add them to your cart and proceed with the rental process"],
-                    ["Are there any restrictions on where I can use the rented product in Pune?", "Some products may have specific usage restrictions. Please refer to the product description and rental agreement for any such limitations while renting in Pune"],
-                    ["Can I rent a product for a single-day event or occasion in Pune?", "Yes, you can typically rent products for short-term events or occasions while you're in Pune. We offer flexible rental options to suit your needs"],
-                    ["What should I do if I have a problem with the rented product during my rental period in Pune?", "Contact our customer support immediately while you're in Pune. We'll provide assistance or arrange for a replacement if necessary"],
-                    ["Can I schedule a specific delivery and pickup time for my rented product in Pune?", "Depending on availability, we may be able to accommodate specific delivery and pickup time requests while you're in Pune. Please inquire with us"],
-                    ["Is there a minimum or maximum rental duration for your products in Pune?", "Rental durations may vary depending on the product while you're in Pune. We offer both short-term and long-term rental options to meet your requirements"],
-                    ["Can I rent a product if I live outside your delivery area in Pune?", "We primarily serve specific areas for delivery in Pune. If you're outside our service area, please contact us to discuss the possibility of delivery"],
-                    ["What happens if I lose or damage accessories that come with the rented product in Pune?", "Additional charges may apply for lost or damaged accessories while renting in Pune. Please take good care of the product and its accompanying items"]
-                ],
-                "features": [
-                    "Plug & Play",
-                    "ZERO Water drainage",
-                    "Minimum Space requirement",
-                    "Covers an approx. area up to 500 sq. ft",
-                    "Wheels for easy mobilization",
-                    "Ideal for events, weddings, shootings, exhibition etc"
-                ]
-            },
+            
             {
                 "id": 44,
                 "name": "air cooler (5.5 Ft)",
                 "keyfeat": "120 ltrs",
                 "buy": true,
                 "desc": "Rentooz offers a top-notch Air Cooler 120 LTRS collection in Pune. Our Air Coolers provide powerful and energy-efficient cooling with stylish designs to elevate your space. The 120 LTRS capacity ensures uninterrupted cooling convenience",
-                "price": 2000,
+                "price": 29999,
                 "img": ["/proimg/COOLER 120 LTRS - 1.png", "/proimg/COOLER 120 LTRS - 2.png", "/proimg/COOLER 120 LTRS - 3.png"],
                 "cate": "air cooler",
                 "faqs":[
@@ -400,7 +336,7 @@
                 "keyfeat": "",
                 "buy": true,
                 "desc": "Rentooz offers a top-notch Air Cooler 100 LTRS collection in Pune. Our Air Coolers provide powerful and energy-efficient cooling with stylish designs to elevate your space. The 100 LTRS capacity ensures uninterrupted cooling convenience",
-                "price": 1500,
+                "price": 29899,
                 "img": ["/proimg/aircooler1001.png", "/proimg/aircooler1003.png", "/proimg/aircooler1002.png"],
                 "cate": "air cooler",
                 "faqs":[
@@ -435,7 +371,7 @@
                 "keyfeat": "",
                 "buy": true,
                 "desc": "Rentooz offers a top-notch Air Cooler 110 LTRS collection in Pune. Our Air Coolers provide powerful and energy-efficient cooling with stylish designs to elevate your space. The 110 LTRS capacity ensures uninterrupted cooling convenience",
-                "price": 1500,
+                "price": 17799,
                 "img": ["/proimg/AIR COOLER - 100 LTR FRONT.png", "/proimg/AIR COOLER - 100 LTR BACK.png"],
                 "cate": "air cooler",
                 "faqs":[
@@ -470,7 +406,7 @@
                 "keyfeat": "",
                 "buy": true,
                 "desc": "Rentooz offers a top-notch Silent Air Cooler 75 LTRS collection in Pune. Our Silent Air Coolers provide powerful and energy-efficient cooling with stylish designs to elevate your space. The 75 LTRS capacity ensures uninterrupted cooling convenience",
-                "price": 1000,
+                "price": 14799,
                 "img": ["/proimg/aircooler752.png", "/proimg/aircooler751.png", "/proimg/aircooler753.png"],
                 "cate": "air cooler",
                 "faqs":[
