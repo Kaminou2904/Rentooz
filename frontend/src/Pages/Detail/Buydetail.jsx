@@ -186,10 +186,10 @@ function Buydetail() {
                             <span className="ms-1 text-muted bricolage-semibold">{detstarNum[detstarNum.length - 1]} (202)</span>
                         </p>
                         <div className="mainDetailPriceDiv p-0 d-flex align-items-center mt-4">
-                            <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center me-1">₹{foundPro.price}
-                            </div>
+                            {/* <div className="detailPriceTag w-100 border-brand-blue bricolage-bold bg-brand-blue p-2 fs-5 text-white text-center me-1">₹{foundPro.price}
+                            </div> */}
                             <div className="checkBtnWrap d-flex align-items-center py-1 m-0">
-                                {/* <button className='checkBtn btn bg-brand-blue text-uppercase w-100 text-white bricolage-bold fs-4 me-1'>Check Avaibility <i className="fas fa-arrow-right ms-2"></i></button> */}
+                                <button className='checkBtn buy-btn btn bg-brand-blue text-uppercase w-100 text-white bricolage-bold fs-4 me-1'>₹{foundPro.price} <i className="fas fa-arrow-right ms-2"></i></button>
                                 <p className="mb-0 checkCall bg-brand-blue rounded-3 me-1">
                                     <a href="tel:+91 9819570211" className="nav-link text-white"><i className="fas fa-phone-alt fs-4"></i></a>
                                 </p>

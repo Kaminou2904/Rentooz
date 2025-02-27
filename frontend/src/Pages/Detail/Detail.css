@@ -44,6 +44,10 @@
     padding-bottom: 12px !important;
     width: min(100%, 600px) !important;
     text-align: center;
+    font-size: 16px !important;
+}
+
+.buy-btn{
     font-size: 20px !important;
 }
 
