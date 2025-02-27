@@ -11,7 +11,7 @@ function Productcard(props) {
             </div>
             <div className="productCardData">
                 <div className="productName">
-                    <Link to={`/${props.cate.replace(/ /g, '-')}/${props.name.replace(/ /g, '-')}-on-rent-in-pune`} className='nav-link'><p className="mb-0 text-brand-blue text-center text-capitalize lh-sm bricolage-extrabold mt-2">{props.name} <br /><span className="text-capitalize bricolage-extrabold">{props.keyfeat}</span></p></Link>
+                    <Link to={`/buy/${props.cate.replace(/ /g, '-')}/${props.name.replace(/ /g, '-')}-in-pune`} className='nav-link'><p className="mb-0 text-brand-blue text-center text-capitalize lh-sm bricolage-extrabold mt-2">{props.name} <br /><span className="text-capitalize bricolage-extrabold">{props.keyfeat}</span></p></Link>
                 </div>
                 <div className="productCardRating mt-1 d-flex justify-content-center align-items-center pb-3">
                     <i className="fas fa-star text-warning"></i>
