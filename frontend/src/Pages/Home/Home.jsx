@@ -4,6 +4,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Categorycard from '../../Components/Categorycard/Categorycard';
 import Data from '../../Data/Product.json';
+import Selldata from '../../Data/Buyproduct.json';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -153,9 +154,9 @@ function Home() {
     const productPrinter = () => {
         const firstdata = [];
         const maincateData = [];
-        for (const product in Data) {
-            maincateData.push({ procate: product, icon: Data[product].mainicon })
-            firstdata.push(Data[product].products[0]);
+        for (const product in Selldata) {
+            maincateData.push({ procate: product, icon: Selldata[product].mainicon })
+            firstdata.push(Selldata[product].products[0]);
         };
         return { firstdata, maincateData };
     };

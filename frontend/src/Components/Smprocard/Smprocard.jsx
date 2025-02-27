@@ -11,7 +11,7 @@ function Smprocard(props) {
             <div className="mainsmProductcardData p-2">
                 <Link to={`/${props.category.replace(/ /g, '-')}/${props.name.replace(/ /g, '-')}-on-rent-in-pune`} className='nav-link'><p className="mainsmProductcardName bricolage-bold text-capitalize mb-0 text-brand-blue">{props.name.slice(0, 7)}...</p></Link>
                 <p className="mainsmProductcardCategory mb-0 text-muted text-uppercase">{props.category}</p>
-                {/* <div className="mainsmProductcardPrice text-brand-purp lh-sm bricolage-bold">₹{props.rentprice} <span className='text-muted bricolage-semibold'>/Day</span></div> */}
+                <div className="mainsmProductcardPrice text-brand-purp lh-sm bricolage-bold">₹{props.rentprice} <span className='text-muted bricolage-semibold'>/Day</span></div>
             </div>
         </div>
   );
