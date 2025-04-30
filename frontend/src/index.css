@@ -80,3 +80,7 @@ body{
 .fa-chevron-left{
   cursor: pointer;
 }
+
+.fs-sm{
+  font-size: 14px;
+}

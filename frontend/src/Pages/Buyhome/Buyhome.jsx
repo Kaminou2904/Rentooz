@@ -269,6 +269,25 @@ function Buyhome() {
                 </div>
             </div> */}
 
+            <div className="px-2">
+                <div className="border-brand-skin rounded-brand p-2">
+                    <Link to={'/'} className='nav-link'>
+                        <div className="row align-items-center">
+                            <div className="col-2 pe-0">
+                                <img src="/images/2Fan.png" alt="products" className="img-fluid" />
+                            </div>
+                            <div className="col-9">
+                                <h2 className="mb-0 fs-4 bricolage-bold text-brand-blue">Rent event products!</h2>
+                                <p className="mb-0 fs-sm lh-sm text-brand-skin">Get best event maproducts on rent in Pune.</p>
+                            </div>
+                            <div className="col-1 ps-0 d-flex align-items-center">
+                                <i className="fas fa-arrow-circle-right text-brand-blue fs-4"></i>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+            </div>
+
             <div className="testDiv my-5 px-4">
                 <p className="heading fs-3">Best Selling Products</p>
                 <Slider {...caroSettings}>
