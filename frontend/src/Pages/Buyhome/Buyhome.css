@@ -1,0 +1,159 @@
+.headerLogoWraper{
+    width: min(45%, 350px);
+    margin: auto !important;
+}
+
+.heroDiv{
+    height: 70px;
+}
+
+.heroTxt{
+    font-size: 20px;
+    line-height: 22px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.herotxt-desk{
+    font-size: 20px;
+    line-height: 22px;
+    width: 30%;
+    overflow: hidden;
+}
+
+.searchIcon{
+    width: 38px;
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+    z-index: 65;
+}
+
+.searchSuggetionDiv{
+    position: relative;
+    z-index: 65;
+}
+
+.selectedSugg{
+    background-color: rgb(226, 226, 226);
+}
+
+.psudoDiv{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    z-index: 60;
+}
+
+.emptyTab{
+    position: absolute;
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.activeTopTab{
+    color: white !important;
+}
+
+.customTab, .dailyTab{
+    z-index: 3;
+}
+
+.callBtn{
+    border-radius: 13px;
+    letter-spacing: 1px;
+}
+
+.aboutLogo{
+    width: auto;
+    height: 14px;
+}
+
+.aboutLogo img{
+    height: 100% !important;
+    width: auto !important;
+}
+
+.aboutTxt{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.serviceCardImg{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto;
+}
+
+.serviceTxt{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.whyLogo{
+    width: 155px !important;
+}
+
+.whyTxt{
+    font-size: 14px;
+    line-height: 16px !important;
+}
+
+.blogCardImg img{
+    border-radius: 20px;
+}
+
+.contactHeading{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.formInpu::placeholder{
+    letter-spacing: 2px;
+}
+
+.submitBtn{
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 900px) {
+    .headerLogoWraper{
+        margin: 0px !important;
+        width: 200px;
+    }
+}
+
+.readBtn{
+    cursor: pointer;
+}
+
+.category-card-wrap{
+    width: calc(100% / 4);
+}
+
+@media screen and (width < 800px) {
+    .desk-hero-div{
+        display: none;
+    }
+    .mob-hero-div{
+        display: flex;
+    }
+}
+
+@media screen and (width > 800px) {
+    .category-card-wrap{
+        width: min(calc(90% / 3), 120px);
+    }
+    .desk-hero-div{
+        display: flex;
+    }
+    .mob-hero-div{
+        display: none;
+    }
+}

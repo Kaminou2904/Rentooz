@@ -8,7 +8,7 @@ function Footer() {
         <div className="container row mx-auto px-4 mb-5">
             <div className="col-md-3">
                 <div className="footerLogo pe-5">
-                    <img src="../images/Rentooze Logo New.png" alt="rentinggo footer logo" className="img-fluid" />
+                    <img src="../../images/Rentooze Logo New.png" alt="rentinggo footer logo" className="img-fluid" />
                 </div>
                 <div className="socialLinks mt-3 mb-3">
                     <p className="fs-5 bricolage-bold mb-1">Social Links</p>

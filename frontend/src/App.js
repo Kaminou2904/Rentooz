@@ -13,12 +13,15 @@ import Blogpage from './Pages/Blogpage/Blogpage';
 import Blogpagetwo from './Pages/Blogpagetwo/Blogpagetwo';
 import Buylisting from './Pages/Listing/Buylisting';
 import Buydetail from './Pages/Detail/Buydetail';
+import Buyhome from './Pages/Buyhome/Buyhome';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/rent' element={<Home/>}/>
+        <Route path='/buy' element={<Buyhome/>}/>
         <Route path='/product-rental-service-in-pune' element={<Home/>}/>
         <Route path='/mist-fan-spare-parts' element={<Parts/>}/>
         <Route path='/:category' element={<Listing/>}/>
