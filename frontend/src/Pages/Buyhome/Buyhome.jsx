@@ -199,10 +199,10 @@ function Buyhome() {
     return (
         <div className='mainHome container p-0'>
             <Helmet>
-                <link ref="canonical" url="https://www.rentooze.in/"></link>
+                <link ref="canonical" url="https://www.rentooze.in/buy"></link>
             </Helmet>
             <div className="mainHeader d-flex justify-content-between align-items-center px-3">
-                <div className="headerLogoWraper py-4 mx-0 mt-2 me-3">
+                <div className="headerLogoWraperBuy py-4 mx-0 mt-2 me-3">
                     <img src="/images/Rentooze Logo New.png" className='img-fluid' alt="Rentooze logo" />
                 </div>
                 <Bottomnav />
