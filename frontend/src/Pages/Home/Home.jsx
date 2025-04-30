@@ -269,7 +269,7 @@ function Home() {
                 </div>
             </div> */}
 
-            <div className="px-2">
+            <div className="px-2 buy-rent-ad">
                 <div className="border-brand-skin rounded-brand p-2">
                     <Link to={'/buy'} className='nav-link'>
                         <div className="row align-items-center">
