@@ -66,6 +66,34 @@ function Buyhome() {
         ],
     }
 
+    const bannerCaro = {
+        infinite: true,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                },
+            },
+        ],
+    }
+
     const responsiveSet = {
         infinite: true,
         dots: true,
@@ -173,16 +201,39 @@ function Buyhome() {
             <Helmet>
                 <link ref="canonical" url="https://www.rentooze.in/"></link>
             </Helmet>
-            <div className="mainHeader d-flex justify-content-between align-items-center">
-                <div className="headerLogoWraper py-4 mt-2">
+            <div className="mainHeader d-flex justify-content-between align-items-center px-3">
+                <div className="headerLogoWraper py-4 mx-0 mt-2 me-3">
                     <img src="/images/Rentooze Logo New.png" className='img-fluid' alt="Rentooze logo" />
                 </div>
                 <Bottomnav />
+                <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-3 px-2 ${searchBtn === '100%' ? 'rounded-brand-sm' : 'rounded-pill'}`} onClick={searchIconClick} style={{ width: searchBtn }}>
+                    <input
+                        type="text"
+                        name="search"
+                        className='form-control border-0 shadow-none bricolage-light text-muted m-0 p-0 ps-2' id="searchinpu"
+                        placeholder='Search something'
+                        style={{ display: searchInpu }}
+                        value={searchTxt}
+                        onChange={(e) => setSearchTxt(e.target.value)}
+                        onKeyDown={(e) => handleKeyDown(e)}
+                    />
+                    <i className={`fas fa-search text-brand-skin fs-5 ${searchBtn === '100%' ? 'me-2' : ''}`}></i>
+                </div>
             </div>
+            
+            <div className="searchSuggetionDiv px-4" style={{ display: searchSuggetionDiv }}>
+                    <div className="searchSuggetion p-2 bg-white shadow">
+                        {
+                            searchResult.map((result, ind) => (
+                                <Link key={ind} className={`nav-link ${selectedSuggestion === ind ? 'selectedSugg' : ''}`} to={`/buy/${result.cate}`} onMouseOver={() => setSelectedSuggestion(ind)} onMouseOut={() => setSelectedSuggestion(-1)}><p className="mb-0 border-bottom mt-2 fs-5">{result.cate}</p></Link>
+                            ))
+                        }
+                    </div>
+                </div>
 
             <div className="psudoDiv" style={{ display: psudodiv }} onClick={psudoClick}></div>
 
-            <div className={`heroDiv mob-hero-div px-4 mt-2 align-items-center ${searchBtn === '100%' ? 'justify-content-end' : 'justify-content-between'}`}>
+            {/* <div className={`heroDiv mob-hero-div px-4 mt-2 align-items-center ${searchBtn === '100%' ? 'justify-content-end' : 'justify-content-between'}`}>
                 <h2 className='heroTxt mb-0 bricolage-bold text-brand-skin text-nowrap' style={{ display: herotxt }}>Stay Cool, Pay Smart<br /> <span className="text-brand-blue bricolage-regular">The Ultimate Cooling <br />Rental Solutions in Pune</span></h2>
                 <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-4 px-2 ${searchBtn === '100%' ? 'rounded-brand' : 'rounded-pill'}`} onClick={searchIconClick} style={{ width: searchBtn }}>
                     <input
@@ -197,9 +248,9 @@ function Buyhome() {
                     />
                     <i className={`fas fa-search text-brand-skin fs-5 ${searchBtn === '100%' ? 'me-2' : ''}`}></i>
                 </div>
-            </div>
+            </div> */}
 
-            <div className={`heroDiv desk-hero-div mt-2 align-items-center justify-content-between w-100`}>
+            {/* <div className={`heroDiv desk-hero-div mt-2 align-items-center justify-content-between w-100`}>
                 <h2 className='heroTxt herotxt-desk mb-0 bricolage-bold text-brand-skin text-nowrap'>Stay Cool, Pay Smart<br /> <span className="text-brand-blue bricolage-regular">The Ultimate Cooling <br />Rental Solutions in Pune</span></h2>
                 <div className={`searchIcon d-flex justify-content-center align-items-center border-brand-skin py-3 px-2 rounded-brand w-100`}>
                     <input
@@ -213,9 +264,9 @@ function Buyhome() {
                     />
                     <i className={`fas fa-search text-brand-skin fs-5 me-2`}></i>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="searchSuggetionDiv px-4" style={{ display: searchSuggetionDiv }}>
+            {/* <div className="searchSuggetionDiv px-4" style={{ display: searchSuggetionDiv }}>
                 <div className="searchSuggetion p-2 bg-white shadow">
                     {
                         searchResult.map((result, ind) => (
@@ -223,7 +274,7 @@ function Buyhome() {
                         ))
                     }
                 </div>
-            </div>
+            </div> */}
 
             {/* <div className="dailyTabs container mt-4">
                 <div className="tabsWrap d-flex bg-brand-gray rounded-pill">
@@ -236,6 +287,15 @@ function Buyhome() {
                     </div>
                 </div>
             </div> */}
+
+            <div className='px-2'>
+                <Slider {...bannerCaro}>
+                    <img src="/images/banner-placeholder.png" alt="banner" className="img-fluid rounded-brand px-2" />
+                    <img src="/images/banner-placeholder.png" alt="banner" className="img-fluid rounded-brand px-2" />
+                    <img src="/images/banner-placeholder.png" alt="banner" className="img-fluid rounded-brand px-2" />
+                    <img src="/images/banner-placeholder.png" alt="banner" className="img-fluid rounded-brand px-2" />
+                </Slider>
+            </div>
 
             <div className="categoryWrap text-center mt-5 px-4 mb-5">
                 <p className="fs-4 text-muted text-start mx-auto bricolage-bold mb-3">EXPLORE OUR PRODUCTS</p>

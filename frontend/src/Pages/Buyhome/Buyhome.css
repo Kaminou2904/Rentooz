@@ -1,6 +1,6 @@
 .headerLogoWraper{
     width: min(45%, 350px);
-    margin: auto !important;
+    margin: 0 !important;
 }
 
 .heroDiv{

@@ -23,6 +23,10 @@ body{
   border-radius: 20px !important;
 }
 
+.rounded-brand-sm{
+  border-radius: 15px !important;
+}
+
 .text-brand-skin{
   color: #daaa84 !important;
 }
